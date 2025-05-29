@@ -1,0 +1,20 @@
+{
+  "name": "lifechild_2025",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss ./style.css --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungman5/lifechild_2025.git"
+  },
+  "author": "sungman5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sungman5/lifechild_2025/issues"
+  },
+  "homepage": "https://github.com/sungman5/lifechild_2025#readme",
+  "description": ""
+}

@@ -1,0 +1,114 @@
+.gnb {
+  font-size: 1.6rem;
+}
+
+.newsletter-top-banner {
+  color: $white;
+  background-color: $sub;
+  padding: 1.8rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.gnb-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 4rem;
+}
+
+// 중앙 메뉴
+.gnb-nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.gnb-nav-item {
+  font-size: 2rem;
+  padding: 0 4rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:last-child{
+    gap: 0.8rem;
+  }
+}
+
+// 서브메뉴
+.gnb-menu-dropdown {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  padding: 0.8rem 0;
+  background-color: $white;
+  border-radius: 0.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .menu-item a {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1.6rem 2.4rem;
+    display: block;
+    height: 100%;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+
+.gnb-logo img {
+  height: 7rem;
+}
+
+.gnb-btns {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.gnb-btns img {
+  height: 1.5rem;
+}
+
+.gnb-btns a {
+  display: block;
+}
+
+.gnb-donation {
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  background: $primary;
+  border-radius: 2px 2px 2px 1em;
+  font-weight: 700;
+  color: $sub;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: $primaryHover;
+  }
+}
+
+.gnb-select-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.gnb-btns .gnb-megamenu {
+  height: 2em;
+  cursor: pointer;
+}
