@@ -35,6 +35,7 @@ function register_lc_menus()
             'donate' => 'gnb 드롭다운 메뉴:후원',
             'news' => 'gnb 드롭다운 메뉴:소식',
             'participation' => 'gnb 드롭다운 메뉴:참여',
+            'archive' => 'gnb 드롭다운 메뉴:아카이브',
             'hamburger' => '우측 사이드에 등장하는 전체 메뉴',
             'footer' => '푸터에 있는 메뉴(오시는 길 등)',
         ]

@@ -22,6 +22,16 @@ html {
   height: 100%;
 }
 
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+}
 .gnb {
   font-size: 1.6rem;
 }
@@ -50,9 +60,17 @@ html {
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
+  width: 100%;
+  max-width: 144rem;
 }
 
+@media only screen and (max-width: 1440px) {
+  .gnb-nav {
+    display: none;
+  }
+}
 .gnb-nav-item {
   font-size: 2rem;
   padding: 0 4rem;
@@ -61,21 +79,41 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.3s all;
+  cursor: pointer;
 }
 .gnb-nav-item:last-child {
   gap: 0.8rem;
 }
+.gnb-nav-item:hover {
+  color: #0066D9;
+}
+.gnb-nav-item:hover .gnb-menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+#lifechildren-outlink img {
+  transition: 0.3s all;
+}
+
+#lifechildren-outlink:hover img {
+  transform: translate(0.3rem, -0.3rem);
+}
 
 .gnb-menu-dropdown {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%);
-  width: 16rem;
+  width: 17rem;
   padding: 0.8rem 0;
   background-color: #ffffff;
   border-radius: 0.8rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0 0 0 1px, rgba(42, 51, 69, 0.04) 0 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0 6px 6px -3px, rgba(14, 63, 126, 0.04) 0 12px 12px -6px, rgba(14, 63, 126, 0.04) 0 24px 24px -12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s all;
 }
 .gnb-menu-dropdown .menu-item a {
   font-size: 1.7rem;
@@ -99,11 +137,14 @@ html {
 }
 
 .gnb-btns img {
-  height: 1.5rem;
+  height: 2rem;
 }
 
 .gnb-btns a {
   display: block;
+}
+.gnb-btns a:hover {
+  color: #000000;
 }
 
 .gnb-donation {
@@ -114,6 +155,7 @@ html {
   font-weight: 700;
   color: #0066D9;
   transition: 0.3s all;
+  line-height: 120%;
 }
 .gnb-donation:hover {
   background-color: #FFCC33;
@@ -122,12 +164,47 @@ html {
 .gnb-select-lang {
   display: flex;
   align-items: center;
-  gap: 0.3em;
+  gap: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
 }
+.gnb-select-lang img:first-child {
+  width: 2.4rem;
+  height: auto;
+}
 
-.gnb-btns .gnb-megamenu {
-  height: 2em;
+.gnb-btns .gnb-fullscreen-menu-btn {
+  height: 3.2rem;
   cursor: pointer;
+}
+
+.fullscreen-header {
+  padding: 2.4rem;
+  border-bottom: 1px solid #FAFAFA;
+}
+
+.fullscreen-dimmed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.fullscreen-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen-grid-item {
+  padding: 3.2rem;
+  border-right: 1px solid #FAFAFA;
+  transition: 0.3s ease-in-out;
+}
+.fullscreen-grid-item h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
