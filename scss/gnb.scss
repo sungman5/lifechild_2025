@@ -159,7 +159,10 @@
 // Full Screen menu
 .fullscreen-header {
   padding: 2.4rem;
-  border-bottom: 1px solid $grayLight;
+  border-bottom: 1px solid $grayLine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fullscreen-dimmed {
@@ -169,6 +172,7 @@
   bottom: 0;
   left: 0;
   background-color: $white;
+  display: none;
 }
 
 .fullscreen-grid {
@@ -180,11 +184,15 @@
 
 .fullscreen-grid-item {
   padding: 3.2rem;
-  border-right: 1px solid $grayLight;
+  border-right: 1px solid $grayLine;
   transition: 0.3s ease-in-out;
+}
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
+.fullscreen-item-heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#notion-app > div > div:nth-child(1) > div > div > header > div > div.notion-topbar > div > div:nth-child(2) > div:nth-child(2) {
+  display: none;
 }

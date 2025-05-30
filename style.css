@@ -22,6 +22,10 @@ html {
   height: 100%;
 }
 
+body {
+  height: 100%;
+}
+
 @media only screen and (min-width: 2560px) {
   html {
     font-size: 11px;
@@ -180,7 +184,10 @@ html {
 
 .fullscreen-header {
   padding: 2.4rem;
-  border-bottom: 1px solid #FAFAFA;
+  border-bottom: 1px solid #E1E1E1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fullscreen-dimmed {
@@ -190,6 +197,7 @@ html {
   bottom: 0;
   left: 0;
   background-color: #ffffff;
+  display: none;
 }
 
 .fullscreen-grid {
@@ -201,10 +209,25 @@ html {
 
 .fullscreen-grid-item {
   padding: 3.2rem;
-  border-right: 1px solid #FAFAFA;
+  border-right: 1px solid #E1E1E1;
   transition: 0.3s ease-in-out;
 }
-.fullscreen-grid-item h2 {
-  font-size: 2rem;
+
+.fullscreen-item-heading {
+  font-size: 4rem;
   font-weight: 600;
+}
+
+#notion-app > div > div:nth-child(1) > div > div > header > div > div.notion-topbar > div > div:nth-child(2) > div:nth-child(2) {
+  display: none;
+}
+
+#suggest {
+  height: 100%;
+}
+
+#suggest-form {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: 0 auto;
 }
