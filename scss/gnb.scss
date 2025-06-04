@@ -1,5 +1,7 @@
 .gnb {
   font-size: 1.6rem;
+  position: relative;
+  z-index: 999999;
 }
 
 .newsletter-top-banner {
@@ -138,17 +140,53 @@
 }
 
 .gnb-select-lang {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
+  font-size: 1.4rem;
+}
 
-  img:first-child {
-    width: 2.4rem;
-    height: auto;
+.lang-flag {
+  width: 2rem;
+  height: auto;
+}
+
+.lang-select {
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  padding: 0.8rem 0;
+  background-color: $white;
+  border-radius: 0.8rem;
+  //box-shadow: rgba(14, 63, 126, 0.04) 0 0 0 1px, rgba(42, 51, 69, 0.04) 0 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0 6px 6px -3px, rgba(14, 63, 126, 0.04) 0 12px 12px -6px, rgba(14, 63, 126, 0.04) 0 24px 24px -12px;
+  border: 1px solid $grayLine;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  z-index: 999;
+}
+
+.lang-select.active{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.lang-select-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  &:hover {
+    background-color: $primary;
   }
 }
+
 
 .gnb-btns .gnb-fullscreen-menu-btn {
   height: 3.2rem;
@@ -165,14 +203,31 @@
   align-items: center;
 }
 
+.fullscreen-header .gnb-fullscreen-menu-btn {
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    transform: scale(0.8);
+  }
+}
+
 .fullscreen-dimmed {
+  z-index: 999999;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: $white;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+}
+
+.fullscreen-dimmed.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .fullscreen-grid {
@@ -191,6 +246,16 @@
 .fullscreen-item-heading {
   font-size: 4rem;
   font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.fullscreen-grid-item .menu li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  a:hover {
+    color: $sub;
+  }
 }
 
 #notion-app > div > div:nth-child(1) > div > div > header > div > div.notion-topbar > div > div:nth-child(2) > div:nth-child(2) {

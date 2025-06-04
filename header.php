@@ -89,10 +89,20 @@
         <div class="gnb-btns">
             <img src="<?php echo get_template_directory_uri() ?>/img/magnifying-glass-light.svg" alt="">
             <div class="gnb-select-lang">
-                <img src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
+                <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
                 <?php echo substr(get_locale(), 0, 2); ?>
                 <img class="caret-down" src="<?php echo get_template_directory_uri() ?>/img/caret-down-light.svg"
                      alt="">
+                <div class="lang-select">
+                    <div class="lang-select-item">
+                        <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
+                        <p>한국어</p>
+                    </div>
+                    <div class="lang-select-item">
+                        <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-us.png" alt="">
+                        <p>English</p>
+                    </div>
+                </div>
             </div>
             <a href="">로그인</a>
             <a class="gnb-donation" href="">후원하기</a>
@@ -106,7 +116,8 @@
         <a class="gnb-logo" href="<?php echo home_url(); ?>">
             <img src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
         </a>
-        <img src="<?php echo get_template_directory_uri() ?>/img/x-square-thin.svg" alt="">
+        <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/x-square-thin.svg"
+             alt="">
     </header>
     <div class="fullscreen-grid">
         <div class="fullscreen-grid-item">

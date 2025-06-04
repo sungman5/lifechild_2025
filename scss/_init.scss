@@ -9,6 +9,7 @@
   font-family: "Pretendard Variable", sans-serif;
   text-decoration-line: none;
   //border-radius: 2px;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,6 +20,14 @@ html {
 
 body{
   height: 100%;
+}
+
+.wrapper{
+  padding: 12.8rem 4rem;
+}
+
+.slide-wrapper{
+  padding: 0 4rem;
 }
 
 @media only screen and (min-width: 2560px){

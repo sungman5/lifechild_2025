@@ -88,3 +88,34 @@ function create_campaign_post_type()
     ]);
 }
 add_action('init', 'create_campaign_post_type');
+
+// 캠페인 텍소노미 등록
+function create_campaign_status_taxonomy() {
+    $labels = array(
+        'name'              => _x('진행상태', 'taxonomy general name', 'textdomain'),
+        'singular_name'     => _x('진행상태', 'taxonomy singular name', 'textdomain'),
+        'search_items'      => __('진행상태 검색', 'textdomain'),
+        'all_items'         => __('모든 진행상태', 'textdomain'),
+        'parent_item'       => __('상위 진행상태', 'textdomain'),
+        'parent_item_colon' => __('상위 진행상태:', 'textdomain'),
+        'edit_item'         => __('진행상태 편집', 'textdomain'),
+        'update_item'       => __('진행상태 업데이트', 'textdomain'),
+        'add_new_item'      => __('새 진행상태 추가', 'textdomain'),
+        'new_item_name'     => __('새 진행상태 이름', 'textdomain'),
+        'menu_name'         => __('진행상태', 'textdomain'),
+    );
+
+    $args = array(
+        'hierarchical'      => true, // true로 설정하면 카테고리처럼 계층적이 됩니다. false로 설정하면 태그처럼 작동합니다.
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'show_in_rest'      => true, // 구텐베르크 에디터와의 호환성을 위해 추가
+//        'rewrite'           => array('slug' => 'campaign_status', 'with_front' => false, 'pages' => true, 'feeds' => true),
+    );
+
+    register_taxonomy('campaign_status', array('campaign'), $args);
+}
+
+add_action('init', 'create_campaign_status_taxonomy');
