@@ -1,0 +1,93 @@
+
+/*
+floating menu
+*/
+
+.floating-page-menu {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.6rem;
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.floating-page-menu-list{
+  display: flex;
+  align-items: center;
+}
+
+.floating-page-menu-item{
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 0.4rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 1.2rem;
+  &:hover{
+    background-color: $primary;
+  }
+}
+
+.floating-menu-accordion{
+  position: relative;
+  cursor: pointer;
+}
+
+.floating-menu-list{
+  position: absolute;
+  bottom: 120%;
+  left: 10%;
+  background-color: white;
+  transform: translate(-10%, 2rem);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.8rem;
+  padding: 0.8rem 0;
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+
+  li a{
+    display: block;
+    padding: 1rem 3.2rem;
+    font-size: 1.6rem;
+    word-break: keep-all;
+    &:hover{
+      background-color: $primary;
+    }
+  }
+}
+
+
+
+.floating-menu-current-page{
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 1rem;
+  padding: 0.8rem 2rem;
+}
+.floating-menu-current-page p{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.floating-menu-current-page svg{
+  transition: 0.3s ease;
+}
+
+
+
+.floating-menu-accordion:hover .floating-menu-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-10%, 0);
+}
+
+.floating-menu-accordion:hover .floating-menu-current-page svg{
+  transform: rotate(180deg);
+}

@@ -2,20 +2,21 @@
 <html <?php echo get_language_attributes() ?> lang="">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
+
 <header class="gnb">
     <div class="newsletter-top-banner">
         뉴스레터 안녕하세요
     </div>
     <div class="gnb-menu">
         <a class="gnb-logo" href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
+            <img class="lc_logo" src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
         </a>
         <div class="gnb-nav">
             <div class="gnb-nav-item">
@@ -87,7 +88,8 @@
             </a>
         </div>
         <div class="gnb-btns">
-            <img src="<?php echo get_template_directory_uri() ?>/img/magnifying-glass-light.svg" alt="">
+            <img class="gnb-search-icon" src="<?php echo get_template_directory_uri() ?>/img/magnifying-glass-light.svg"
+                 alt="">
             <div class="gnb-select-lang">
                 <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
                 <?php echo substr(get_locale(), 0, 2); ?>
@@ -95,7 +97,8 @@
                      alt="">
                 <div class="lang-select">
                     <div class="lang-select-item">
-                        <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
+                        <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png"
+                             alt="">
                         <p>한국어</p>
                     </div>
                     <div class="lang-select-item">
@@ -104,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <a href="">로그인</a>
+            <a class="gnb-login" href="">로그인</a>
             <a class="gnb-donation" href="">후원하기</a>
             <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/mega-menu.svg"
                  alt="">
@@ -114,7 +117,8 @@
 <div class="fullscreen-dimmed">
     <header class="fullscreen-header">
         <a class="gnb-logo" href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
+            <img class="lc_logo" src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
+<!--            <img class="lc_logo_symbol" src="--><?php //echo get_template_directory_uri() ?><!--/img/lc_logo_symbol.png" alt="">-->
         </a>
         <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/x-square-thin.svg"
              alt="">
@@ -161,6 +165,14 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
+            <h2 class="fullscreen-item-heading">참여</h2>
+            <?php
+            wp_nav_menu([
+                'theme_location' => 'participation',
+            ])
+            ?>
+        </div>
+        <div class="fullscreen-grid-item">
             <h2 class="fullscreen-item-heading">아카이브</h2>
             <?php
             wp_nav_menu([
@@ -168,13 +180,8 @@
             ])
             ?>
         </div>
-        <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">제안/기타</h2>
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'participation',
-            ])
-            ?>
-        </div>
     </div>
+<!--    <div class="fullscreen-banners">-->
+<!--        후원하기 / 한글 / 영문-->
+<!--    </div>-->
 </div>

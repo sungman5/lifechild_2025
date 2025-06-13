@@ -1,7 +1,11 @@
 .gnb {
   font-size: 1.6rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 999999;
+  transition: 0.3s ease-in-out;
 }
 
 .newsletter-top-banner {
@@ -18,7 +22,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem 4rem;
+  padding: 1.6rem 4rem;
+  background-color: $white;
+}
+
+
+@media only screen and (max-width: 1536px) {
+  .gnb-menu {
+    padding: 1.6rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .gnb-menu {
+    padding: 1.6rem 2rem;
+  }
 }
 
 // 중앙 메뉴
@@ -35,11 +53,6 @@
   max-width: 144rem;
 }
 
-@media only screen and (max-width: 1440px) {
-  .gnb-nav {
-    display: none;
-  }
-}
 
 .gnb-nav-item {
   font-size: 2rem;
@@ -63,6 +76,12 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .gnb-nav-item {
+    //padding: 0 2.4rem;
   }
 }
 
@@ -106,6 +125,11 @@
   height: 7rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .gnb-logo img {
+    height: 5rem;
+  }
+}
 .gnb-btns {
   display: flex;
   align-items: center;
@@ -116,7 +140,7 @@
   height: 2rem;
 }
 
-.gnb-btns a {
+.gnb-login, .gnb-donation {
   display: block;
 
   &:hover {
@@ -170,7 +194,7 @@
   z-index: 999;
 }
 
-.lang-select.active{
+.lang-select.active {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, -50%);
@@ -182,6 +206,7 @@
   gap: 0.8rem;
   padding: 0.8rem 1.5rem;
   font-size: 1.3rem;
+
   &:hover {
     background-color: $primary;
   }
@@ -223,7 +248,10 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.3s all;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .fullscreen-dimmed.active {
   opacity: 1;
@@ -234,13 +262,17 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 100%;
-  height: 100%;
+  flex: 1;
+  //height: 100%;
 }
 
 .fullscreen-grid-item {
   padding: 3.2rem;
   border-right: 1px solid $grayLine;
   transition: 0.3s ease-in-out;
+  &:last-child{
+    border-right: none;
+  }
 }
 
 .fullscreen-item-heading {
@@ -258,6 +290,59 @@
   }
 }
 
-#notion-app > div > div:nth-child(1) > div > div > header > div > div.notion-topbar > div > div:nth-child(2) > div:nth-child(2) {
-  display: none;
+@media only screen and (max-width: 1280px){
+  .fullscreen-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+  .fullscreen-item-heading {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+
+  .fullscreen-grid-item{
+    display: flex;
+    align-items: center;
+    padding: 2.4rem 3.2rem;
+    border-bottom: 1px solid $grayLine;
+    border-right: none;
+    h2{
+      width: 100%;
+      max-width: 12rem;
+    }
+    .menu{
+      display: flex;
+      gap: 1rem;
+      justify-content: space-evenly;
+      align-items: center;
+      li{
+        margin-bottom: 0;
+        position: relative;
+        &:after {
+          content: " •";
+        }
+
+        &:last-child::after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .fullscreen-grid-item .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .gnb-nav {
+    display: none;
+  }
+  .gnb-select-lang, .gnb-login, .gnb-donation, .gnb-search-icon {
+    display: none;
+  }
 }
