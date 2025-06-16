@@ -257,10 +257,14 @@
 (() => {
     function setMobilePageSubMenu() {
         const footer = document.getElementById('site-footer');
-        const floatingPageMenuHeight = document.querySelector('.floating-page-menu').offsetHeight;
-        if (window.innerWidth < 1440) {
-            footer.style.paddingBottom = `${floatingPageMenuHeight}px`;
+        const floatingPageMenuHeight = document.querySelector('.floating-page-menu');
+        if(floatingPageMenuHeight !== null ){
+            const height = floatingPageMenuHeight.offsetHeight;
+            if (window.innerWidth < 1440) {
+                footer.style.paddingBottom = `${height}px`;
+            }
         }
+
     }
 
     setMobilePageSubMenu();
