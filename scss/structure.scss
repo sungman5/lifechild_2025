@@ -1,0 +1,60 @@
+.organization-page{
+  background-color: $grayLight;
+}
+
+.organization {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+  gap: 10rem;
+  background-color: $grayLight;
+}
+
+.organization-container {
+  width: 100%;
+}
+
+.structure-wrapper{
+  padding: 8rem 4rem;
+}
+
+.organization-group {
+  width: 100%;
+  border-top: 1px solid $grayLine;
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+}
+
+.organization-group h3 {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.organization-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 430px){
+  .organization{
+    padding: 0 2rem;
+  }
+  .organization-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.organization-grid-item {
+  //background-color: #fff972;
+}
+
+.organization-grid-item h5 {
+  font-size: 1.6rem;
+}
+
+.organization-item-desc, .organization-item-phone {
+  font-size: 1.5rem;
+}

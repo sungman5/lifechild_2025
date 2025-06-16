@@ -1,5 +1,68 @@
+
 .section-hero img{
   width: 100%;
   height: 64rem;
   object-fit: cover;
+}
+
+.education-container{
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+}
+
+.education img{
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
+}
+
+.education-content{
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.education-number-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  width: 100%;
+  padding: 6.4rem 0;
+}
+
+.education-number-item{
+  text-align: center;
+}
+
+.education-stats{
+  //font-family: "Red Rose", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+  color: $sub;
+}
+
+.edu-stats-caption{
+  font-size: 2rem;
+  color: $grayText;
+}
+
+.education-excerpt{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.education-detail{
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  gap: 2.4rem;
+  padding: 2.4rem 0;
+  border-top: 1px solid $grayLine;
+  svg {
+    flex-shrink: 0;
+  }
 }

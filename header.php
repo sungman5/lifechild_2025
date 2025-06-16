@@ -10,7 +10,12 @@
 </head>
 <body <?php body_class() ?>>
 
-<header class="gnb">
+<header class="gnb" style="<?php ?>">
+    <script>
+        if (window.location.pathname !== '/') {
+            document.querySelector('.gnb').style.borderBottom = '1px solid #f1f1f1';
+        }
+    </script>
     <div class="newsletter-top-banner">
         뉴스레터 안녕하세요
     </div>
@@ -20,7 +25,7 @@
         </a>
         <div class="gnb-nav">
             <div class="gnb-nav-item">
-                소개
+                <a href="<?php home_url(); ?>/whoweare">소개</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'intro',
@@ -30,7 +35,7 @@
                 ?>
             </div>
             <div class="gnb-nav-item">
-                사업
+                <a href="<?php home_url(); ?>/global">사업</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'business',
@@ -40,7 +45,7 @@
                 ?>
             </div>
             <div class="gnb-nav-item">
-                캠페인
+                <a href="<?php home_url(); ?>/campaign">캠페인</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'campaign',
@@ -50,7 +55,7 @@
                 ?>
             </div>
             <div class="gnb-nav-item">
-                후원
+                <a href="<?php home_url(); ?>/donation-guide">후원</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'donate',
@@ -60,7 +65,7 @@
                 ?>
             </div>
             <div class="gnb-nav-item">
-                소식
+                <a href="<?php home_url(); ?>/category/story/">소식</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'news',
@@ -70,7 +75,7 @@
                 ?>
             </div>
             <div class="gnb-nav-item">
-                참여
+                <a href="<?php home_url(); ?>/suggest">참여</a>
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'participation',
@@ -118,14 +123,15 @@
     <header class="fullscreen-header">
         <a class="gnb-logo" href="<?php echo home_url(); ?>">
             <img class="lc_logo" src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
-<!--            <img class="lc_logo_symbol" src="--><?php //echo get_template_directory_uri() ?><!--/img/lc_logo_symbol.png" alt="">-->
+            <!--            <img class="lc_logo_symbol" src="-->
+            <?php //echo get_template_directory_uri() ?><!--/img/lc_logo_symbol.png" alt="">-->
         </a>
         <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/x-square-thin.svg"
              alt="">
     </header>
     <div class="fullscreen-grid">
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">소개</h2>
+            <a href="<?php home_url(); ?>/whoweare" class="fullscreen-item-heading">소개</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'intro',
@@ -133,7 +139,7 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">사업</h2>
+            <a href="<?php home_url(); ?>/global" class="fullscreen-item-heading">사업</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'business',
@@ -141,7 +147,7 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">캠페인</h2>
+            <a href="<?php home_url(); ?>/active_campaigns" class="fullscreen-item-heading">캠페인</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'campaign',
@@ -149,7 +155,7 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">후원</h2>
+            <a href="<?php home_url(); ?>/donation-guide" class="fullscreen-item-heading">후원</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'donate',
@@ -181,7 +187,7 @@
             ?>
         </div>
     </div>
-<!--    <div class="fullscreen-banners">-->
-<!--        후원하기 / 한글 / 영문-->
-<!--    </div>-->
+    <!--    <div class="fullscreen-banners">-->
+    <!--        후원하기 / 한글 / 영문-->
+    <!--    </div>-->
 </div>

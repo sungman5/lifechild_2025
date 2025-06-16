@@ -56,7 +56,7 @@
 
 .gnb-nav-item {
   font-size: 2rem;
-  padding: 0 4rem;
+  padding: 0 2vw;
   height: 100%;
   display: flex;
   align-items: center;
@@ -79,9 +79,9 @@
   }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1536px) {
   .gnb-nav-item {
-    //padding: 0 2.4rem;
+    padding: 0 3.2rem;
   }
 }
 

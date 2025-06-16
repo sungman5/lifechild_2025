@@ -165,15 +165,15 @@
                 const start = section.offsetTop;
                 const end = start + section.offsetHeight * 0.2;
 
-                if (scrollY >= start && scrollY <= end && window.innerWidth > 425) {
+                if (scrollY >= start && scrollY <= end && window.innerWidth > 430) {
                     const progress = (scrollY - start) / (end - start);
                     const clamped = Math.min(Math.max(progress, 0), 1);
                     const scale = 1 - clamped * 0.3;
                     image.style.transform = `scale(${scale})`;
-                } else if (scrollY < start && window.innerWidth > 425) {
+                } else if (scrollY < start && window.innerWidth > 430) {
                     // 초기 위치보다 위에 있을 경우 scale 초기화
                     image.style.transform = `scale(1)`;
-                } else if (scrollY > end && window.innerWidth > 425) {
+                } else if (scrollY > end && window.innerWidth > 430) {
                     // 구간을 벗어난 경우 최종 scale 유지
                     image.style.transform = `scale(0.7)`;
                 }
@@ -202,7 +202,7 @@
 
             function campaignListMoveLeft() {
                 let number;
-                if (window.innerWidth > 425) {
+                if (window.innerWidth > 430) {
                     number = 3;
                     console.log(number)
                 } else {
@@ -231,26 +231,41 @@
 
 
 /********************************************************
- * 맨 위로 버튼
+ * 각 페이지의 플로팅 서브 메뉴
  ********************************************************/
 (() => {
     document.addEventListener('DOMContentLoaded', () => {
-        if (window.location.pathname.startsWith('/whoweare')) {
-            console.log('whoweare 페이지입니다.');
+        const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
+        const sections = document.querySelectorAll('section');
 
-            const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
-            const sections = document.querySelectorAll('section');
-
-            pageMenuItem.forEach((element, index) => {
-                element.addEventListener('click', (e) => {
-                    e.preventDefault(); // a 태그일 경우 기본 이동 방지
-                    const targetSection = sections[index + 1];
-                    if (targetSection) {
-                        targetSection.scrollIntoView({behavior: 'smooth'});
-                    }
-                });
+        pageMenuItem.forEach((element, index) => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault(); // a 태그일 경우 기본 이동 방지
+                const targetSection = sections[index + 1];
+                if (targetSection) {
+                    targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+                }
             });
-        }
+        });
     });
 })();
 
+/********************************************************
+ * 모바일 버전에서 서브 메뉴를 위한 푸터 마진 생성
+ ********************************************************/
+
+(() => {
+    function setMobilePageSubMenu() {
+        const footer = document.getElementById('site-footer');
+        const floatingPageMenuHeight = document.querySelector('.floating-page-menu').offsetHeight;
+        if (window.innerWidth < 1440) {
+            footer.style.paddingBottom = `${floatingPageMenuHeight}px`;
+        }
+    }
+
+    setMobilePageSubMenu();
+})();
+
+/********************************************************
+ * 페이지네이션 innerHTML
+ ********************************************************/

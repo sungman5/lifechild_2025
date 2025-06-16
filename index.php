@@ -60,7 +60,7 @@
         <header class="section-header">
             <h3 class="section-header-cat">라칠 뉴스룸</h3>
             <h2 class="section-header-headline">후원자와 함께 만들어가는 <br class="br-show-mobile">놀라운 변화</h2>
-            <a href="" class="section-direct-btn">뉴스룸 더보기</a>
+            <a href="<?php home_url(); ?>/category/story" class="section-direct-btn">뉴스룸 더보기</a>
         </header>
         <ul class="news-list">
             <?php
@@ -84,7 +84,7 @@
                     $query->the_post(); ?>
 
                     <li class="news-item">
-                        <a href="">
+                        <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail(); ?>
                             <div class="news-item-heading">
                                 <h3><?php the_title(); ?></h3>
@@ -109,7 +109,7 @@
                 매주 전해드리는<br>
                 그룹홈 소식
             </h2>
-            <a href="" class="section-direct-btn">그룹홈 단신 모두보기</a>
+            <a href="<?php home_url(); ?>/category/grouphome-news" class="section-direct-btn">그룹홈 단신 모두보기</a>
         </div>
         <ul class="grouphome-news-list">
             <?php
@@ -156,7 +156,7 @@
                 국내외 소외된 아이들을 품는 일에 앞장섭니다.<br>
                 투명한 경영 철학으로, 아동을 위한 사업에 후원금의 85% 이상을 사용하고 있습니다.
             </h3>
-            <a href="" class="section-direct-btn">
+            <a href="<?php home_url(); ?>/category/financial-reports" class="section-direct-btn">
                 2024년 재정보고
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
                     <path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"></path>
@@ -182,7 +182,7 @@
         </header>
         <ul class="index-business-list">
             <li class="index-business-item">
-                <a href="">
+                <a href="<?php home_url(); ?>/global">
                     <div class="index-business-item-content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0066d9"
                              viewBox="0 0 256 256">
@@ -203,7 +203,7 @@
                 </a>
             </li>
             <li class="index-business-item">
-                <a href="">
+                <a href="<?php home_url(); ?>/domestic">
                     <div class="index-business-item-content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0066d9"
                              viewBox="0 0 256 256">
@@ -225,7 +225,7 @@
 
             </li>
             <li class="index-business-item">
-                <a href="">
+                <a href="<?php home_url(); ?>/donation-supporting">
                     <div class="index-business-item-content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0066d9"
                              viewBox="0 0 256 256">
@@ -245,7 +245,7 @@
                 </a>
             </li>
             <li class="index-business-item">
-                <a href="">
+                <a href="<?php home_url(); ?>/emergency">
                     <div class="index-business-item-content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0066d9"
                              viewBox="0 0 256 256">
@@ -349,16 +349,16 @@
         </div>
     </div>
 </section>
-<section id="notice-container">
+<section id="board-container">
     <div class="wrapper">
         <header class="section-header">
             <h3 class="section-header-cat">공지/언론보도</h3>
             <h2 class="section-header-headline">알려드립니다</h2>
-            <a href="" class="section-direct-btn">전체보기</a>
+            <a href="<?php home_url(); ?>/category/notice" class="section-direct-btn">전체보기</a>
         </header>
-        <ul class="notice-list">
+        <ul class="board-list">
             <?php
-            $args_notice = [
+            $args_index_notice = [
                 'post_type' => 'post',
                 'posts_per_page' => 5,
                 'post_status' => 'publish',
@@ -371,14 +371,14 @@
                 ]
             ];
 
-            $query_notice = new WP_Query($args_notice);
+            $query_index_notice = new WP_Query($args_index_notice);
             ?>
-            <?php if ($query_notice->have_posts()): ?>
-                <?php while ($query_notice->have_posts()): ?>
-                    <?php $query_notice->the_post(); ?>
-                    <li class="notice-item">
-                        <a href="">
-                            <div class="notice-item-terms">
+            <?php if ($query_index_notice->have_posts()): ?>
+                <?php while ($query_index_notice->have_posts()): ?>
+                    <?php $query_index_notice->the_post(); ?>
+                    <li class="board-item">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="board-item-terms">
                                 <?php
                                 $terms = get_the_terms(get_the_ID(), 'category');
                                 if ($terms && !is_wp_error($terms)) {
@@ -390,8 +390,8 @@
                                 }
                                 ?>
                             </div>
-                            <p class="notice-item-title"><?php the_title(); ?></p>
-                            <p class="notice-item-time"><?php the_time('Y-m-d') ?></p>
+                            <p class="board-item-title"><?php the_title(); ?></p>
+                            <p class="board-item-time"><?php the_time('Y-m-d') ?></p>
                         </a>
                     </li>
                 <?php endwhile; ?>

@@ -1,5 +1,5 @@
-.wwa-wrapper{
-  padding: 8rem 4rem;
+.wwa-headline {
+
 }
 
 .wwa-cover-img {
@@ -19,6 +19,7 @@
 }
 
 .wwa-vm-item {
+  width: 100%;
   aspect-ratio: 4/3;
   background-size: cover;
   background-position: center;
@@ -43,15 +44,41 @@
   }
 }
 
+
+@media only screen and (max-width: 768px) {
+  .wwa-vm-grid {
+    grid-template-columns: 1fr;
+  }
+  .wwa-vm-item {
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+
 .wwa-desc {
   font-size: 1.9rem;
   text-align: center;
   line-height: 180%;
 }
+
+@media only screen and (max-width: 430px){
+  .wwa-desc {
+    font-size: 1.5rem;
+    letter-spacing: -0.1px;
+  }
+}
+
 // 비전과 미션
-.wwa-vision-mission{
+.wwa-vision-mission {
   background-color: $grayBackground;
 }
+
 // 행동가치
 .wwa-value-grid {
   display: grid;
@@ -114,23 +141,54 @@
     padding-right: 1.8rem;
   }
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .wwa-value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wwa-value-grid-item {
+    aspect-ratio: 4 / 3;
+  }
+}
+//
+@media only screen and (max-width: 768px) {
+  .wwa-value-grid-item {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .wwa-value-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 // 인사말
-.wwa-greeting-section{
+.wwa-greeting-section {
   background-color: $grayBackground;
 }
-.wwa-greeting{
+
+.wwa-greeting {
   width: 100%;
   max-width: 88rem;
   display: flex;
   gap: 1.8rem;
   margin: auto;
-  p{
+
+  p {
     font-size: 1.8rem;
   }
 }
 
+@media only screen and (max-width: 430px){
+  .wwa-greeting{
+    padding: 0 2rem;
+  }
+}
 
 // 오시는 길
-.wwa-location-section{
+.wwa-location-section {
   background-color: $white;
 }

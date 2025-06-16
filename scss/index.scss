@@ -19,7 +19,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .slide-list {
     aspect-ratio: 4 / 5;
     border-radius: 0
@@ -118,7 +118,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
 
   .slide-item-content {
     padding: 0 3.2rem;
@@ -165,7 +165,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .slide-navigation-arrow svg {
     width: 3rem;
     height: 3rem;
@@ -186,7 +186,7 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .news-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -347,11 +347,11 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .grouphome-news-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 3.2rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
 
   .grouphome-header-headline {
@@ -485,7 +485,7 @@
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .index-business-list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -510,7 +510,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .donate-guide-btns {
     grid-template-columns: 1fr;
   }
@@ -648,11 +648,11 @@
 
 // notice-section
 
-#notice-container {
+#board-container {
   background-color: $grayLight;
 }
 
-.notice-list {
+.board-list {
   width: 100%;
   max-width: $defaultWidth;
   margin: auto;
@@ -662,7 +662,7 @@
   border: 1px solid $grayLine;
 }
 
-.notice-item a {
+.board-item a {
   display: flex;
   padding: 1.6rem 3.2rem;
   gap: 2.4rem;
@@ -672,14 +672,14 @@
     background-color: $grayLight;
     cursor: pointer;
 
-    .notice-item-title, .notice-item-terms {
+    .board-item-title, .board-item-terms {
       color: $sub;
     }
   }
 
 }
 
-.notice-item-title {
+.board-item-title {
   flex: 1;
   font-size: 2.4rem;
   display: -webkit-box;
@@ -690,12 +690,12 @@
 }
 
 
-.notice-item-terms, .notice-item-time {
+.board-item-terms, .board-item-time {
   flex-shrink: 0;
 
 }
 
-.notice-item-terms {
+.board-item-terms {
   background-color: $white;
   border: 1px solid $grayLine;
   border-radius: 0.8rem;
@@ -703,43 +703,43 @@
   font-size: 2.4rem;
 }
 
-.notice-item-time {
+.board-item-time {
   font-size: 1.6rem;
   color: $grayText;
 }
 
 @media only screen and (max-width: 1025px) {
-  .notice-list {
+  .board-list {
     padding: 3.2rem;
   }
-  .notice-item-title {
+  .board-item-title {
     font-size: 2rem;
   }
-  .notice-item a {
+  .board-item a {
     padding: 1.6rem;
   }
-  .notice-item-terms {
+  .board-item-terms {
     padding: 1.6rem 1.4rem;
     font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .notice-list {
+@media only screen and (max-width: 430px) {
+  .board-list {
     padding: 0.8rem;
   }
-  .notice-item-title {
+  .board-item-title {
     font-size: 1.4rem;
   }
-  .notice-item a {
+  .board-item a {
     padding: 0.8rem;
     gap: 0.8rem;
   }
-  .notice-item-terms {
+  .board-item-terms {
     padding: 0.6rem 0.8rem;
     font-size: 1.4rem;
   }
-  .notice-item-time {
+  .board-item-time {
     font-size: 1.2rem;
   }
 }
