@@ -10,7 +10,7 @@ License:        GNU General Public License v2 or later
 * {
   margin: 0;
   padding: 0;
-  color: #121212;
+  color: #0f1419;
   line-height: 160%;
   list-style: none;
   font-family: "Pretendard Variable", sans-serif;
@@ -62,6 +62,10 @@ body {
   display: none;
 }
 
+.gray-bg {
+  background-color: #F5F5F5;
+}
+
 @media only screen and (max-width: 430px) {
   .br-show-mobile {
     display: block;
@@ -102,7 +106,7 @@ body {
   font-size: 5.4rem;
   text-align: center;
   line-height: 130%;
-  background: linear-gradient(to left, #0066D9, #121212);
+  background: linear-gradient(to left, #0066D9, #0f1419);
   -webkit-background-clip: text; /* 웹킷 기반 브라우저용 */
   -webkit-text-fill-color: transparent; /* 텍스트 색상을 배경으로 채움 */
 }
@@ -156,6 +160,51 @@ body {
   background-color: #FFD600;
 }
 
+/*****************************************************************
+donation-banner
+각 사업소개 페이지에 있는 CTA 버튼의 기본 양식입니다.
+******************************************************************/
+.page-donation-banner {
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.8rem;
+  background: #ffffff no-repeat center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.page-donation-banner-content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 140%;
+}
+
+.page-donation-banner-content p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.page-donation-banner-button {
+  padding: 1.2rem 2.1rem;
+  background-color: #FFD600;
+  width: fit-content;
+  color: #0f1419;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+}
+.page-donation-banner-button:hover {
+  background-color: #FFCC33;
+}
+
+.page-donation-banner-content-white {
+  color: #ffffff;
+}
+
 /*
 floating menu
 */
@@ -187,6 +236,7 @@ floating menu
   padding: 0.8rem 1.4rem;
   border-radius: 1.2rem;
   cursor: pointer;
+  font-weight: 500;
 }
 .floating-page-menu-item:hover {
   background-color: #FFD600;
@@ -518,6 +568,7 @@ floating menu
 }
 
 .fullscreen-item-heading {
+  display: block;
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -836,7 +887,7 @@ floating menu
   .grouphome-header-headline {
     text-align: center;
     font-size: 4rem;
-    background: linear-gradient(to left, #0066D9, #121212);
+    background: linear-gradient(to left, #0066D9, #0f1419);
     -webkit-background-clip: text; /* 웹킷 기반 브라우저용 */
     -webkit-text-fill-color: transparent; /* 텍스트 색상을 배경으로 채움 */
   }
@@ -1337,7 +1388,7 @@ floating menu
   color: #ffffff;
 }
 .wwa-value-grid-item:nth-child(3) {
-  background-color: #121212;
+  background-color: #0f1419;
 }
 .wwa-value-grid-item:nth-child(3) h3, .wwa-value-grid-item:nth-child(3) p {
   color: #FFD600;
@@ -1393,24 +1444,116 @@ floating menu
   background-color: #ffffff;
 }
 
+.global-container {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto;
+}
+
+.global img {
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0.8rem 3.2rem;
+  aspect-ratio: 22/9;
+  object-fit: cover;
+  margin-bottom: 3.2rem;
+}
+
+.global-content {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
+}
+
+.global-excerpt {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.global-grouphome-detail-grid {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+}
+
+.global-grouphome-status {
+  padding: 2.4rem 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+.global-grouphome-status h4 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.global-grouphome-status p {
+  font-size: 2rem;
+}
+
+.global-grouphome-status-tap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.global-grouphome-status-item {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 0 1.6rem 0 1.2rem;
+  border: 1px solid #E1E1E1;
+  cursor: pointer;
+  flex-shrink: 0;
+  gap: 0.4rem;
+}
+.global-grouphome-status-item:hover {
+  background-color: #FFD600;
+}
+.global-grouphome-status-item:hover p {
+  color: #0f1419;
+}
+.global-grouphome-status-item p {
+  font-size: 1.7rem;
+  color: #999999;
+}
+.global-grouphome-status-item .tossface {
+  font-size: 2.4rem;
+}
+
+#domestic-page {
+  padding-bottom: 12.8rem;
+}
+
+#domestic-page .section-header-headline {
+  margin-bottom: 2.4rem;
+}
+
 .section-hero img {
   width: 100%;
   height: 64rem;
   object-fit: cover;
 }
 
-.education-container {
+.domestic-container {
   width: 100%;
   max-width: 151.2rem;
   margin: auto;
 }
 
-.education img {
+.domestic img {
+  display: block;
   width: 100%;
+  margin: auto;
   border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
+  aspect-ratio: 22/9;
+  object-fit: cover;
 }
 
-.education-content {
+.domestic-content {
   width: 100%;
   max-width: 102.4rem;
   margin: auto;
@@ -1419,7 +1562,7 @@ floating menu
   gap: 3.2rem;
 }
 
-.education-number-grid {
+.domestic-number-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
@@ -1427,28 +1570,32 @@ floating menu
   padding: 6.4rem 0;
 }
 
-.education-number-item {
+.domestic-number-item {
   text-align: center;
 }
 
-.education-stats {
+.domestic-stats {
   font-size: 4.8rem;
   font-weight: 600;
   letter-spacing: -3px;
   color: #0066D9;
 }
 
-.edu-stats-caption {
+.domestic-stats-caption {
   font-size: 2rem;
   color: #999999;
 }
 
-.education-excerpt {
+.domestic-excerpt {
   font-size: 2.2rem;
   font-weight: 500;
 }
 
-.education-detail {
+.domestic-excerpt strong {
+  color: #0066D9;
+}
+
+.domestic-detail {
   font-size: 1.8rem;
   font-weight: 500;
   display: flex;
@@ -1456,7 +1603,7 @@ floating menu
   padding: 2.4rem 0;
   border-top: 1px solid #E1E1E1;
 }
-.education-detail svg {
+.domestic-detail svg {
   flex-shrink: 0;
 }
 

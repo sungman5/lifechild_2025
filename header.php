@@ -163,7 +163,7 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">소식</h2>
+            <a href="<?php home_url(); ?>/category/story" class="fullscreen-item-heading">소식</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'news',
@@ -171,7 +171,7 @@
             ?>
         </div>
         <div class="fullscreen-grid-item">
-            <h2 class="fullscreen-item-heading">참여</h2>
+            <a href="<?php home_url(); ?>/suggest" class="fullscreen-item-heading">참여</a>
             <?php
             wp_nav_menu([
                 'theme_location' => 'participation',

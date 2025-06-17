@@ -1,0 +1,86 @@
+#global-page {
+
+}
+
+.global-container {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+}
+
+.global img {
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0.8rem 3.2rem;
+  aspect-ratio: 22/ 9;
+  object-fit: cover;
+  margin-bottom: 3.2rem;
+}
+
+.global-content {
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+.global-excerpt {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.global-grouphome-detail-grid {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+}
+
+.global-grouphome-status {
+  padding: 2.4rem 0;
+  border-top: 1px solid $grayLine;
+}
+
+.global-grouphome-status h4 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.global-grouphome-status p {
+  font-size: 2rem;
+}
+
+.global-grouphome-status-tap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.global-grouphome-status-item {
+  display: inline-flex;
+  align-items: center;
+  background-color: $white;
+  border-radius: 999px;
+  padding: 0 1.6rem 0 1.2rem;
+  border: 1px solid $grayLine;
+  cursor: pointer;
+  flex-shrink: 0;
+  gap: 0.4rem;
+
+  &:hover{
+    background-color: $primary;
+    p{
+      color: $black;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+    color: $grayText;
+  }
+
+  .tossface {
+    font-size: 2.4rem;
+  }
+}

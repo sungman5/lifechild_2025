@@ -63,6 +63,10 @@ body {
   display: none;
 }
 
+.gray-bg {
+  background-color: $grayBackground;
+}
+
 @media only screen and (max-width: 430px) {
   .br-show-mobile {
     display: block;
@@ -147,11 +151,12 @@ body {
 
 
 // 보드 페이지네이션
-.board-pagination{
+.board-pagination {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
   gap: 0.8rem;
+
   span, a {
     border-radius: 999px;
     display: flex;
@@ -162,7 +167,57 @@ body {
     height: 6.4rem;
     border: 1px solid $grayText;
   }
-  .current{
+
+  .current {
     background-color: $primary;
   }
+}
+
+
+/*****************************************************************
+donation-banner
+각 사업소개 페이지에 있는 CTA 버튼의 기본 양식입니다.
+******************************************************************/
+
+.page-donation-banner {
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.8rem;
+  background: $white no-repeat center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.page-donation-banner-content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 140%;
+}
+
+.page-donation-banner-content p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.page-donation-banner-button {
+  padding: 1.2rem 2.1rem;
+  background-color: $primary;
+  width: fit-content;
+  color: $black;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+
+  &:hover {
+    background-color: $primaryHover;
+  }
+}
+
+
+.page-donation-banner-content-white {
+  color: $white;
 }
