@@ -27,37 +27,38 @@
   font-weight: 500;
 }
 
-.global-grouphome-detail-grid {
+.grouphome-status-grid {
   width: 100%;
-  max-width: $defaultWidth;
-  margin: auto;
+  //max-width: $defaultWidth;
+  max-width: $contentWidth;
+  margin: auto auto 6.4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 6.4rem;
 }
 
-.global-grouphome-status {
+.grouphome-status {
   padding: 2.4rem 0;
   border-top: 1px solid $grayLine;
 }
 
-.global-grouphome-status h4 {
+.grouphome-status h4 {
   font-size: 2rem;
   margin-bottom: 1.6rem;
 }
 
-.global-grouphome-status p {
-  font-size: 2rem;
+.grouphome-status p {
+  font-size: 1.5rem;
 }
 
-.global-grouphome-status-tap {
+.grouphome-nation-tap-list {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   flex-wrap: wrap;
 }
 
-.global-grouphome-status-item {
+.grouphome-nation-tap {
   display: inline-flex;
   align-items: center;
   background-color: $white;
@@ -68,19 +69,120 @@
   flex-shrink: 0;
   gap: 0.4rem;
 
-  &:hover{
+  &:hover {
     background-color: $primary;
-    p{
+
+    p {
+      pointer-events: none;
       color: $black;
     }
   }
 
   p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: $grayText;
   }
 
   .tossface {
     font-size: 2.4rem;
+  }
+}
+
+.grouphome-nation-status-header p {
+  font-weight: 600;
+}
+
+.grouphome-nation-status {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid $grayLine;
+
+  p {
+    //text-align: left;
+    font-size: 1.5rem;
+  }
+}
+
+.global-grouphome-name {
+  grid-column: 3 / 5;
+}
+
+.is_active {
+  background-color: $primary;
+  border: 1px solid $primary;
+
+  p {
+    color: $black;
+    font-weight: 600;
+  }
+}
+
+.is_inactive {
+  display: none;
+}
+
+.grouphome-news-container {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+}
+
+.global-page-donation-banner {
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+
+  h4, p {
+    color: $black;
+  }
+
+  .page-donation-banner-button {
+    background-color: $sub;
+    color: $white;
+
+    &:hover {
+      background-color: $subHover;
+    }
+  }
+}
+
+.global-business-status {
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+  padding: 4rem 0;
+  svg{
+    display: block;
+    margin: auto auto 1rem;
+  }
+  h4{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+}
+
+.global-business-location {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.global-business-location-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid $grayLine;
+  padding: 0.4rem 1.6rem 0.4rem 1.2rem;
+  border-radius: 999px;
+  background-color: $white;
+
+  p {
+    font-size: 1.6rem;
   }
 }

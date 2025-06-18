@@ -258,7 +258,7 @@
     function setMobilePageSubMenu() {
         const footer = document.getElementById('site-footer');
         const floatingPageMenuHeight = document.querySelector('.floating-page-menu');
-        if(floatingPageMenuHeight !== null ){
+        if (floatingPageMenuHeight !== null) {
             const height = floatingPageMenuHeight.offsetHeight;
             if (window.innerWidth < 1440) {
                 footer.style.paddingBottom = `${height}px`;
@@ -271,5 +271,30 @@
 })();
 
 /********************************************************
- * 페이지네이션 innerHTML
+ * 그룹홈 운영현황의 탭 기능
  ********************************************************/
+
+(() => {
+    const taps = document.querySelectorAll('.grouphome-nation-tap');
+    const targets = document.querySelectorAll('.grouphome-family');
+
+    function activeTap(e) {
+        taps.forEach(el => el.classList.remove('is_active'));
+        e.currentTarget.classList.add('is_active');
+    }
+
+    for (let i = 0; i < taps.length; i++) {
+        taps[i].addEventListener('click', (e) => {
+            activeTap(e);
+
+            if (i === 0) {
+                targets.forEach(el => el.classList.remove('is_inactive'));
+            } else {
+                targets.forEach(el => el.classList.add('is_inactive'));
+                if (targets[i - 1]) {
+                    targets[i - 1].classList.remove('is_inactive');
+                }
+            }
+        });
+    }
+})();
