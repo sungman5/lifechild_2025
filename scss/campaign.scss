@@ -3,19 +3,115 @@
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   max-width: $defaultWidth;
+  margin: auto;
+  position: relative;
+  gap: 4.8rem;
+}
+
+.campaign-item a {
+  img {
+    border-radius: 1.6rem;
+  }
+
+  .campaign-content {
+    padding: 1.2rem;
+  }
 }
 
 .campaign-item:first-child {
-  grid-column: 1 / 3;
+  grid-column: 1 / 4;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle, #00000000, #00000090);
+    z-index: 2;
+    border-radius: 1.6rem;
+  }
 }
 
-.campaign-item li a {
-  display: block;
+.campaign-item:first-child a img {
   width: 100%;
+  aspect-ratio: 22 / 9;
+  height: 100%;
+  object-fit: cover;
 }
 
-.campaign-item li a img {
-  width: 500px;
-  display: block;
+.campaign-title {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.campaign-excerpt {
+  font-size: 1.6rem;
+  color: $grayText;
+  margin-bottom: 0.8rem;
+}
+
+.campaign-item:first-child .campaign-content {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  z-index: 99;
+
+  .campaign-title {
+    font-size: 4.8rem;
+    color: $white;
+    line-height: 1;
+  }
+
+  .campaign-excerpt {
+    font-size: 2rem;
+    color: $white;
+  }
+}
+
+.campaign-item:not(:first-child) a img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
   object-fit: cover;
+}
+
+
+.campaign-tags {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.campaign-tag {
+  font-size: 1.4rem;
+  background-color: $grayBackground;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+}
+
+.campaign-active-banner {
+  background-color: $green;
+  color: $white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 0.5rem 1.6rem 0.5rem 1.2rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@keyframes flash-fill {
+  0%, 100% {
+    fill: #006614;
+  }
+  50% {
+    fill: #00ff26;
+  }
+}
+
+.campaign-active-banner svg {
+  animation: flash-fill 1s infinite ease-in-out;
 }

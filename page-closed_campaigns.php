@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<main id="active-campaigns">
+<main id="closed-campaigns">
     <section>
         <div class="wrapper8">
             <header class="section-header">
-                <h2 class="section-header-headline">진행 중인 캠페인</h2>
+                <h2 class="section-header-headline">종료된 캠페인</h2>
                 <p class="section-header-cat">
                     지금 여러분의 마음이 필요한 곳입니다.
                 </p>
@@ -18,7 +18,8 @@
                         [
                             'taxonomy' => 'campaign_status',
                             'field' => 'slug',
-                            'terms' => 'cat-campaigns-active']
+                            'terms' => 'cat-campaigns-closed'
+                        ]
                     ]
                 ];
 
@@ -39,7 +40,7 @@
                                                  fill="#00ff26" viewBox="0 0 256 256">
                                                 <path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path>
                                             </svg>
-                                            진행 중
+                                            종료됨
                                         </p>
                                         <?php
                                         $tags = get_the_terms(get_the_ID(), 'post_tag');

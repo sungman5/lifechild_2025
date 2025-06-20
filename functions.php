@@ -11,6 +11,7 @@ function enqueue_styles(): void
     //Pretendard
     wp_enqueue_style('Pretendard Variable', 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
     wp_enqueue_style('Red Rose', 'https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+    wp_enqueue_style('Reddit', 'https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
     //Tossface 이모지
     wp_enqueue_style('Tossface', 'https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
@@ -86,6 +87,7 @@ function create_campaign_post_type()
         'public' => true,
         'has_archive' => true,
         'supports' => ['thumbnail', 'title', 'editor', 'excerpt'],
+        'taxonomies' => ['post_tag'],
         'menu_icon' => 'dashicons-sos',
 //        'publicly_queryable' => true,
         'show_in_rest' => true,

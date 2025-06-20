@@ -384,7 +384,7 @@
                     </div>
                 </div>
                 <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
+                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-food-banner.jpg')">
                     <div class="page-donation-banner-content">
                         <h4 class="page-donation-banner-content-white">후원안내</h4>
                         <p class="page-donation-banner-content-white">
@@ -484,7 +484,7 @@
                     </div>
                 </div>
                 <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
+                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-education-banner.jpg')">
                     <div class="page-donation-banner-content">
                         <h4 class="page-donation-banner-content-white">후원안내</h4>
                         <p class="page-donation-banner-content-white">
@@ -550,7 +550,7 @@
                     </div>
                 </div>
                 <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
+                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-medical-banner.jpg')">
                     <div class="page-donation-banner-content">
                         <h4 class="page-donation-banner-content-white">후원안내</h4>
                         <p class="page-donation-banner-content-white">

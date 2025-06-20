@@ -151,11 +151,11 @@
 .global-business-status {
   width: 100%;
   max-width: $contentWidth;
-  margin: auto;
   padding: 4rem 0;
+  margin: auto auto 2.4rem;
   svg{
     display: block;
-    margin: auto auto 1rem;
+    margin: auto auto 2rem;
   }
   h4{
     text-align: center;
