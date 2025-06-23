@@ -1,0 +1,39 @@
+.donation-guide-header-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .donation-guide-header-flex{
+    background-color: $grayLight;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+.donation-guide-header-title{
+  font-size: 4.8rem;
+  line-height: 1;
+  margin-bottom: 1.6rem;
+}
+
+.donation-guide-header-desc{
+  font-size: 2rem;
+}
+
+.donation-grid{
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.donation-grid-item {
+  aspect-ratio: 1 / 1;
+  background-color: green;
+}

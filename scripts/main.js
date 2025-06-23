@@ -233,22 +233,24 @@
 /********************************************************
  * 각 페이지의 플로팅 서브 메뉴
  ********************************************************/
-(() => {
-    document.addEventListener('DOMContentLoaded', () => {
-        const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
-        const sections = document.querySelectorAll('section');
+document.addEventListener('DOMContentLoaded', () => {
+    const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
+    const sections = document.querySelectorAll('section');
 
-        pageMenuItem.forEach((element, index) => {
-            element.addEventListener('click', (e) => {
-                e.preventDefault(); // a 태그일 경우 기본 이동 방지
+    pageMenuItem.forEach((element, index) => {
+        element.addEventListener('click', (e) => {
+            const isScrollLink = element.classList.contains('scroll-only');
+            if (isScrollLink) {
+                e.preventDefault(); // 내부 스크롤만 처리
                 const targetSection = sections[index + 1];
                 if (targetSection) {
-                    targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-            });
+            }
+            // 그 외 링크는 기본 이동하게 놔둠
         });
     });
-})();
+});
 
 /********************************************************
  * 모바일 버전에서 서브 메뉴를 위한 푸터 마진 생성
