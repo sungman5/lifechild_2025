@@ -2106,6 +2106,9 @@ floating menu
   color: #0066D9;
 }
 
+/*******************************************************
+후원 안내 페이지
+********************************************************/
 .donation-guide-header-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2120,6 +2123,13 @@ floating menu
 }
 .donation-guide-header-grid img {
   width: 100%;
+}
+
+.donation-guide-header-item p:first-child {
+  color: #0066D9;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 0.2rem;
 }
 
 .donation-guide-header-title {
@@ -2137,13 +2147,120 @@ floating menu
   max-width: 102.4rem;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.2rem;
+  grid-template-columns: 1fr;
+}
+.donation-grid img {
+  margin: auto;
 }
 
 .donation-grid-item {
-  aspect-ratio: 1/1;
-  background-color: green;
+  padding: 4rem;
+  display: flex;
+  align-items: start;
+  gap: 5.6rem;
+  border-top: 1px solid #E1E1E1;
+}
+.donation-grid-item:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.donation-grid-item-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(to right, #0066D9, red);
+  -webkit-background-clip: text; /* 웹킷 기반 브라우저용 */
+  -webkit-text-fill-color: transparent; /* 텍스트 색상을 배경으로 채움 */
+}
+
+.donation-grid-item-desc {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.donation-number {
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 8rem;
+  flex-shrink: 0;
+  width: 10rem;
+  line-height: 1;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*******************************************************
+정기 후원 페이지
+********************************************************/
+.donation-regular-container {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.donation-regular-container .section-hero img {
+  border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
+}
+
+.donation-regular-intro-desc {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.donation-btn {
+  background-color: #FFD600;
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding: 3.2rem 5.6rem 3.2rem 8rem;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
+  margin: auto;
+  border-radius: 0.8rem;
+}
+.donation-btn:hover {
+  background-color: #FFCC33;
+}
+
+.donation-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto auto 12.4rem;
+  gap: 4rem;
+}
+.donation-benefits-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.donation-benefits-list-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2.4rem;
+  border-top: 1px solid #E1E1E1;
+}
+.donation-benefits-list-item:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.donation-benefits-list-item-title {
+  font-size: 2rem;
+}
+
+.donation-benefits-list-item-desc {
+  font-size: 1.6rem;
+}
+
+.donation-regular-banner {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto;
 }
 
 .story-container {

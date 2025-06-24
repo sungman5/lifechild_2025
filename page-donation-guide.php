@@ -3,6 +3,7 @@
     <header class="donation-guide-header-grid">
         <div class="donation-guide-header-flex">
             <div class="donation-guide-header-item">
+                <p>후원안내</p>
                 <h2 class="donation-guide-header-title">
                     궁금해요.<span class="tossface">🤔</span><br>
                     라칠에 후원해도 괜찮은가요?
@@ -25,70 +26,98 @@
                 </p>
             </header>
             <div class="donation-grid">
+                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_1.png" alt="">
                 <div class="donation-grid-item">
+                    <p class="donation-number">01</p>
                     <div class="donation-grid-item-content">
-                        <h4>외부 영향 없는 독립적 운영</h4>
-                        <p>ddddd</p>
+                        <h4 class="donation-grid-item-title">외부 영향 없는 독립적 운영</h4>
+                        <p class="donation-grid-item-desc">
+                            라이프오브더칠드런은 기업이나 정부의 지원 없이, 오직 후원금만으로 운영되는 독립 NGO입니다.
+                            외부 영향 없이 후원자의 뜻에 따라 아이들을 위한 길을 정직하게 걸어갑니다.
+                        </p>
                     </div>
                 </div>
                 <div class="donation-grid-item">
+                    <p class="donation-number">02</p>
                     <div class="donation-grid-item-content">
-                        <h4>투명한 재정과 활동</h4>
-                        <p>ddddd</p>
+                        <h4 class="donation-grid-item-title">투명한 재정과 활동</h4>
+                        <p class="donation-grid-item-desc">
+                            모든 후원금의 사용 내역과 활동 결과는 투명하게 공개합니다.
+                            후원자가 안심하고 신뢰할 수 있도록, 숫자 하나, 이야기 하나까지 숨김없이 전합니다.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <nav class="floating-page-menu">
-        <div class="floating-menu-accordion">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'donate',
-                'container' => false,
-                'menu_class' => 'floating-menu-list'
-            ])
-
-            ?>
-            <div class="floating-menu-current-page">
-                <p><?php the_title() ?></p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M210.83,162.83a4,4,0,0,1-5.66,0L128,85.66,50.83,162.83a4,4,0,0,1-5.66-5.66l80-80a4,4,0,0,1,5.66,0l80,80A4,4,0,0,1,210.83,162.83Z"></path>
-                </svg>
+    <section>
+        <div class="wrapper gray-bg">
+            <header class="section-header">
+                <h2 class="section-header-headline">진심을 전하는 조직</h2>
+                <p class="section-header-cat">
+                    규모는 작지만, 마음은 큽니다.<br>
+                    한 명, 한 명의 아이에게 더 깊이 다가가고, 따뜻하게 살핍니다.
+                </p>
+            </header>
+            <div class="donation-grid">
+                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_2.png" alt="">
+                <div class="donation-grid-item">
+                    <p class="donation-number">03</p>
+                    <div class="donation-grid-item-content">
+                        <h4 class="donation-grid-item-title">직접 뛰는 모금</h4>
+                        <p class="donation-grid-item-desc">
+                            라이프오브더칠드런은 모금을 외주에 맡기지 않습니다.
+                            직접 고용한 활동가들이 진심을 담아 한 분 한 분께 우리의 이야기를 전합니다.
+                            우리는 사람을 통해 진심을 전합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="donation-grid-item">
+                    <p class="donation-number">04</p>
+                    <div class="donation-grid-item-content">
+                        <h4 class="donation-grid-item-title">아이에게 더 가까운 국제협력</h4>
+                        <p class="donation-grid-item-desc">
+                            현지에 뿌리내린 파트너와 함께합니다. 사무실보다 도움이 먼저 가야 할 곳이 있기 때문입니다.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <ul class="floating-page-menu-list">
-            <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M237,147.44a4,4,0,0,1-5.48-1.4c-8.33-14-20.93-22-34.56-22a4,4,0,0,1-1.2-.2,36.76,36.76,0,0,1-3.8.2,4,4,0,0,1,0-8,28,28,0,1,0-27.12-35,4,4,0,0,1-7.75-2,36,36,0,1,1,54,39.48c10.81,3.85,20.51,12,27.31,23.48A4,4,0,0,1,237,147.44ZM187.46,214a4,4,0,0,1-1.46,5.46,3.93,3.93,0,0,1-2,.54,4,4,0,0,1-3.46-2,61,61,0,0,0-105.08,0,4,4,0,0,1-6.92-4,68.35,68.35,0,0,1,39.19-31,44,44,0,1,1,40.54,0A68.35,68.35,0,0,1,187.46,214ZM128,180a36,36,0,1,0-36-36A36,36,0,0,0,128,180ZM64,116A28,28,0,1,1,91.12,81a4,4,0,0,0,7.75-2A36,36,0,1,0,45.3,118.75,63.55,63.55,0,0,0,12.8,141.6a4,4,0,0,0,6.4,4.8A55.55,55.55,0,0,1,64,124a4,4,0,0,0,0-8Z"></path>
-                </svg>
-                <p>라칠, 괜찮을까?</p>
-            </li>
-            <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M224,108H211.9a84,84,0,0,0-167.8,0H32a4,4,0,0,0-4,4,100.32,100.32,0,0,0,56,89.82V208a12,12,0,0,0,12,12h64a12,12,0,0,0,12-12v-6.18A100.32,100.32,0,0,0,228,112,4,4,0,0,0,224,108Zm-20.11,0H141.05a75.92,75.92,0,0,1,50.16-38.14A75.45,75.45,0,0,1,203.89,108ZM186,62.93A83.92,83.92,0,0,0,132.08,108H94.68A76.22,76.22,0,0,1,168,52c2.33,0,4.68.13,7,.34A76.81,76.81,0,0,1,186,62.93ZM128,36a75.48,75.48,0,0,1,34.3,8.21A84.26,84.26,0,0,0,86.41,108H52.11A76.09,76.09,0,0,1,128,36Zm38.33,159.66A4,4,0,0,0,164,199.3V208a4,4,0,0,1-4,4H96a4,4,0,0,1-4-4v-8.7a4,4,0,0,0-2.33-3.64A92.33,92.33,0,0,1,36.09,116H219.91A92.33,92.33,0,0,1,166.33,195.66Z"></path>
-                </svg>
-                <p>오직 후원자</p>
-            </li>
-            <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M249.88,92.47l-120-64a4,4,0,0,0-3.76,0l-120,64a4,4,0,0,0,0,7.06L36,115.47v50.82a11.92,11.92,0,0,0,3,8c12.65,14.09,41,37.73,89,37.73,21,0,38.2-4.52,52-10.79V240a4,4,0,0,0,8,0V197.18a111.64,111.64,0,0,0,29-22.91,11.94,11.94,0,0,0,3-8V115.47l29.88-15.94a4,4,0,0,0,0-7.06ZM128,204c-44.83,0-71.25-22-83-35.08a3.92,3.92,0,0,1-1-2.63V119.73l82.12,43.8a4,4,0,0,0,3.76,0L180,136.8v55.53C166.58,199,149.39,204,128,204Zm84-37.71a4,4,0,0,1-1,2.64,103.32,103.32,0,0,1-23,19v-55.4l24-12.8Zm-24.59-42.51a4,4,0,0,0-1.53-1.44l-56-29.87a4,4,0,0,0-3.76,7.06L179.5,128,128,155.47,16.5,96,128,36.53,239.5,96Z"></path>
-                </svg>
-                <p>진심</p>
-            </li>
-            <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M234.83,69.17l-48-48a4,4,0,0,0-5.66,5.66L202.34,48,168,82.34,130.83,45.17a4,4,0,1,0-5.66,5.66L134.34,60,47.51,146.83A12,12,0,0,0,44,155.31v51L21.17,229.17a4,4,0,0,0,5.66,5.66L49.66,212h51a11.93,11.93,0,0,0,8.48-3.51L196,121.66l9.17,9.17a4,4,0,0,0,5.66-5.66L173.66,88,208,53.66l21.17,21.17a4,4,0,1,0,5.66-5.66ZM103.51,202.83a4,4,0,0,1-2.82,1.17H52V155.31a4,4,0,0,1,1.17-2.82L74,131.66l23.17,23.17a4,4,0,1,0,5.66-5.66L79.66,126,98,107.66l23.17,23.17a4,4,0,0,0,5.66-5.66L103.66,102,140,65.66l25.17,25.17h0L190.34,116Z"></path>
-                </svg>
-                <p>투명성</p>
-            </li>
-            <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M171,50.38a250,250,0,0,0-40.73-37.66,4,4,0,0,0-4.58,0A250,250,0,0,0,85,50.38C58.17,81.21,44,113.58,44,144a84,84,0,0,0,168,0C212,113.58,197.83,81.21,171,50.38ZM128,220a76.08,76.08,0,0,1-76-76c0-35.9,21.15-67.8,38.9-88.24A255,255,0,0,1,128,21a255,255,0,0,1,37.1,34.8C182.85,76.2,204,108.1,204,144A76.08,76.08,0,0,1,128,220Zm51.94-67.33a53.51,53.51,0,0,1-43.28,43.27,3.68,3.68,0,0,1-.66.06,4,4,0,0,1-.66-7.94c18.18-3.06,33.63-18.51,36.72-36.73a4,4,0,0,1,7.88,1.34Z"></path>
-                </svg>
-                <p>후원자 인터뷰</p>
-            </li>
-        </ul>
-    </nav>
+    </section>
+    <section>
+        <div class="wrapper">
+            <header class="section-header">
+                <h2 class="section-header-headline">후원자에게 먼저 보고합니다</h2>
+                <p class="section-header-cat">
+                    활동 보고는 가장 먼저 후원자에게.<br>
+                    모든 변화는 함께 만든 것이기에 먼저 알릴 책임이 있다고 믿습니다.
+                </p>
+            </header>
+            <div class="donation-grid">
+                <div class="donation-grid-item">
+                    <p class="donation-number">05</p>
+                    <div class="donation-grid-item-content">
+                        <h4 class="donation-grid-item-title">활동의 첫 번째 독자, 후원자</h4>
+                        <p class="donation-grid-item-desc">가장 먼저 전할 사람이 있습니다.
+                            현장의 변화, 우리의 걸음, 그 모든 이야기를 후원자님께 가장 먼저 공유합니다.
+                            이 여정을 함께 만드는 분이니까요.
+                        </p>
+                    </div>
+                </div>
+                <div class="donation-grid-item">
+                    <p class="donation-number">06</p>
+                    <div class="donation-grid-item-content">
+                        <h4 class="donation-grid-item-title">숨김 없는 보고, 꾸밈 없는 언어</h4>
+                        <p class="donation-grid-item-desc">
+                            좋은 소식도, 때로는 어려운 이야기까지도
+                            있는 그대로, 솔직하게 전합니다.
+                            신뢰는 진심 어린 소통에서 시작된다고 믿습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php get_template_part('template-parts/donation-sub-menu') ?>
 </main>
 <?php get_footer(); ?>
