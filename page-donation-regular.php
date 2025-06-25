@@ -6,19 +6,19 @@
                 <h2 class="section-header-headline">정기후원</h2>
                 <p class="section-header-cat">정기후원은 아이들의 삶에 지속적인 변화를 만들어냅니다.</p>
             </header>
-            <div class="donation-regular-container">
+            <div class="donation-container">
                 <div class="section-hero">
                     <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-lc-regular-cover.jpg" alt=""
                          title="사진제공: 라이프오브더칠드런">
                 </div>
-                <p class="donation-regular-intro-desc">
+                <p class="donation-intro-desc">
                     정기후원은 아이들의 삶에 지속적인 변화를 만들어냅니다.<br>
                     여러분의 꾸준한 후원은 생계, 교육, 건강, 긴급구호 등<br>
                     라이프오브더칠드런의 모든 공익사업에 분배되어 사용됩니다.
                 </p>
                 <a class="donation-btn" href="">
                     정기후원하기
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 256 256">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
                         <path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"></path>
                     </svg>
                 </a>
@@ -109,8 +109,8 @@
             <div class="page-donation-banner donation-regular-banner"
                  style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
                 <div class="page-donation-banner-content">
-                    <h4 class="page-donation-banner-content-white">후원안내</h4>
-                    <p class="page-donation-banner-content-white">
+                    <h4 class="page-donation-banner-content">후원안내</h4>
+                    <p class="page-donation-banner-content">
                         국경 너머 아이의<br>
                         보금자리가 되어주세요.
                     </p>

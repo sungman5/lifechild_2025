@@ -217,11 +217,21 @@
   h3 {
     font-size: 2.4rem;
     transition: 0.3s all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   p {
     font-size: 2rem;
     color: $grayText;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

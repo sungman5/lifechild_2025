@@ -280,7 +280,7 @@
         </header>
     </div>
     <div class="donate-guide-btns">
-        <a title="Photo by Life of the Children" href="" class="donate-guide-btn"
+        <a title="Photo by Life of the Children" href="<?php echo esc_url(home_url('/donation-guide')) ?>" class="donate-guide-btn"
            style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-index-donate.jpg')">
             <h3>라칠에 후원해도 괜찮은 이유 <span class="tossface">💛️</span></h3>
         </a>

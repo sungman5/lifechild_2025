@@ -10,7 +10,7 @@
                 </h2>
                 <p class="donation-guide-header-desc">
                     라칠은 기업·정부의 자금 없이 후원자만을 바라보며 묵묵히 걸어왔습니다.<br>
-                    그래서, 괜찮다고 말할 수 있습니다.
+                    그래서 괜찮다고 말할 수 있습니다.
                 </p>
             </div>
         </div>
@@ -19,14 +19,14 @@
     <section>
         <div class="wrapper">
             <header class="section-header">
-                <h2 class="section-header-headline">오직 후원자의 힘으로</h2>
+                <h2 class="section-header-headline">오직 후원자의 힘으로 진심을 전합니다</h2>
                 <p class="section-header-cat">
-                    라이프오브더칠드런은 기업이나 정부의 지원 없이, 오직 후원자들의 정성으로 운영됩니다.<br>
-                    외부 영향 없이, 아이들만을 바라보며 한 걸음씩 나아갑니다.
+                    라이프오브더칠드런은 기업이나 정부의 지원 없이, 후원자들의 정성으로 운영됩니다.<br>
+                    오직 아이들만 바라보며 한 걸음씩 나아갑니다.
                 </p>
             </header>
             <div class="donation-grid">
-                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_1.png" alt="">
+                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_2.png" alt="">
                 <div class="donation-grid-item">
                     <p class="donation-number">01</p>
                     <div class="donation-grid-item-content">
@@ -47,20 +47,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="wrapper gray-bg">
-            <header class="section-header">
-                <h2 class="section-header-headline">진심을 전하는 조직</h2>
-                <p class="section-header-cat">
-                    규모는 작지만, 마음은 큽니다.<br>
-                    한 명, 한 명의 아이에게 더 깊이 다가가고, 따뜻하게 살핍니다.
-                </p>
-            </header>
-            <div class="donation-grid">
-                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_2.png" alt="">
                 <div class="donation-grid-item">
                     <p class="donation-number">03</p>
                     <div class="donation-grid-item-content">
@@ -84,38 +70,118 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="guide-section-bg gray-bg"
+             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/regular_donate_1.png')">
         <div class="wrapper">
             <header class="section-header">
-                <h2 class="section-header-headline">후원자에게 먼저 보고합니다</h2>
+                <h2 class="section-header-headline">후원 방법</h2>
                 <p class="section-header-cat">
-                    활동 보고는 가장 먼저 후원자에게.<br>
-                    모든 변화는 함께 만든 것이기에 먼저 알릴 책임이 있다고 믿습니다.
+                    후원자님의 방식대로 간편하게 후원할 수 있습니다.
                 </p>
             </header>
-            <div class="donation-grid">
+            <div class="donation-how-grid">
                 <div class="donation-grid-item">
-                    <p class="donation-number">05</p>
                     <div class="donation-grid-item-content">
-                        <h4 class="donation-grid-item-title">활동의 첫 번째 독자, 후원자</h4>
-                        <p class="donation-grid-item-desc">가장 먼저 전할 사람이 있습니다.
-                            현장의 변화, 우리의 걸음, 그 모든 이야기를 후원자님께 가장 먼저 공유합니다.
-                            이 여정을 함께 만드는 분이니까요.
-                        </p>
+                        <div>
+                            <h4 class="donation-grid-item-title">정기후원</h4>
+                            <p class="donation-grid-item-desc">
+                                정기적으로 라칠의 모든 사업과 아동을 후원합니다.
+                            </p>
+                        </div>
+                        <div class="donation-grid-item-links">
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-regular')) ?>">
+                                <p>바로 후원</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                     viewBox="0 0 256 256">
+                                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,109.66-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,173.66,133.66Z"></path>
+                                </svg>
+                            </a>
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-regular')) ?>">
+                                <p>더 알아보기</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="donation-grid-item">
-                    <p class="donation-number">06</p>
                     <div class="donation-grid-item-content">
-                        <h4 class="donation-grid-item-title">숨김 없는 보고, 꾸밈 없는 언어</h4>
-                        <p class="donation-grid-item-desc">
-                            좋은 소식도, 때로는 어려운 이야기까지도
-                            있는 그대로, 솔직하게 전합니다.
-                            신뢰는 진심 어린 소통에서 시작된다고 믿습니다.
-                        </p>
+                        <div>
+                            <h4 class="donation-grid-item-title">일시후원</h4>
+                            <p class="donation-grid-item-desc">
+                                한 번씩 마음이 움직일 때마다
+                            </p>
+                        </div>
+                        <div class="donation-grid-item-links">
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-singular')) ?>">
+                                <p>바로 후원</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                     viewBox="0 0 256 256">
+                                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,109.66-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,173.66,133.66Z"></path>
+                                </svg>
+                            </a>
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-singular')) ?>">
+                                <p>더 알아보기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-grid-item">
+                    <div class="donation-grid-item-content">
+                        <div>
+                            <h4 class="donation-grid-item-title">아동결연</h4>
+                            <p class="donation-grid-item-desc">
+                                현지에 뿌리내린 파트너와 함께합니다. 사무실보다 도움이 먼저 가야 할 곳이 있기 때문입니다.
+                            </p>
+                        </div>
+                        <div class="donation-grid-item-links">
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-supporting')) ?>">
+                                <p>국내외 아동 결연하기</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                     viewBox="0 0 256 256">
+                                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,109.66-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,173.66,133.66Z"></path>
+                                </svg>
+                            </a>
+                            <a class="donation-grid-item-link"
+                               href="<?php echo esc_url(home_url('/donation-supporting')) ?>">
+                                <p>더 알아보기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-grid-item">
+                    <div class="donation-grid-item-content">
+                        <div>
+                            <h4 class="donation-grid-item-title">물품후원</h4>
+                            <p class="donation-grid-item-desc">
+                                현지에 뿌리내린 파트너와 함께합니다. 사무실보다 도움이 먼저 가야 할 곳이 있기 때문입니다.
+                            </p>
+                        </div>
+                        <div class="donation-grid-item-links">
+                            <a class="donation-grid-item-link" target="_blank" href="mailto:korea@childrenlife.org">
+                                <p>담당자에게 문의하기</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                     viewBox="0 0 256 256">
+                                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,109.66-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,173.66,133.66Z"></path>
+                                </svg>
+                            </a>
+                            <a class="donation-grid-item-link" target="_blank" href="mailto:korea@childrenlife.org">
+                                <p>더 알아보기</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <header class="section-header">
+                <h2 class="section-header-headline">FAQ</h2>
+            </header>
         </div>
     </section>
     <?php get_template_part('template-parts/donation-sub-menu') ?>
