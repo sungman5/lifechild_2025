@@ -205,6 +205,34 @@ donation-banner
   color: #ffffff;
 }
 
+/*****************************************************************
+각 페이지에 있는 수치 정보에 대한 기본 디자인입니다.
+******************************************************************/
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  width: 100%;
+  padding: 6.4rem 0;
+}
+
+.stats-item {
+  text-align: center;
+}
+
+.stats-number {
+  font-size: 6.4rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+  color: #0066D9;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.stats-label {
+  font-size: 2rem;
+  color: #999999;
+}
+
 /*
 floating menu
 */
@@ -1679,31 +1707,6 @@ floating menu
   gap: 3.2rem;
 }
 
-.domestic-number-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
-  width: 100%;
-  padding: 6.4rem 0;
-}
-
-.domestic-number-item {
-  text-align: center;
-}
-
-.domestic-stats {
-  font-size: 6.4rem;
-  font-weight: 600;
-  letter-spacing: -3px;
-  color: #0066D9;
-  font-family: "Reddit Sans", sans-serif;
-}
-
-.domestic-stats-caption {
-  font-size: 2rem;
-  color: #999999;
-}
-
 .domestic-excerpt {
   font-size: 2.2rem;
   font-weight: 500;
@@ -2353,12 +2356,115 @@ floating menu
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
   width: 100%;
+  margin-bottom: 6.4rem;
 }
 
 .singular-grid-item {
-  aspect-ratio: 1/1;
-  background-color: #ffffff;
+  aspect-ratio: 9/14;
+  padding: 4rem 2.4rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff no-repeat bottom;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.8rem;
+}
+.singular-grid-item h4 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.singular-grid-item .another-singular-donate-desc {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/*******************************************************
+아동결연 페이지
+********************************************************/
+#donation-support .donation-intro-desc {
+  text-align: left;
+  width: 102.4rem;
+  margin: auto;
+}
+#donation-support .supporting-stats-grid {
+  width: 102.4rem;
+  margin: auto;
+}
+
+.supporting-tap-container {
+  width: 151.2rem;
+  margin: auto;
+}
+
+.supporting-taps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F5F5F5;
+}
+
+.supporting-tap {
+  padding: 2.4rem 0;
+  cursor: pointer;
+  border-top: 1px solid #E1E1E1;
+}
+.supporting-tap:hover h3 {
+  color: #0066D9;
+}
+.supporting-tap h3 {
+  text-align: center;
+  font-size: 2rem;
+  pointer-events: none;
+}
+.supporting-tap:first-child {
+  border-top: 4px solid #FFD600;
+  background-color: #ffffff;
+  border-right: 1px solid #E1E1E1;
+}
+
+.supporting-tap-headline {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 130%;
+  background: none;
+  -webkit-background-clip: unset; /* 웹킷 기반 브라우저용 */
+  -webkit-text-fill-color: unset; /* 텍스트 색상을 배경으로 채움 */
+  color: #0f1419;
+}
+
+.supporting-tap-contents {
+  position: relative;
+}
+
+#supporting-domestic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.supporting-tap-item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.supporting-tap-item img {
+  border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.supporting-tap-item-body h4 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.supporting-tap-item-body p {
+  font-size: 1.8rem;
+  color: #999999;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .story-container {

@@ -29,28 +29,28 @@
                     <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-jerry-Wang-on-unsplash.jpg" alt=""
                          title="Photo by jerry Wang on unsplash">
                     <div class="domestic-content">
-                        <div class="domestic-number-grid">
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                        <div class="stats-grid">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     23
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     협력기관 수
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     872
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 수혜 인원(2025년 기준)
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     32,000,000
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 지원금액(단위: 원)
                                 </p>
                             </div>
@@ -129,28 +129,28 @@
                     <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-Aditya-Romansa-on-unsplash.jpg" alt=""
                          title="Photo-by-傅甬 华(Yonghua Fu) on unsplash">
                     <div class="domestic-content">
-                        <div class="domestic-number-grid">
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                        <div class="stats-grid">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     23
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     협력기관 수
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     872
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 수혜 인원(2025년 기준)
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     32,000,000
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 지원금액(단위: 원)
                                 </p>
                             </div>
@@ -229,28 +229,28 @@
                     <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-lc-winter.jpg" alt=""
                          title="Photo-by-傅甬 华(Yonghua Fu) on unsplash">
                     <div class="domestic-content">
-                        <div class="domestic-number-grid">
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                        <div class="stats-grid">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     23
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     협력기관 수
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     872
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 수혜 인원(2025년 기준)
                                 </p>
                             </div>
-                            <div class="domestic-number-item">
-                                <p class="domestic-stats">
+                            <div class="stats-item">
+                                <p class="stats-number">
                                     32,000,000
                                 </p>
-                                <p class="domestic-stats-caption">
+                                <p class="stats-label">
                                     누적 지원금액(단위: 원)
                                 </p>
                             </div>

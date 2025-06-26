@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault(); // 내부 스크롤만 처리
                 const targetSection = sections[index + 1];
                 if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
                 }
             }
             // 그 외 링크는 기본 이동하게 놔둠
@@ -299,4 +299,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+})();
+
+
+/********************************************************
+ * 아동결연 페이지 탭
+ ********************************************************/
+(() => {
+    const taps = document.querySelectorAll('.supporting-tap')
+
+
 })();

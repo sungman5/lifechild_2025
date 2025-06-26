@@ -258,10 +258,122 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
   width: 100%;
+  margin-bottom: 6.4rem;
 }
 
 .singular-grid-item {
-  aspect-ratio: 1 / 1;
-  background-color: $white;
+  aspect-ratio: 9 / 14;
+  padding: 4rem 2.4rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  background: $white no-repeat bottom;
+  border: 1px solid $grayLine;
+  border-radius: 0.8rem;
+
+  h4 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .another-singular-donate-desc {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+/*******************************************************
+아동결연 페이지
+********************************************************/
+
+#donation-support {
+  .donation-intro-desc {
+    text-align: left;
+    width: $contentWidth;
+    margin: auto;
+  }
+
+  .supporting-stats-grid {
+    width: $contentWidth;
+    margin: auto;
+  }
+}
+
+.supporting-tap-container {
+  width: $defaultWidth;
+  margin: auto;
+}
+
+.supporting-taps{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $grayBackground;
+}
+
+.supporting-tap{
+  padding: 2.4rem 0;
+  cursor: pointer;
+  border-top: 1px solid $grayLine;
+  &:hover h3{
+    color: $sub;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    pointer-events: none;
+  }
+  &:first-child{
+    border-top: 4px solid $primary;
+    background-color: $white;
+    border-right: 1px solid $grayLine;
+  }
+}
+
+.supporting-tap-headline{
+  font-size: 4rem;
+  text-align: center;
+  line-height: 130%;
+  background: none;
+  -webkit-background-clip: unset; /* 웹킷 기반 브라우저용 */
+  -webkit-text-fill-color: unset; /* 텍스트 색상을 배경으로 채움 */
+  color: $black;
+}
+
+.supporting-tap-contents{
+  position: relative;
+}
+
+#supporting-domestic{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+.supporting-tap-item-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.supporting-tap-item img{
+  border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.supporting-tap-item-body{
+  h4 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+  p{
+    font-size: 1.8rem;
+    color: $grayText;
+    line-height: 1.5;
+    font-weight: 500;
+  }
 }

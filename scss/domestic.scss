@@ -37,32 +37,6 @@
   gap: 3.2rem;
 }
 
-.domestic-number-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
-  width: 100%;
-  padding: 6.4rem 0;
-}
-
-.domestic-number-item {
-  text-align: center;
-}
-
-.domestic-stats {
-  //font-family: "Red Rose", sans-serif;
-  font-size: 6.4rem;
-  font-weight: 600;
-  letter-spacing: -3px;
-  color: $sub;
-  font-family: $reddit;
-}
-
-.domestic-stats-caption {
-  font-size: 2rem;
-  color: $grayText;
-}
-
 .domestic-excerpt {
   font-size: 2.2rem;
   font-weight: 500;
