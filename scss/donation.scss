@@ -38,6 +38,12 @@
   font-size: 2rem;
 }
 
+.donation-intro-desc {
+  text-align: left;
+  width: $contentWidth;
+  margin: auto;
+}
+
 .donation-grid {
   width: 100%;
   max-width: $contentWidth;
@@ -46,6 +52,7 @@
   grid-template-columns: 1fr;
 
   img {
+    width: 24rem;
     margin: auto;
   }
 }
@@ -183,6 +190,11 @@
   text-align: center;
 }
 
+.supporting-stats-grid {
+  width: $contentWidth;
+  margin: auto;
+}
+
 .donation-btn {
   background-color: $primary;
   font-size: 2.4rem;
@@ -289,50 +301,40 @@
 아동결연 페이지
 ********************************************************/
 
-#donation-support {
-  .donation-intro-desc {
-    text-align: left;
-    width: $contentWidth;
-    margin: auto;
-  }
-
-  .supporting-stats-grid {
-    width: $contentWidth;
-    margin: auto;
-  }
-}
-
 .supporting-tap-container {
   width: $defaultWidth;
   margin: auto;
 }
 
-.supporting-taps{
+.supporting-taps {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $grayBackground;
 }
 
-.supporting-tap{
+.supporting-tap {
   padding: 2.4rem 0;
   cursor: pointer;
   border-top: 1px solid $grayLine;
-  &:hover h3{
+
+  &:hover h3 {
     color: $sub;
   }
+
   h3 {
     text-align: center;
     font-size: 2rem;
     pointer-events: none;
   }
-  &:first-child{
+
+  &.active {
     border-top: 4px solid $primary;
     background-color: $white;
     border-right: 1px solid $grayLine;
   }
 }
 
-.supporting-tap-headline{
+.supporting-tap-headline {
   font-size: 4rem;
   text-align: center;
   line-height: 130%;
@@ -342,38 +344,172 @@
   color: $black;
 }
 
-.supporting-tap-contents{
+.supporting-tap-contePnts {
   position: relative;
 }
 
-#supporting-domestic{
-  position: absolute;
-  top: 0;
-  left: 0;
+.supporting-tap-content-item {
   display: none;
 }
 
+.supporting-tap-content-item.active {
+  display: block;
+}
 
-.supporting-tap-item-grid{
+.supporting-tap-item-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
 
-.supporting-tap-item img{
+.supporting-tap-item img {
+  width: 100%;
   border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
   margin-bottom: 1.6rem;
 }
 
-.supporting-tap-item-body{
+.supporting-tap-item-body {
   h4 {
     font-size: 2.4rem;
     margin-bottom: 0.8rem;
   }
-  p{
+
+  p {
     font-size: 1.8rem;
     color: $grayText;
     line-height: 1.5;
     font-weight: 500;
   }
+}
+
+/*******************************************************
+물품후원 페이지
+********************************************************/
+
+#donation-goods .donation-btn{
+  padding: 1.6rem 3.2rem 1.6rem 4.8rem;
+}
+
+.goods-sub-headline {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 130%;
+  background: none;
+  -webkit-background-clip: unset; /* 웹킷 기반 브라우저용 */
+  -webkit-text-fill-color: unset; /* 텍스트 색상을 배경으로 채움 */
+  color: $black;
+  //margin-bottom: 2.4rem;
+}
+
+.goods-sub-cat {
+  font-size: 2rem;
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto auto 1.6rem;
+}
+
+.goods-grid {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff972;
+  padding: 4.8rem 3.2rem;
+  aspect-ratio: 3 / 4;
+  border-radius: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  &:nth-child(1) {
+    background: linear-gradient(135deg, #FF4D4D, #FF9800);
+
+    .goods-name {
+      color: $white;
+    }
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(135deg, #FFD600, #AEEA00);
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(135deg, #2979FF, #00BCD4);
+
+    .goods-name {
+      color: $white;
+    }
+  }
+
+  &:nth-child(4) {
+    background: linear-gradient(135deg, #00C853, #00E676);
+  }
+}
+
+.goods-icon {
+  background-color: $white;
+  width: fit-content;
+  padding: 2.4rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.goods-name {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.goods-desc {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.goods-step {
+  width: 100%;
+  max-width: $contentWidth;
+  //display: flex;
+  //flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin: auto auto 6.4rem;
+}
+
+.goods-step-item {
+  background-color: $white;
+  //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 2.4rem;
+  border: 1px solid $grayLine;
+  border-radius: 0.8rem;
+  aspect-ratio: 5 / 4;
+}
+
+.step-name{
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.step-desc{
+  font-size: 1.6rem;
+}
+
+.step-number{
+  font-family: $reddit;
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.8rem;
 }

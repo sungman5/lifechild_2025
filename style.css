@@ -140,6 +140,9 @@ body {
   background-color: #FFCC33;
 }
 
+/*****************************************************************
+보드 페이지네이션 버튼 디자인
+******************************************************************/
 .board-pagination {
   display: flex;
   justify-content: center;
@@ -147,13 +150,13 @@ body {
   gap: 0.8rem;
 }
 .board-pagination span, .board-pagination a {
-  border-radius: 999px;
+  border-radius: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  width: 6.4rem;
-  height: 6.4rem;
+  font-size: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
   border: 1px solid #999999;
 }
 .board-pagination .current {
@@ -161,7 +164,6 @@ body {
 }
 
 /*****************************************************************
-donation-banner
 각 사업소개 페이지에 있는 CTA 버튼의 기본 양식입니다.
 ******************************************************************/
 .page-donation-banner {
@@ -432,11 +434,11 @@ floating menu
     padding: 0 3.2rem;
   }
 }
-#lifechildren-outlink img {
+#lifechildren-outlink svg {
   transition: 0.3s all;
 }
 
-#lifechildren-outlink:hover img {
+#lifechildren-outlink:hover svg {
   transform: translate(0.3rem, -0.3rem);
 }
 
@@ -508,6 +510,7 @@ floating menu
 .gnb-select-lang {
   position: relative;
   display: flex;
+  display: none;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
@@ -2155,6 +2158,12 @@ floating menu
   font-size: 2rem;
 }
 
+.donation-intro-desc {
+  text-align: left;
+  width: 102.4rem;
+  margin: auto;
+}
+
 .donation-grid {
   width: 100%;
   max-width: 102.4rem;
@@ -2163,6 +2172,7 @@ floating menu
   grid-template-columns: 1fr;
 }
 .donation-grid img {
+  width: 24rem;
   margin: auto;
 }
 
@@ -2285,6 +2295,11 @@ floating menu
   text-align: center;
 }
 
+.supporting-stats-grid {
+  width: 102.4rem;
+  margin: auto;
+}
+
 .donation-btn {
   background-color: #FFD600;
   font-size: 2.4rem;
@@ -2384,16 +2399,6 @@ floating menu
 /*******************************************************
 아동결연 페이지
 ********************************************************/
-#donation-support .donation-intro-desc {
-  text-align: left;
-  width: 102.4rem;
-  margin: auto;
-}
-#donation-support .supporting-stats-grid {
-  width: 102.4rem;
-  margin: auto;
-}
-
 .supporting-tap-container {
   width: 151.2rem;
   margin: auto;
@@ -2418,7 +2423,7 @@ floating menu
   font-size: 2rem;
   pointer-events: none;
 }
-.supporting-tap:first-child {
+.supporting-tap.active {
   border-top: 4px solid #FFD600;
   background-color: #ffffff;
   border-right: 1px solid #E1E1E1;
@@ -2434,15 +2439,16 @@ floating menu
   color: #0f1419;
 }
 
-.supporting-tap-contents {
+.supporting-tap-contePnts {
   position: relative;
 }
 
-#supporting-domestic {
-  position: absolute;
-  top: 0;
-  left: 0;
+.supporting-tap-content-item {
   display: none;
+}
+
+.supporting-tap-content-item.active {
+  display: block;
 }
 
 .supporting-tap-item-grid {
@@ -2452,6 +2458,7 @@ floating menu
 }
 
 .supporting-tap-item img {
+  width: 100%;
   border-radius: 0.8rem 0.8rem 0.8rem 2.4rem;
   margin-bottom: 1.6rem;
 }
@@ -2465,6 +2472,126 @@ floating menu
   color: #999999;
   line-height: 1.5;
   font-weight: 500;
+}
+
+/*******************************************************
+물품후원 페이지
+********************************************************/
+#donation-goods .donation-btn {
+  padding: 1.6rem 3.2rem 1.6rem 4.8rem;
+}
+
+.goods-sub-headline {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 130%;
+  background: none;
+  -webkit-background-clip: unset; /* 웹킷 기반 브라우저용 */
+  -webkit-text-fill-color: unset; /* 텍스트 색상을 배경으로 채움 */
+  color: #0f1419;
+}
+
+.goods-sub-cat {
+  font-size: 2rem;
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto auto 1.6rem;
+}
+
+.goods-grid {
+  width: 100%;
+  max-width: 151.2rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff972;
+  padding: 4.8rem 3.2rem;
+  aspect-ratio: 3/4;
+  border-radius: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.goods-item:nth-child(1) {
+  background: linear-gradient(135deg, #FF4D4D, #FF9800);
+}
+.goods-item:nth-child(1) .goods-name {
+  color: #ffffff;
+}
+.goods-item:nth-child(2) {
+  background: linear-gradient(135deg, #FFD600, #AEEA00);
+}
+.goods-item:nth-child(3) {
+  background: linear-gradient(135deg, #2979FF, #00BCD4);
+}
+.goods-item:nth-child(3) .goods-name {
+  color: #ffffff;
+}
+.goods-item:nth-child(4) {
+  background: linear-gradient(135deg, #00C853, #00E676);
+}
+
+.goods-icon {
+  background-color: #ffffff;
+  width: fit-content;
+  padding: 2.4rem;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.goods-name {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.goods-desc {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.goods-step {
+  width: 100%;
+  max-width: 102.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin: auto auto 6.4rem;
+}
+
+.goods-step-item {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.8rem;
+  aspect-ratio: 5/4;
+}
+
+.step-name {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.step-desc {
+  font-size: 1.6rem;
+}
+
+.step-number {
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.8rem;
 }
 
 .story-container {
@@ -2674,6 +2801,87 @@ floating menu
 
 .article-button-list {
   padding: 1.4rem 2rem 1.4rem 1.4rem;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
+}
+
+.faq-item-content {
+  display: none;
+  padding: 2.4rem;
+  background-color: #FAFAFA;
+  margin-top: 2.4rem;
+}
+
+.faq-item-content.active {
+  display: block;
+}
+
+.faq-item {
+  padding: 2.4rem 0;
+  border-top: 1px solid #E1E1E1;
+  cursor: pointer;
+}
+.faq-item:hover .faq-item-title {
+  color: #0066D9;
+}
+.faq-item:hover .faq-plus {
+  fill: #0066D9;
+}
+.faq-item:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.faq-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-item-header svg {
+  display: none;
+}
+
+.faq-plus.active {
+  display: block;
+}
+
+.faq-minus.active {
+  display: block;
+}
+
+#faq .section-header {
+  margin-bottom: 2rem;
+}
+#faq .section-header-headline {
+  margin-bottom: 2.4rem;
+}
+
+.faq-item-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#faq-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E1E1E1;
+  padding: 1.2rem 2rem;
+  border-radius: 0.2rem;
+}
+
+#faq-search {
+  width: 100%;
+  max-width: 102.4rem;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  width: 100%;
 }
 
 #suggest {

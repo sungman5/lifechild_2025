@@ -306,7 +306,78 @@ document.addEventListener('DOMContentLoaded', () => {
  * 아동결연 페이지 탭
  ********************************************************/
 (() => {
-    const taps = document.querySelectorAll('.supporting-tap')
+    const taps = document.querySelectorAll('.supporting-tap');
+    const items = document.querySelectorAll('.supporting-tap-content-item');
 
+    taps.forEach((tap, index) => {
+        tap.addEventListener('click', () => {
+            // 탭 활성화 처리
+            taps.forEach(el => el.classList.remove('active'));
+            tap.classList.add('active');
 
+            // 콘텐츠 활성화 처리
+            items.forEach(el => el.classList.remove('active'));
+            items[index].classList.add('active');
+            items[index].classList.add('active');
+        });
+    });
 })();
+
+/********************************************************
+ * faq 탭 기능
+ ********************************************************/
+(() => {
+    const items = document.querySelectorAll('.faq-item');
+    const bodys = document.querySelectorAll('.faq-item-content');
+    const plus = document.querySelectorAll('.faq-plus');
+    const minus = document.querySelectorAll('.faq-minus');
+
+    items.forEach((tap, index) => {
+        tap.addEventListener('click', () => {
+            const isActive = bodys[index].classList.contains('active');
+            if (isActive) {
+                bodys[index].classList.remove('active');
+                plus[index].classList.add('active');
+                minus[index].classList.remove('active');
+            } else {
+                bodys.forEach(el => el.classList.remove('active'));
+                plus.forEach(el => el.classList.add('active'));
+                minus.forEach(el => el.classList.remove('active'));
+
+                bodys[index].classList.add('active');
+                plus[index].classList.remove('active');
+                minus[index].classList.add('active');
+            }
+        });
+    });
+})();
+
+/********************************************************
+ * faq 검색 기능
+ ********************************************************/
+(() => {
+    const headlines = document.querySelectorAll('.faq-item-title');
+    const input = document.getElementById('search-input');
+    let debounceTimer;
+
+    input.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+
+        debounceTimer = setTimeout(() => {
+            const query = input.value.trim().toLowerCase();
+            console.log('검색어:', query);
+
+            headlines.forEach((headline) => {
+                const text = headline.textContent.toLowerCase();
+                const faqItem = headline.closest('.faq-item');
+
+                if (text.includes(query)) {
+                    faqItem.style.display = '';
+                } else {
+                    faqItem.style.display = 'none';
+                }
+            });
+        }, 300); // 0.5초 (500ms) 대기
+    });
+})();
+

@@ -33,7 +33,7 @@
                     <?php while ($query_notice->have_posts()): ?>
                         <?php $query_notice->the_post(); ?>
                         <li class="board-item">
-                            <a href="">
+                            <a href="<?php the_permalink(); ?>">
                                 <div class="board-item-terms">
                                     <?php
                                     $terms = get_the_terms(get_the_ID(), 'category');

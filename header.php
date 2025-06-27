@@ -89,17 +89,22 @@
             </svg>
             <a id="lifechildren-outlink" class="gnb-nav-item" href="">
                 <span>지역아동센터</span>
-                <img src="<?php echo get_template_directory_uri() ?>/img/arrow-up-right-light.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
+                    <path d="M196,64V168a4,4,0,0,1-8,0V73.66L66.83,194.83a4,4,0,0,1-5.66-5.66L182.34,68H88a4,4,0,0,1,0-8H192A4,4,0,0,1,196,64Z"></path>
+                </svg>
             </a>
         </div>
         <div class="gnb-btns">
-            <img class="gnb-search-icon" src="<?php echo get_template_directory_uri() ?>/img/magnifying-glass-light.svg"
-                 alt="">
+            <svg class="gnb-search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                 viewBox="0 0 256 256">
+                <path d="M226.83,221.17l-52.7-52.7a84.1,84.1,0,1,0-5.66,5.66l52.7,52.7a4,4,0,0,0,5.66-5.66ZM36,112a76,76,0,1,1,76,76A76.08,76.08,0,0,1,36,112Z"></path>
+            </svg>
             <div class="gnb-select-lang">
                 <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png" alt="">
                 <?php echo substr(get_locale(), 0, 2); ?>
-                <img class="caret-down" src="<?php echo get_template_directory_uri() ?>/img/caret-down-light.svg"
-                     alt="">
+                <svg class="caret-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
+                    <path d="M210.83,98.83l-80,80a4,4,0,0,1-5.66,0l-80-80a4,4,0,0,1,5.66-5.66L128,170.34l77.17-77.17a4,4,0,1,1,5.66,5.66Z"></path>
+                </svg>
                 <div class="lang-select">
                     <div class="lang-select-item">
                         <img class="lang-flag" src="<?php echo get_template_directory_uri() ?>/img/flag-korean.png"
@@ -114,8 +119,7 @@
             </div>
             <a class="gnb-login" href="">로그인</a>
             <a class="gnb-donation" href="">후원하기</a>
-            <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/mega-menu.svg"
-                 alt="">
+            <svg class="gnb-fullscreen-menu-btn" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M220,128a4,4,0,0,1-4,4H40a4,4,0,0,1,0-8H216A4,4,0,0,1,220,128ZM40,68H216a4,4,0,0,0,0-8H40a4,4,0,0,0,0,8ZM216,188H40a4,4,0,0,0,0,8H216a4,4,0,0,0,0-8Z"></path></svg>
         </div>
     </div>
 </header>
@@ -123,8 +127,6 @@
     <header class="fullscreen-header">
         <a class="gnb-logo" href="<?php echo home_url(); ?>">
             <img class="lc_logo" src="<?php echo get_template_directory_uri() ?>/img/lc_logo.svg" alt="">
-            <!--            <img class="lc_logo_symbol" src="-->
-            <?php //echo get_template_directory_uri() ?><!--/img/lc_logo_symbol.png" alt="">-->
         </a>
         <img class="gnb-fullscreen-menu-btn" src="<?php echo get_template_directory_uri() ?>/img/x-square-thin.svg"
              alt="">

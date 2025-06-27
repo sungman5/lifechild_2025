@@ -179,9 +179,7 @@
     </section>
     <section>
         <div class="wrapper">
-            <header class="section-header">
-                <h2 class="section-header-headline">FAQ</h2>
-            </header>
+            <?php get_template_part('template-parts/faq') ?>
         </div>
     </section>
     <?php get_template_part('template-parts/donation-sub-menu') ?>

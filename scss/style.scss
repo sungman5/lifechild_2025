@@ -1,6 +1,7 @@
 //init
 @import "./_variables.scss";
 @import "./_init.scss";
+@import "./_common.scss";
 
 @import './page-sub-menu.scss';
 @import "./gnb.scss";
@@ -14,5 +15,6 @@
 @import "./donation.scss";
 @import "./story.scss";
 @import "./single.scss";
+@import "./faq.scss";
 @import "./suggest.scss";
 @import "./footer.scss";
