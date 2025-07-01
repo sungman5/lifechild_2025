@@ -29,7 +29,7 @@
             // 아래로 스크롤 중
             accumulatedScrollDown += scrollDelta;
 
-            if (accumulatedScrollDown > gnb.offsetHeight) {
+            if (accumulatedScrollDown > 0) {
                 gnb.style.top = `-${gnb.offsetHeight}px`; // 숨기기
             }
         } else {
