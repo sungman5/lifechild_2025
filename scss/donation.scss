@@ -317,6 +317,10 @@
   cursor: pointer;
   border-top: 1px solid $grayLine;
 
+  &:first-child{
+    border-right: 1px solid $grayLine;
+  }
+
   &:hover h3 {
     color: $sub;
   }
@@ -330,7 +334,6 @@
   &.active {
     border-top: 4px solid $primary;
     background-color: $white;
-    border-right: 1px solid $grayLine;
   }
 }
 
@@ -380,6 +383,15 @@
     line-height: 1.5;
     font-weight: 500;
   }
+}
+#donation-support-banner-section{
+  background-color: $grayLight;
+  border-top: 1px solid $grayLine;
+}
+#donation-support-banner{
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
 }
 
 /*******************************************************

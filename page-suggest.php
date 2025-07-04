@@ -1,16 +1,12 @@
 <?php get_header(); ?>
-<div id="suggest">
+<main id="suggest">
     <section>
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">문의 및 제안</h2>
+                <p class="section-header-cat">국내 소외계층을 위한 따뜻한 동행, 희망을 만드는 국내사업</p>
             </header>
             <div class="suggest-container">
-                <div class="suggest-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis delectus et mollitia
-                    nesciunt obcaecati officiis tempora veniam voluptatem voluptatibus! Ex, excepturi harum illo non
-                    praesentium quas repellat vitae voluptates.
-                </div>
                 <form id="suggest-form" action="" method="POST">
                     <div class="form-item">
                         <label class="form-item-labels" for="suggest-company">기관/기업명 <span style="color: red">*</span></label>
@@ -29,7 +25,7 @@
                         <input class="form-item-inputs" type="tel" id="suggest-phone" placeholder="010-0000-0000" required>
                     </div>
                     <div class="form-item">
-                        <label class="form-item-labels" for="suggest-body">문의내용 <span style="color: red">*</span></label>
+                        <label class="form-item-labels" for="suggest-body">문의/제안 내용 <span style="color: red">*</span></label>
                         <textarea class="form-item-inputs" type="text" id="suggest-body" required placeholder="궁금한점이나 제안사항을 적어주세요."></textarea>
                     </div>
                     <div class="form-item form-item-privacy">
@@ -39,9 +35,11 @@
                             <input class="form-item-inputs" type="checkbox" id="suggest-privacy">
                         </div>
                     </div>
+                    <button type="submit" class="form-submit-button">신청하기</button>
                 </form>
             </div>
         </div>
     </section>
-</div>
+    <?php get_template_part('template-parts/form-sub-menu') ?>
+</main>
 <?php get_footer(); ?>

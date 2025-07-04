@@ -3,10 +3,9 @@
     <section>
         <div class="wrapper8">
             <header class="section-header">
-                <h2 class="section-header-headline">배분 신청</h2>
+                <h2 class="section-header-headline">자원봉사 신청</h2>
                 <p class="section-header-cat">
-                    후원이 필요한 기관은 아래 내용을 작성해주세요.<br>
-                    물품 후원이 발생하면 연락드립니다.
+                    자원봉사가 필요하신 분은 아래 폼을 입력해주세요.
                 </p>
             </header>
             <div class="suggest-container">

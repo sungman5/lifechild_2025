@@ -114,10 +114,17 @@
                                     한 아이를 여러 후원자가 함께 지원하는 1:N 결연으로<br>
                                     국내 현실에 맞는 지속가능한 지원을 실현합니다.
                                 </p>
+                                <p class="section-direct-btn section-direct-btn-blue">
+                                    왜 1:N으로 결연하나요?
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                         viewBox="0 0 256 256">
+                                        <path d="M148,112a4,4,0,0,1-4,4H116v28a4,4,0,0,1-8,0V116H80a4,4,0,0,1,0-8h28V80a4,4,0,0,1,8,0v28h28A4,4,0,0,1,148,112Zm78.83,114.83a4,4,0,0,1-5.66,0l-52.7-52.7a84.1,84.1,0,1,1,5.66-5.66l52.7,52.7A4,4,0,0,1,226.83,226.83ZM112,188a76,76,0,1,0-76-76A76.08,76.08,0,0,0,112,188Z"></path>
+                                    </svg>
+                                </p>
                             </header>
                             <div class="supporting-tap-item-grid">
                                 <div class="supporting-tap-item">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/supporting-grid-1.jpg"
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/photo-by-lc-domestic-support-1.png"
                                          alt="">
                                     <div class="supporting-tap-item-body">
                                         <h4>국내 생활 여건을 고려한 후원</h4>
@@ -127,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="supporting-tap-item">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/supporting-grid-2.jpg"
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/photo-by-lc-domestic-support-2.png"
                                          alt="">
                                     <div class="supporting-tap-item-body">
                                         <h4>함께 만드는 따뜻한 연대</h4>
@@ -137,7 +144,7 @@
                                     </div>
                                 </div>
                                 <div class="supporting-tap-item">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/supporting-grid-3.jpg"
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/photo-by-lc-domestic-support-3.png"
                                          alt="">
                                     <div class="supporting-tap-item-body">
                                         <h4>후원자와 함께하는 특별한 시간</h4>
@@ -150,6 +157,38 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper8 gray-bg">
+            <header class="section-header">
+                <h2 class="section-header-headline">아동결연을 신청하시면</h2>
+                <p class="section-header-cat">
+                    결연 후원을 신청하시면 결연아동 카드와 연례 발달 보고서 등을 통해<br>
+                    아이의 소중한 성장 이야기를 꾸준히 전해드립니다
+                </p>
+            </header>
+            <div class="reward-container">
+                <img src="<?php echo get_template_directory_uri() ?>/img/support-reward.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="donation-support-banner-section">
+        <div class="wrapper8">
+            <div id="donation-support-banner" class="page-donation-banner"
+                 style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-support-banner.jpg')">
+                <div class="page-donation-banner-content">
+                    <h4 class="page-donation-banner-content">후원안내</h4>
+                    <p class="page-donation-banner-content">
+                        아이의 꿈에<br>
+                        당신의 손길을 더해주세요.
+                    </p>
+                </div>
+                <a href="" class="page-donation-banner-button">
+                    지금 결연 시작하기
+                </a>
             </div>
         </div>
     </section>

@@ -62,6 +62,26 @@
   }
 }
 
+.section-direct-btn-blue {
+  background-color: $white;
+  color: $sub;
+  border: 1px solid $sub;
+  transition: none;
+  cursor: pointer;
+  svg{
+    fill: $sub;
+  }
+
+  &:hover {
+    background-color: $sub;
+    color: $white;
+    svg{
+      fill: $white;
+    }
+  }
+}
+
+
 /*****************************************************************
 보드 페이지네이션 버튼 디자인
 ******************************************************************/

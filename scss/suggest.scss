@@ -4,11 +4,8 @@
 
 .suggest-container {
   width: 100%;
-  max-width: $contentWidth;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  max-width: $singleWidth;
+  margin: auto;
 }
 
 .suggest-desc {
@@ -26,6 +23,7 @@
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+  flex-shrink: 0;
 }
 
 .form-item-inputs {
@@ -59,7 +57,21 @@
   align-items: center;
   justify-content: space-between;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.form-submit-button{
+  width: 100%;
+  font-size: 2rem;
+  background-color: $primary;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  font-weight: 700;
+  &:hover{
+    background-color: $primaryHover;
+  }
 }
 
 /************************************************************

@@ -140,6 +140,24 @@ body {
   background-color: #FFCC33;
 }
 
+.section-direct-btn-blue {
+  background-color: #ffffff;
+  color: #0066D9;
+  border: 1px solid #0066D9;
+  transition: none;
+  cursor: pointer;
+}
+.section-direct-btn-blue svg {
+  fill: #0066D9;
+}
+.section-direct-btn-blue:hover {
+  background-color: #0066D9;
+  color: #ffffff;
+}
+.section-direct-btn-blue:hover svg {
+  fill: #ffffff;
+}
+
 /*****************************************************************
 보드 페이지네이션 버튼 디자인
 ******************************************************************/
@@ -2415,6 +2433,9 @@ floating menu
   cursor: pointer;
   border-top: 1px solid #E1E1E1;
 }
+.supporting-tap:first-child {
+  border-right: 1px solid #E1E1E1;
+}
 .supporting-tap:hover h3 {
   color: #0066D9;
 }
@@ -2426,7 +2447,6 @@ floating menu
 .supporting-tap.active {
   border-top: 4px solid #FFD600;
   background-color: #ffffff;
-  border-right: 1px solid #E1E1E1;
 }
 
 .supporting-tap-headline {
@@ -2472,6 +2492,17 @@ floating menu
   color: #999999;
   line-height: 1.5;
   font-weight: 500;
+}
+
+#donation-support-banner-section {
+  background-color: #FAFAFA;
+  border-top: 1px solid #E1E1E1;
+}
+
+#donation-support-banner {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
 }
 
 /*******************************************************
@@ -2890,11 +2921,8 @@ floating menu
 
 .suggest-container {
   width: 100%;
-  max-width: 102.4rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  max-width: 65.8rem;
+  margin: auto;
 }
 
 .suggest-desc {
@@ -2912,6 +2940,7 @@ floating menu
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+  flex-shrink: 0;
 }
 
 .form-item-inputs {
@@ -2944,7 +2973,21 @@ floating menu
   align-items: center;
   justify-content: space-between;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.form-submit-button {
+  width: 100%;
+  font-size: 2rem;
+  background-color: #FFD600;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.form-submit-button:hover {
+  background-color: #FFCC33;
 }
 
 /************************************************************
