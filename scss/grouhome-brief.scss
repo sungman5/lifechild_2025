@@ -1,0 +1,66 @@
+#grouphome-brief {
+  padding: 3.2rem 3.2rem 6.4rem;
+}
+
+#gh-brief-logo {
+  height: 5.6rem;
+}
+
+.gh-brief-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1.6rem 0 4.8rem 0;
+}
+
+.gh-brief-title {
+  font-size: 4.8rem;
+}
+
+.gh-brief-title-desc {
+  font-size: 1.8rem;
+}
+
+.gh-brief-container {
+}
+
+.gh-brief-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gh-brief-item {
+  padding: 1.6rem 0.8rem;
+  border-top: 1px solid $grayLine;
+}
+
+.gh-brief-item-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.layout-gh-brief-item-content {
+  margin-bottom: 1.6rem;
+
+  p {
+    font-size: 1.5rem;
+    font-family: $sung;
+    line-height: 1.6;
+  }
+
+}
+
+.gh-brief-tags {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gh-brief-item-tag {
+  font-size: 1.2rem;
+  border: 1px solid $grayLine;
+  border-radius: 999px;
+  padding: 0.3rem 1.2rem;
+  width: fit-content;
+}

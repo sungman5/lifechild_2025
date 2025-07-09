@@ -1,0 +1,11 @@
+.history-container{
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+.history-month-grid{
+  display: flex;
+  gap: 4rem;
+  border-top: 1px solid $grayLine;
+}

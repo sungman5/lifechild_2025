@@ -244,15 +244,10 @@
   font-size: 1.6rem;
 }
 
-.donation-regular-banner {
+.donation-regular-container {
   width: 100%;
   max-width: $contentWidth;
   margin: auto;
-
-  .page-donation-banner-button {
-    background-color: $sub;
-    color: $white;
-  }
 }
 
 
@@ -387,11 +382,11 @@
 #donation-support-banner-section{
   background-color: $grayLight;
   border-top: 1px solid $grayLine;
-}
-#donation-support-banner{
-  width: 100%;
-  max-width: $contentWidth;
-  margin: auto;
+  .wrapper8{
+    width: 100%;
+    max-width: $contentWidth;
+    margin: auto;
+  }
 }
 
 /*******************************************************

@@ -96,19 +96,7 @@
                         </p>
                     </li>
                 </ul>
-                <div class="page-donation-banner donation-regular-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
-                    <div class="page-donation-banner-content">
-                        <h4 class="page-donation-banner-content">후원안내</h4>
-                        <p class="page-donation-banner-content">
-                            국경 너머 아이의<br>
-                            보금자리가 되어주세요.
-                        </p>
-                    </div>
-                    <a href="" class="page-donation-banner-button">
-                        매월 1만 원 후원하기
-                    </a>
-                </div>
+                <?php get_cta_button('지금, 한 번의 마음이<br>아이를 살립니다.', 'photo-by-lc-grouphome-banner.jpg', '한 번의 도움 건내기', '#', '', false); ?>
             </div>
         </div>
     </section>

@@ -49,271 +49,265 @@
                 </p>
                 <a href="<?php home_url(); ?>/category/grouphome-news" class="section-direct-btn">그룹홈 소식 모두보기</a>
             </header>
-            <div class="grouphome-status-grid">
-                <div class="grouphome-status-group">
-                    <div class="grouphome-status">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                             viewBox="0 0 256 256">
-                            <path d="M196,64V40a12,12,0,0,0-12-12H72A12,12,0,0,0,60,40V64A12,12,0,0,0,72,76H83.32L60.05,223.38A4,4,0,0,0,63.38,228,4.46,4.46,0,0,0,64,228,4,4,0,0,0,68,224.62L76.26,172H179.74l8.31,52.62A4,4,0,0,0,192,228a4.46,4.46,0,0,0,.63-.05,4,4,0,0,0,3.33-4.57L172.68,76H184A12,12,0,0,0,196,64ZM68,64V40a4,4,0,0,1,4-4H184a4,4,0,0,1,4,4V64a4,4,0,0,1-4,4H72A4,4,0,0,1,68,64ZM178.48,164h-101l13.9-88h73.16Z"></path>
-                        </svg>
-                        <h4>보모워크샵</h4>
-                        <p>아시아 아이들을 위한 그룹홈이 따뜻한 보금자리를 마련했습니다. 다양한 문화와 꿈을 품은 아이들이 안전하고 행복하게 성장할 수 있도록 사랑과 배려가 가득한 환경을
-                            제공합니다.</p>
+            <div class="global-container">
+                <div class="grouphome-status-grid">
+                    <div class="grouphome-status-group">
+                        <div class="grouphome-status">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                 viewBox="0 0 256 256">
+                                <path d="M196,64V40a12,12,0,0,0-12-12H72A12,12,0,0,0,60,40V64A12,12,0,0,0,72,76H83.32L60.05,223.38A4,4,0,0,0,63.38,228,4.46,4.46,0,0,0,64,228,4,4,0,0,0,68,224.62L76.26,172H179.74l8.31,52.62A4,4,0,0,0,192,228a4.46,4.46,0,0,0,.63-.05,4,4,0,0,0,3.33-4.57L172.68,76H184A12,12,0,0,0,196,64ZM68,64V40a4,4,0,0,1,4-4H184a4,4,0,0,1,4,4V64a4,4,0,0,1-4,4H72A4,4,0,0,1,68,64ZM178.48,164h-101l13.9-88h73.16Z"></path>
+                            </svg>
+                            <h4>보모워크샵</h4>
+                            <p>아시아 아이들을 위한 그룹홈이 따뜻한 보금자리를 마련했습니다. 다양한 문화와 꿈을 품은 아이들이 안전하고 행복하게 성장할 수 있도록 사랑과 배려가 가득한 환경을
+                                제공합니다.</p>
+                        </div>
+                        <div class="grouphome-status">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                 viewBox="0 0 256 256">
+                                <path d="M216,44H132V24a4,4,0,0,0-8,0V44H40A12,12,0,0,0,28,56V176a12,12,0,0,0,12,12H87.68l-26.8,33.5a4,4,0,1,0,6.24,5L97.92,188h60.16l30.8,38.5a4,4,0,0,0,6.24-5L168.32,188H216a12,12,0,0,0,12-12V56A12,12,0,0,0,216,44Zm4,132a4,4,0,0,1-4,4H40a4,4,0,0,1-4-4V56a4,4,0,0,1,4-4H216a4,4,0,0,1,4,4Z"></path>
+                            </svg>
+                            <h4>신입 보모 오리엔테이션</h4>
+                            <p>보모가 라이프오브더칠드런 그룹홈 사업의 방향성을 잘 이해하고, 아동들을 올바로 양육할 수 있도록 ‘신입 보모 오리엔테이션’ 프로그램을 실시하고 있습니다.</p>
+                        </div>
+                        <div class="grouphome-status">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                 viewBox="0 0 256 256">
+                                <path d="M219.45,40.31a4,4,0,0,0-3.76-3.76C141.06,32.16,81.46,54.39,56.24,96,39,124.56,39.9,158.37,58.8,191.54L37.17,213.17a4,4,0,0,0,5.66,5.66l21.63-21.64c17.39,9.91,35,14.89,51.83,14.89A83.43,83.43,0,0,0,160,199.76C201.61,174.54,223.84,114.93,219.45,40.31ZM155.82,192.92c-25.37,15.37-55.56,14.75-85.48-1.61l92.5-92.49a4,4,0,0,0-5.66-5.66l-92.49,92.5c-16.36-29.92-17-60.11-1.61-85.48C86.34,61.77,141.72,41,211.66,44.34,215,114.28,194.23,169.66,155.82,192.92Z"></path>
+                            </svg>
+                            <h4>텃밭 가꾸기</h4>
+                            <p>그룹홈 마당에 텃밭을 일구어 자연을 배우고 생명의 소중함을 알아갑니다. 동시에 재배한 작물을 직접 먹기도 하고, 이웃 주민과 소소하게 나누며 아이들의 공동체
+                                의식과
+                                사회성을 함양하고 있습니다.</p>
+                        </div>
+                        <div class="grouphome-status">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                 viewBox="0 0 256 256">
+                                <path d="M235.12,226.5a4,4,0,0,1-5.62.62C229.11,226.81,189.72,196,128,196S26.89,226.81,26.5,227.13a4,4,0,0,1-5-6.25c1.63-1.31,39.56-31.08,101-32.79a116.11,116.11,0,0,1-4.45-41.4c1.79-22.37,11.85-52.74,48.61-74.16-6.46-2.24-16.29-4.83-26.49-4.49-20.74.67-34.28,13.1-40.25,36.94A4,4,0,1,1,92.12,103c8.64-34.54,30.74-42.45,47.75-43,11.46-.36,22.22,2.44,29.34,4.91-3.63-8.39-10.93-21-23.4-26.37-11.15-4.77-24.56-2.87-39.86,5.67a4,4,0,1,1-3.9-7c17.6-9.82,33.4-11.85,47-6,14.6,6.28,23,20.15,27.23,29.74,4.21-8.4,11.87-19.69,23.84-23.59,10.55-3.43,22.1-.49,34.33,8.76a4,4,0,1,1-4.82,6.38c-10-7.57-19.1-10.11-27-7.54-11.14,3.61-18,16.42-21,23.46A67.51,67.51,0,0,1,206,76.53c24.81,14.18,30,40.17,30,59.47a4,4,0,0,1-8,0c0-43.89-27.5-55.67-42.53-58.83,10.67,15,11.46,29.37,9.92,39.44a54.76,54.76,0,0,1-8.18,21.7,4,4,0,0,1-3.27,1.69,3.92,3.92,0,0,1-2.3-.73,4,4,0,0,1-1-5.57c.85-1.22,19.26-28.4-5.57-56.73-30,15.86-46.55,39.42-49.1,70.06a108.78,108.78,0,0,0,4.84,41c63,.91,102,31.5,103.65,32.83A4,4,0,0,1,235.12,226.5ZM28,140a24,24,0,1,1,24,24A24,24,0,0,1,28,140Zm8,0a16,16,0,1,0,16-16A16,16,0,0,0,36,140Z"></path>
+                            </svg>
+                            <h4>소풍 및 견학</h4>
+                            <p>그룹홈에 살고 있는 아동 대부분은 해당 지역에서 태어나 자라며 지역 밖으로 나가본 적이 없는 아이들입니다. 소풍과 견학 등 외부세계와의 만남을 통해 아이들이
+                                꿈을
+                                키우고 미래를 개척해 나가는 동기부여를 하고 있습니다.</p>
+                        </div>
+                        <div class="grouphome-status">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                 viewBox="0 0 256 256">
+                                <path d="M240,196H228V168a4,4,0,0,0-4-4H160a4,4,0,0,0-4,4v28H36V56a4,4,0,0,1,4-4H216a4,4,0,0,1,4,4v80a4,4,0,0,0,8,0V56a12,12,0,0,0-12-12H40A12,12,0,0,0,28,56V196H16a4,4,0,0,0,0,8H240a4,4,0,0,0,0-8Zm-76-24h56v24H164Z"></path>
+                            </svg>
+                            <h4>직업 교육</h4>
+                            <p>성인이 되어 그룹홈을 떠나게 되는 아이들에게 직업교육을 실시하여 자립할 수 있도록 돕고 있습니다.</p>
+                        </div>
                     </div>
-                    <div class="grouphome-status">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                             viewBox="0 0 256 256">
-                            <path d="M216,44H132V24a4,4,0,0,0-8,0V44H40A12,12,0,0,0,28,56V176a12,12,0,0,0,12,12H87.68l-26.8,33.5a4,4,0,1,0,6.24,5L97.92,188h60.16l30.8,38.5a4,4,0,0,0,6.24-5L168.32,188H216a12,12,0,0,0,12-12V56A12,12,0,0,0,216,44Zm4,132a4,4,0,0,1-4,4H40a4,4,0,0,1-4-4V56a4,4,0,0,1,4-4H216a4,4,0,0,1,4,4Z"></path>
-                        </svg>
-                        <h4>신입 보모 오리엔테이션</h4>
-                        <p>보모가 라이프오브더칠드런 그룹홈 사업의 방향성을 잘 이해하고, 아동들을 올바로 양육할 수 있도록 ‘신입 보모 오리엔테이션’ 프로그램을 실시하고 있습니다.</p>
-                    </div>
-                    <div class="grouphome-status">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                             viewBox="0 0 256 256">
-                            <path d="M219.45,40.31a4,4,0,0,0-3.76-3.76C141.06,32.16,81.46,54.39,56.24,96,39,124.56,39.9,158.37,58.8,191.54L37.17,213.17a4,4,0,0,0,5.66,5.66l21.63-21.64c17.39,9.91,35,14.89,51.83,14.89A83.43,83.43,0,0,0,160,199.76C201.61,174.54,223.84,114.93,219.45,40.31ZM155.82,192.92c-25.37,15.37-55.56,14.75-85.48-1.61l92.5-92.49a4,4,0,0,0-5.66-5.66l-92.49,92.5c-16.36-29.92-17-60.11-1.61-85.48C86.34,61.77,141.72,41,211.66,44.34,215,114.28,194.23,169.66,155.82,192.92Z"></path>
-                        </svg>
-                        <h4>텃밭 가꾸기</h4>
-                        <p>그룹홈 마당에 텃밭을 일구어 자연을 배우고 생명의 소중함을 알아갑니다. 동시에 재배한 작물을 직접 먹기도 하고, 이웃 주민과 소소하게 나누며 아이들의 공동체 의식과
-                            사회성을 함양하고 있습니다.</p>
-                    </div>
-                    <div class="grouphome-status">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                             viewBox="0 0 256 256">
-                            <path d="M235.12,226.5a4,4,0,0,1-5.62.62C229.11,226.81,189.72,196,128,196S26.89,226.81,26.5,227.13a4,4,0,0,1-5-6.25c1.63-1.31,39.56-31.08,101-32.79a116.11,116.11,0,0,1-4.45-41.4c1.79-22.37,11.85-52.74,48.61-74.16-6.46-2.24-16.29-4.83-26.49-4.49-20.74.67-34.28,13.1-40.25,36.94A4,4,0,1,1,92.12,103c8.64-34.54,30.74-42.45,47.75-43,11.46-.36,22.22,2.44,29.34,4.91-3.63-8.39-10.93-21-23.4-26.37-11.15-4.77-24.56-2.87-39.86,5.67a4,4,0,1,1-3.9-7c17.6-9.82,33.4-11.85,47-6,14.6,6.28,23,20.15,27.23,29.74,4.21-8.4,11.87-19.69,23.84-23.59,10.55-3.43,22.1-.49,34.33,8.76a4,4,0,1,1-4.82,6.38c-10-7.57-19.1-10.11-27-7.54-11.14,3.61-18,16.42-21,23.46A67.51,67.51,0,0,1,206,76.53c24.81,14.18,30,40.17,30,59.47a4,4,0,0,1-8,0c0-43.89-27.5-55.67-42.53-58.83,10.67,15,11.46,29.37,9.92,39.44a54.76,54.76,0,0,1-8.18,21.7,4,4,0,0,1-3.27,1.69,3.92,3.92,0,0,1-2.3-.73,4,4,0,0,1-1-5.57c.85-1.22,19.26-28.4-5.57-56.73-30,15.86-46.55,39.42-49.1,70.06a108.78,108.78,0,0,0,4.84,41c63,.91,102,31.5,103.65,32.83A4,4,0,0,1,235.12,226.5ZM28,140a24,24,0,1,1,24,24A24,24,0,0,1,28,140Zm8,0a16,16,0,1,0,16-16A16,16,0,0,0,36,140Z"></path>
-                        </svg>
-                        <h4>소풍 및 견학</h4>
-                        <p>그룹홈에 살고 있는 아동 대부분은 해당 지역에서 태어나 자라며 지역 밖으로 나가본 적이 없는 아이들입니다. 소풍과 견학 등 외부세계와의 만남을 통해 아이들이 꿈을
-                            키우고 미래를 개척해 나가는 동기부여를 하고 있습니다.</p>
-                    </div>
-                    <div class="grouphome-status">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                             viewBox="0 0 256 256">
-                            <path d="M240,196H228V168a4,4,0,0,0-4-4H160a4,4,0,0,0-4,4v28H36V56a4,4,0,0,1,4-4H216a4,4,0,0,1,4,4v80a4,4,0,0,0,8,0V56a12,12,0,0,0-12-12H40A12,12,0,0,0,28,56V196H16a4,4,0,0,0,0,8H240a4,4,0,0,0,0-8Zm-76-24h56v24H164Z"></path>
-                        </svg>
-                        <h4>직업 교육</h4>
-                        <p>성인이 되어 그룹홈을 떠나게 되는 아이들에게 직업교육을 실시하여 자립할 수 있도록 돕고 있습니다.</p>
-                    </div>
-                </div>
-                <div class="grouphome-status-group">
-                    <div class="grouphome-status">
-                        <h4>운영국가 <span style="font-weight: 400">(2025년 기준)</span></h4>
-                        <ul class="grouphome-nation-tap-list">
-                            <li class="grouphome-nation-tap is_active" role="tab">
-                                <p class="tossface">🚩</p>
-                                <p>전체</p>
-                            </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇧🇫</p>
+                    <div class="grouphome-status-group">
+                        <div class="grouphome-status">
+                            <h4>운영국가 <span style="font-weight: 400">(2025년 기준)</span></h4>
+                            <ul class="grouphome-nation-tap-list">
+                                <li class="grouphome-nation-tap is_active" role="tab">
+                                    <p class="tossface">🚩</p>
+                                    <p>전체</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇧🇫</p>
+                                    <p>부르키나파소</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇺🇬</p>
+                                    <p>우간다</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇰🇪</p>
+                                    <p>케냐</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇳🇵</p>
+                                    <p>네팔</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇲🇲</p>
+                                    <p>미얀마</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇵🇭</p>
+                                    <p>필리핀</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇧🇩</p>
+                                    <p>방글라데시</p>
+                                </li>
+                                <li class="grouphome-nation-tap" role="tab">
+                                    <p class="tossface">🇳🇮</p>
+                                    <p>니카라과</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grouphome-nation-status grouphome-nation-status-header">
+                            <p>국가</p>
+                            <p>지역</p>
+                            <p class="global-grouphome-name">그룹홈 이름</p>
+                            <p>성별</p>
+                            <p>아동 수</p>
+                        </div>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>부르키나파소</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">한나 그룹홈</p>
+                                <p>여</p>
+                                <p>5명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇺🇬</p>
+                            <li class="grouphome-nation-status">
+                                <p>부르키나파소</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">다비드 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                            <li class="grouphome-nation-status">
+                                <p>부르키나파소</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">라조아 그룹홈</p>
+                                <p>여</p>
+                                <p>5명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>우간다</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">쎈가 그룹홈</p>
+                                <p>여</p>
+                                <p>3명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇰🇪</p>
+                            <li class="grouphome-nation-status">
+                                <p>우간다</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">해피 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                            <li class="grouphome-nation-status">
+                                <p>우간다</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">모아 그룹홈</p>
+                                <p>여</p>
+                                <p>4명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>케냐</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">프라하 그룹홈</p>
+                                <p>남</p>
+                                <p>6명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇳🇵</p>
+                            <li class="grouphome-nation-status">
+                                <p>케냐</p>
+                                <p>아프리카</p>
+                                <p class="global-grouphome-name">우펜도 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>네팔</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">마더홈 그룹홈</p>
+                                <p>여</p>
+                                <p>4명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇲🇲</p>
+                            <li class="grouphome-nation-status">
+                                <p>네팔</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">글로리 그룹홈</p>
+                                <p>여</p>
+                                <p>2명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>미얀마</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">레단1 그룹홈</p>
+                                <p>여</p>
+                                <p>5명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇵🇭</p>
+                            <li class="grouphome-nation-status">
+                                <p>미얀마</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">레단2 그룹홈</p>
+                                <p>여</p>
+                                <p>5명</p>
+                            </li>
+                            <li class="grouphome-nation-status">
+                                <p>미얀마</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">비전1 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                            <li class="grouphome-nation-status">
+                                <p>미얀마</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">비전2 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>필리핀</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">바콜로드 그룹홈</p>
+                                <p>남</p>
+                                <p>1명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇧🇩</p>
+                            <li class="grouphome-nation-status">
+                                <p>필리핀</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">조이풀 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>방글라데시</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">쇼포노니르 그룹홈</p>
+                                <p>남</p>
+                                <p>5명</p>
                             </li>
-                            <li class="grouphome-nation-tap" role="tab">
-                                <p class="tossface">🇳🇮</p>
+                            <li class="grouphome-nation-status">
+                                <p>방글라데시</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">칼포니르 그룹홈</p>
+                                <p>여</p>
+                                <p>4명</p>
+                            </li>
+                            <li class="grouphome-nation-status">
+                                <p>방글라데시</p>
+                                <p>아시아</p>
+                                <p class="global-grouphome-name">솔트앤라이트 그룹홈</p>
+                                <p>여</p>
+                                <p>2명</p>
+                            </li>
+                        </ul>
+                        <ul class="grouphome-family">
+                            <li class="grouphome-nation-status">
                                 <p>니카라과</p>
+                                <p>중남미</p>
+                                <p class="global-grouphome-name">니카사랑 그룹홈</p>
+                                <p>남</p>
+                                <p>2명</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="grouphome-nation-status grouphome-nation-status-header">
-                        <p>국가</p>
-                        <p>지역</p>
-                        <p class="global-grouphome-name">그룹홈 이름</p>
-                        <p>성별</p>
-                        <p>아동 수</p>
-                    </div>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>부르키나파소</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">한나 그룹홈</p>
-                            <p>여</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>부르키나파소</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">다비드 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>부르키나파소</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">라조아 그룹홈</p>
-                            <p>여</p>
-                            <p>5명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>우간다</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">쎈가 그룹홈</p>
-                            <p>여</p>
-                            <p>3명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>우간다</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">해피 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>우간다</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">모아 그룹홈</p>
-                            <p>여</p>
-                            <p>4명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>케냐</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">프라하 그룹홈</p>
-                            <p>남</p>
-                            <p>6명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>케냐</p>
-                            <p>아프리카</p>
-                            <p class="global-grouphome-name">우펜도 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>네팔</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">마더홈 그룹홈</p>
-                            <p>여</p>
-                            <p>4명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>네팔</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">글로리 그룹홈</p>
-                            <p>여</p>
-                            <p>2명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>미얀마</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">레단1 그룹홈</p>
-                            <p>여</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>미얀마</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">레단2 그룹홈</p>
-                            <p>여</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>미얀마</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">비전1 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>미얀마</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">비전2 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>필리핀</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">바콜로드 그룹홈</p>
-                            <p>남</p>
-                            <p>1명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>필리핀</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">조이풀 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>방글라데시</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">쇼포노니르 그룹홈</p>
-                            <p>남</p>
-                            <p>5명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>방글라데시</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">칼포니르 그룹홈</p>
-                            <p>여</p>
-                            <p>4명</p>
-                        </li>
-                        <li class="grouphome-nation-status">
-                            <p>방글라데시</p>
-                            <p>아시아</p>
-                            <p class="global-grouphome-name">솔트앤라이트 그룹홈</p>
-                            <p>여</p>
-                            <p>2명</p>
-                        </li>
-                    </ul>
-                    <ul class="grouphome-family">
-                        <li class="grouphome-nation-status">
-                            <p>니카라과</p>
-                            <p>중남미</p>
-                            <p class="global-grouphome-name">니카사랑 그룹홈</p>
-                            <p>남</p>
-                            <p>2명</p>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-            <div class="page-donation-banner global-page-donation-banner"
-                 style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
-                <div class="page-donation-banner-content">
-                    <h4 class="page-donation-banner-content-white">후원안내</h4>
-                    <p class="page-donation-banner-content-white">
-                        국경 너머 아이의<br>
-                        보금자리가 되어주세요.
-                    </p>
-                </div>
-                <a href="" class="page-donation-banner-button">
-                    매월 1만 원 후원하기
-                </a>
+                <?php
+                get_cta_button('국경 너무 아이의<br>보금자리가 되어주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
+                ?>
             </div>
         </div>
     </section>
@@ -383,19 +377,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-food-banner.jpg')">
-                    <div class="page-donation-banner-content">
-                        <h4 class="page-donation-banner-content-white">후원안내</h4>
-                        <p class="page-donation-banner-content-white">
-                            영양이 필요한 아이에게<br>
-                            따뜻한 손길을
-                        </p>
-                    </div>
-                    <a href="" class="page-donation-banner-button">
-                        매월 1만 원 후원하기
-                    </a>
-                </div>
+                <?php
+                get_cta_button('영양이 필요한 아이에게<br>따뜻한 손길을', 'photo-by-lc-food-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
+                ?>
             </div>
         </div>
     </section>
@@ -483,19 +467,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-education-banner.jpg')">
-                    <div class="page-donation-banner-content">
-                        <h4 class="page-donation-banner-content-white">후원안내</h4>
-                        <p class="page-donation-banner-content-white">
-                            공부하고 싶은 아이들을<br>
-                            도와주세요.
-                        </p>
-                    </div>
-                    <a href="" class="page-donation-banner-button">
-                        매월 1만 원 후원하기
-                    </a>
-                </div>
+                <?php
+                get_cta_button('공부하고 싶은 아이들을<br>도와주세요.', 'photo-by-lc-education-banner.jpg', '매월 1만 원 후원하기', '#');
+                ?>
             </div>
         </div>
     </section>
@@ -549,19 +523,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-medical-banner.jpg')">
-                    <div class="page-donation-banner-content">
-                        <h4 class="page-donation-banner-content-white">후원안내</h4>
-                        <p class="page-donation-banner-content-white">
-                            작은 후원이<br>
-                            아이의 생명을 지킵니다.
-                        </p>
-                    </div>
-                    <a href="" class="page-donation-banner-button">
-                        매월 1만 원 후원하기
-                    </a>
-                </div>
+                <?php
+                get_cta_button('작은 후원이<br>아이의 생명을 지킵니다.', 'photo-by-lc-medical-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
+                ?>
             </div>
         </div>
     </section>
@@ -631,19 +595,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-donation-banner global-page-donation-banner"
-                     style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
-                    <div class="page-donation-banner-content">
-                        <h4 class="page-donation-banner-content-white">후원안내</h4>
-                        <p class="page-donation-banner-content-white">
-                            깨끗한 물로<br>
-                            아이의 하루를 바꿔주세요.
-                        </p>
-                    </div>
-                    <a href="" class="page-donation-banner-button">
-                        매월 1만 원 후원하기
-                    </a>
-                </div>
+                <?php
+                get_cta_button('깨끗한 물로<br>아이의 하루를 바꿔주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
+                ?>
             </div>
 
         </div>

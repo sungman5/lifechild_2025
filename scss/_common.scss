@@ -125,13 +125,13 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.page-donation-banner-content h4 {
+.page-donation-banner-content h4, .page-donation-banner-content- h4 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   line-height: 140%;
 }
 
-.page-donation-banner-content p {
+.page-donation-banner-content p, .page-donation-banner-content- p {
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -148,11 +148,6 @@
   &:hover {
     background-color: $primaryHover;
   }
-}
-
-
-.page-donation-banner-content-white {
-  color: $white;
 }
 
 /*****************************************************************

@@ -95,19 +95,9 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="page-donation-banner"
-                             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-jerry-Wang-2-on-unsplash.jpg')">
-                            <div class="page-donation-banner-content">
-                                <h4 class="page-donation-banner-content-white">후원안내</h4>
-                                <p class="page-donation-banner-content-white">
-                                    볼펜 하나, 학원 하나가<br>
-                                    아이의 마음을 바꿉니다.
-                                </p>
-                            </div>
-                            <a href="" class="page-donation-banner-button">
-                                매월 1만 원 후원하기
-                            </a>
-                        </div>
+                        <?php
+                        get_cta_button('볼펜 하나, 학원하나가<br>아이의 마음을 바꿉니다.', 'photo-by-jerry-Wang-2-on-unsplash.jpg', '매월 1만 원 후원하기', '#', true);
+                        ?>
                     </div>
                 </div>
             </div>
@@ -126,7 +116,8 @@
             </div>
             <div class="domestic-container">
                 <div class="domestic">
-                    <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-Aditya-Romansa-on-unsplash.jpg" alt=""
+                    <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-Aditya-Romansa-on-unsplash.jpg"
+                         alt=""
                          title="Photo-by-傅甬 华(Yonghua Fu) on unsplash">
                     <div class="domestic-content">
                         <div class="stats-grid">
@@ -195,19 +186,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="page-donation-banner"
-                             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-Chen-Yij-on-unsplash.jpg')">
-                            <div class="page-donation-banner-content">
-                                <h4>후원안내</h4>
-                                <p>
-                                    건강하게 자랄 수 있는 권리,<br>
-                                    여러분이 지켜주세요.
-                                </p>
-                            </div>
-                            <a href="" class="page-donation-banner-button">
-                                매월 1만 원 후원하기
-                            </a>
-                        </div>
+                        <?php get_cta_button('건강하게 자랄 수 있는 권리,<br>여러분이 지켜주세요.', 'photo-by-Chen-Yij-on-unsplash.jpg', '매월 1만 원 후원하기', ''); ?>
                     </div>
                 </div>
             </div>
@@ -295,18 +274,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="page-donation-banner"
-                             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-melanie-rosillo-galvan-on-unsplash.jpg')">
-                            <div class="page-donation-banner-content">
-                                <h4>후원안내</h4>
-                                <p>
-                                    함께하는 기념일,<br>함께하는 계절
-                                </p>
-                            </div>
-                            <a href="" class="page-donation-banner-button">
-                                매월 1만 원 후원하기
-                            </a>
-                        </div>
+                        <?php get_cta_button('함께하는 기념일,<br>함께하는 계절', 'photo-by-melanie-rosillo-galvan-on-unsplash.jpg', '매월 1만 원 후원하기', ''); ?>
                     </div>
                 </div>
             </div>

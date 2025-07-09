@@ -27,10 +27,13 @@
   font-weight: 500;
 }
 
+.global-container{
+  width: 100%;
+  max-width: $contentWidth;
+}
+
 .grouphome-status-grid {
   width: 100%;
-  //max-width: $defaultWidth;
-  max-width: $contentWidth;
   margin: auto auto 6.4rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -129,24 +132,6 @@
   margin: auto;
 }
 
-.global-page-donation-banner {
-  width: 100%;
-  max-width: $contentWidth;
-  margin: auto;
-
-  h4, p {
-    color: $black;
-  }
-
-  .page-donation-banner-button {
-    background-color: $sub;
-    color: $white;
-
-    &:hover {
-      background-color: $subHover;
-    }
-  }
-}
 
 .global-business-status {
   width: 100%;

@@ -12,6 +12,7 @@ function enqueue_styles(): void
     wp_enqueue_style('Pretendard Variable', 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
     wp_enqueue_style('Red Rose', 'https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
     wp_enqueue_style('Reddit', 'https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+    wp_enqueue_style('Chiron Sung HK', 'https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
     //Tossface 이모지
     wp_enqueue_style('Tossface', 'https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
@@ -26,7 +27,6 @@ function enqueue_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
-
 
 
 // 메뉴 등록
@@ -160,3 +160,62 @@ function create_campaign_slide_accept_taxonomy()
 }
 
 add_action('init', 'create_campaign_slide_accept_taxonomy');
+
+// 연혁 페이지 캐시 초기화
+add_action('admin_menu', function () {
+    add_menu_page(
+        '연혁 캐시 초기화',
+        '연혁 캐시 초기화',
+        'manage_options',
+        'clear_history_cache',
+        'render_clear_history_cache_page'
+    );
+});
+
+function render_clear_history_cache_page()
+{
+    if (isset($_POST['clear_cache'])) {
+        delete_transient('history_data_cache');
+        echo '<div class="updated"><p>✅ 연혁 캐시가 초기화되었습니다.</p></div>';
+    }
+
+    echo '<div class="wrap">';
+    echo '<h1>연혁 캐시 초기화</h1>';
+    echo '<form method="post">';
+    submit_button('캐시 삭제하기', 'primary', 'clear_cache');
+    echo '</form>';
+    echo '</div>';
+}
+
+// CTA banners template
+
+function get_cta_button($headline, $imgFileName, $ctaButtonText, $link, $color = false, $ctaColor = true)
+{
+    $template_uri = get_template_directory_uri();
+
+    $headline = wp_kses_post($headline);
+    $ctaButtonText = esc_html($ctaButtonText);
+    $imgFileName = esc_attr($imgFileName);
+    $link = esc_url($link);
+    $ctaBgColor = $ctaColor ? '#ffcc00' : '#007bff';
+    $ctaTextColor = $ctaColor ? '#000' : '#fff';
+    $textColor = $color ? '#fff' : '#000';
+
+    echo <<<HTML
+        <div class="page-donation-banner"
+             style="background-image: url('{$template_uri}/img/{$imgFileName}')">
+            <div class="page-donation-banner-content">
+                <h4 class="page-donation-banner-content" style="color:{$textColor};">후원안내</h4>
+                <p class="page-donation-banner-content" style="color:{$textColor};">
+                    {$headline}
+                </p>
+            </div>
+            <a href="{$link}" target="_blank" class="page-donation-banner-button" style="background-color:{$ctaBgColor}; color:{$ctaTextColor};">
+                {$ctaButtonText}
+            </a>
+        </div>
+    HTML;
+}
+
+
+

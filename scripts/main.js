@@ -29,7 +29,7 @@
             // 아래로 스크롤 중
             accumulatedScrollDown += scrollDelta;
 
-            if (accumulatedScrollDown > gnb.offsetHeight  * 0.3) {
+            if (accumulatedScrollDown > gnb.offsetHeight * 0.3) {
                 gnb.style.top = `-${gnb.offsetHeight}px`; // 숨기기
             }
         } else {
@@ -360,24 +360,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('search-input');
     let debounceTimer;
 
-    input.addEventListener('input', () => {
-        clearTimeout(debounceTimer);
+    if (window.location.pathname === 'donation-guide' || window.location.pathname === 'faq') {
+        input.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
 
-        debounceTimer = setTimeout(() => {
-            const query = input.value.trim().toLowerCase();
-            console.log('검색어:', query);
+            debounceTimer = setTimeout(() => {
+                const query = input.value.trim().toLowerCase();
+                console.log('검색어:', query);
 
-            headlines.forEach((headline) => {
-                const text = headline.textContent.toLowerCase();
-                const faqItem = headline.closest('.faq-item');
+                headlines.forEach((headline) => {
+                    const text = headline.textContent.toLowerCase();
+                    const faqItem = headline.closest('.faq-item');
 
-                if (text.includes(query)) {
-                    faqItem.style.display = '';
-                } else {
-                    faqItem.style.display = 'none';
-                }
-            });
-        }, 300); // 0.5초 (500ms) 대기
-    });
+                    if (text.includes(query)) {
+                        faqItem.style.display = '';
+                    } else {
+                        faqItem.style.display = 'none';
+                    }
+                });
+            }, 300); // 0.5초 (500ms) 대기
+        });
+    }
+
+
 })();
 
+/********************************************************
+ * 연혁페이지
+ ********************************************************/
+(() => {
+    const items = document.querySelectorAll('.history-years li')
+    console.log(items)
+})();

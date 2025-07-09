@@ -23,26 +23,26 @@
                 <div class="stats-grid supporting-stats-grid">
                     <div class="stats-item">
                         <p class="stats-number">
-                            23
+                            313
                         </p>
                         <p class="stats-label">
-                            누적 결연 아동
+                            누적 결연 아동(국내외)
                         </p>
                     </div>
                     <div class="stats-item">
                         <p class="stats-number">
-                            872
+                            227
                         </p>
                         <p class="stats-label">
-                            현재 결연 아동
+                            현재 결연 아동(국내외)
                         </p>
                     </div>
                     <div class="stats-item">
                         <p class="stats-number">
-                            32,000,000
+                            491,190
                         </p>
                         <p class="stats-label">
-                            누적 지원금액(단위: 원)
+                            누적 지원금액(단위: 천원)
                         </p>
                     </div>
                 </div>
@@ -171,25 +171,14 @@
                 </p>
             </header>
             <div class="reward-container">
-                <img src="<?php echo get_template_directory_uri() ?>/img/support-reward.jpg" alt="">
             </div>
         </div>
     </section>
     <section id="donation-support-banner-section">
         <div class="wrapper8">
-            <div id="donation-support-banner" class="page-donation-banner"
-                 style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-support-banner.jpg')">
-                <div class="page-donation-banner-content">
-                    <h4 class="page-donation-banner-content">후원안내</h4>
-                    <p class="page-donation-banner-content">
-                        아이의 꿈에<br>
-                        당신의 손길을 더해주세요.
-                    </p>
-                </div>
-                <a href="" class="page-donation-banner-button">
-                    지금 결연 시작하기
-                </a>
-            </div>
+            <?php
+            get_cta_button('아이의 꿈에<br>당신의 손길을 더해주세요.', 'photo-by-lc-support-banner.jpg', '지금 결연 시작하기', '#');
+            ?>
         </div>
     </section>
     <?php get_template_part('template-parts/donation-sub-menu') ?>

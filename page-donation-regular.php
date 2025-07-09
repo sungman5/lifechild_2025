@@ -51,6 +51,7 @@
                     라이프오브더칠드런과 더 가까이 만나는 특별한 소식을 전해드립니다.
                 </p>
             </header>
+
             <div class="donation-benefits-grid">
                 <img class="donation-benefits-grid-item"
                      src="<?php echo get_template_directory_uri() ?>/img/photo-by-lc-donation-guide.jpg" alt="">
@@ -106,18 +107,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="page-donation-banner donation-regular-banner"
-                 style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-grouphome-banner.jpg')">
-                <div class="page-donation-banner-content">
-                    <h4 class="page-donation-banner-content">후원안내</h4>
-                    <p class="page-donation-banner-content">
-                        국경 너머 아이의<br>
-                        보금자리가 되어주세요.
-                    </p>
-                </div>
-                <a href="" class="page-donation-banner-button">
-                    매월 1만 원 후원하기
-                </a>
+            <div class="donation-regular-container">
+                <?php get_cta_button('한 아이의 오늘을 바꾸는<br>가장 꾸준한 방법', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', '', false); ?>
             </div>
         </div>
     </section>

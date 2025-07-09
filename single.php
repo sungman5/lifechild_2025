@@ -54,19 +54,7 @@
                             목록
                         </a>
                     </div>
-                    <div class="page-donation-banner"
-                         style="background-image: url('<?php echo get_template_directory_uri() ?>/img/photo-by-lc-single-banner.jpg')" title="사진제공 라이프오브더칠드런">
-                        <div class="page-donation-banner-content">
-                            <h4 class="page-donation-banner-content">후원안내</h4>
-                            <p class="page-donation-banner-content">
-                                우리가 아이를 품으면<br>
-                                아이는 세상을 품을 수 있습니다.
-                            </p>
-                        </div>
-                        <a href="" class="page-donation-banner-button">
-                            매월 1만 원 후원하기
-                        </a>
-                    </div>
+                    <?php get_cta_button('우리가 아이를 품으면<br>아이는 세상을 품을 수 있습니다.', 'photo-by-lc-single-banner.jpg', '매월 1만 원 후원하기', '#'); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>

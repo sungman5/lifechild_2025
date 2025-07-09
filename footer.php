@@ -1,6 +1,18 @@
-
 <footer id="site-footer">
-    <div class="footer-top">
+    <?php
+
+
+    if ($_SERVER['REQUEST_URI'] === '/category/grouphome-brief/') {
+        $bgColor_1 = '#323232';
+        $bgColor_2 = '#000000';
+    } else {
+        $bgColor_1 = '#003DA6';
+        $bgColor_2 = '#ffce00';
+    }
+
+
+    ?>
+    <div class="footer-top" style="background-color: <?php echo $bgColor_1 ?>">
         <nav class="footer-nav">
             <div class="footer-text">
                 <p>후원문의</p>
@@ -25,7 +37,7 @@
             </ul>
         </nav>
     </div>
-    <div class="footer-middle">
+    <div class="footer-middle" style="background-color: <?php echo $bgColor_2 ?>">
         <div class="footer-middle-wrap">
             <nav class="footer-middle-nav">
                 <?php
@@ -82,7 +94,8 @@
                 </a>
             </li>
         </ul>
-        <svg title="맨 위로" id="scrollTopButton" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+        <svg title="맨 위로" id="scrollTopButton" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+             viewBox="0 0 256 256">
             <path d="M210.83,194.83a4,4,0,0,1-5.66,0L128,117.66,50.83,194.83a4,4,0,0,1-5.66-5.66l80-80a4,4,0,0,1,5.66,0l80,80A4,4,0,0,1,210.83,194.83ZM48,76H208a4,4,0,0,0,0-8H48a4,4,0,0,0,0,8Z"></path>
         </svg>
     </div>
