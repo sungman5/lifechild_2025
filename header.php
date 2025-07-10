@@ -87,7 +87,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256">
                 <path d="M134,24V232a6,6,0,0,1-12,0V24a6,6,0,0,1,12,0Z"></path>
             </svg>
-            <a id="lifechildren-outlink" class="gnb-nav-item" href="">
+            <a id="lifechildren-outlink" target="_blank" class="gnb-nav-item" href="<?php echo home_url('/lcicare'); ?>">
                 <span>지역아동센터</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
                     <path d="M196,64V168a4,4,0,0,1-8,0V73.66L66.83,194.83a4,4,0,0,1-5.66-5.66L182.34,68H88a4,4,0,0,1,0-8H192A4,4,0,0,1,196,64Z"></path>

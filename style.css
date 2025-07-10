@@ -4,7 +4,7 @@ Theme Name:     Life of the Children 2025
 Theme URI:      https://lifeofthechildren.org
 Author:         Walter
 Description:    only for Life of the children
-Version:        1.0
+Version:        2.0
 License:        GNU General Public License v2 or later
 */
 * {
@@ -3044,6 +3044,167 @@ floating menu
   border-radius: 999px;
   padding: 0.3rem 1.2rem;
   width: fit-content;
+}
+
+#lcicare {
+  overflow-x: hidden;
+  background: #FFD600;
+  background: linear-gradient(45deg, rgba(255, 214, 0, 0.05) 0%, rgb(255, 255, 255) 100%);
+}
+
+.lcicare-section {
+  padding-bottom: 4.8rem;
+}
+.lcicare-section:nth-child(1) {
+  padding-bottom: 0;
+}
+.lcicare-section:nth-child(2) {
+  padding-bottom: 0;
+}
+
+.lcicare-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lcicare-title {
+  font-size: 2rem;
+}
+
+.lcicare-menu {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.lcicare-menu-item {
+  font-size: 2rem;
+}
+
+.lcicare-inner {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
+  padding: 3.2rem 0;
+}
+
+.lcicare-headline {
+  font-size: 4.8rem;
+  line-height: 1.3;
+}
+
+.lcicare-cover-headline {
+  font-size: 8rem;
+  line-height: 1.3;
+}
+
+.lcicare-gallery {
+  display: flex;
+  gap: 2rem;
+  padding: 8.8rem 2rem;
+}
+
+.lcicare-gallery-item img {
+  width: 100%;
+  border-radius: 1.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid #0f1419;
+}
+
+.lcicare-gallery-item:nth-child(1) img {
+  transform: translate(4rem, -4rem) rotate(5deg);
+}
+
+.lcicare-gallery-item:nth-child(2) img {
+  transform: translate(0, 4rem) rotate(-5deg);
+}
+
+.lcicare-gallery-item:nth-child(3) img {
+  transform: translate(0, -8rem) rotate(2deg);
+}
+
+.lcicare-description {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.lcicare-program-grid {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.lcicare-program-item {
+  background-color: #ffffff;
+  border: 1px solid #0f1419;
+  border-radius: 1.6rem;
+  padding: 3.2rem;
+}
+
+.lcicare-program-title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.lcicare-program-body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  color: #999999;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.lcicare-center-gallery {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.lcicare-center-gallery-item {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+.lcicare-center-gallery-item:nth-child(2) {
+  grid-column: 2/4;
+}
+
+.lcicare-contact-container {
+  padding: 4rem 0;
+}
+
+.lcicare-contact {
+  padding: 1rem 0;
+  border-top: 1px solid #0f1419;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lcicare-contact p {
+  font-size: 4rem;
+}
+.lcicare-contact .lcicare-contact-reddit {
+  font-family: "Reddit Sans", sans-serif;
+}
+.lcicare-contact:last-child {
+  border-bottom: 1px solid #0f1419;
+}
+
+.lcicare-footer {
+  padding-bottom: 3.2rem;
+}
+.lcicare-footer div {
+  text-align: center;
+  font-size: 2rem;
+}
+.lcicare-footer div a {
+  color: #0066D9;
+  text-decoration: underline;
 }
 
 .footer-top {
