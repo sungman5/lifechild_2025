@@ -23,7 +23,12 @@ add_action('wp_enqueue_scripts', 'enqueue_styles');
 // 스크립트 삽입
 function enqueue_scripts()
 {
-    wp_enqueue_script('index_script', get_template_directory_uri() . '/scripts/main.js', [], false, true);
+    if (!is_page('lcicare')) {
+        wp_enqueue_script('index_script', get_template_directory_uri() . '/scripts/main.js', [], false, true);
+    }
+    if(is_page('lcicare')) {
+        wp_enqueue_script('lcicare_script', get_template_directory_uri() . '/scripts/lcicare.js', [], false, true);
+    }
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');

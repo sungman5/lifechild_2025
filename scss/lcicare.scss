@@ -33,6 +33,12 @@
 
 .lcicare-menu-item {
   font-size: 2rem;
+  font-weight: 600;
+  &:hover a{
+    color: $sub;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 }
 
 .lcicare-inner {
@@ -56,33 +62,48 @@
 
 
 .lcicare-gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 8.8rem 2rem;
+  padding: 4rem 2rem;
 }
 
-.lcicare-gallery-item img {
-  width: 100%;
+.lcicare-gallery-item {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  opacity: 0;
+  visibility: hidden;
+  width: 93%;
   border-radius: 1.6rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border: 1px solid $black;
-}
+  transition: all 1s ease;
 
-.lcicare-gallery-item:nth-child(1) img {
-  transform: translate(4rem, -4rem) rotate(5deg);
-}
+  &:nth-child(1) {
+    transform: translate(4rem, 10rem) rotate(4deg);
+  }
 
-.lcicare-gallery-item:nth-child(2) img {
-  transform: translate(0, 4rem) rotate(-5deg);
-}
+  &:nth-child(2) {
+    transform: translate(0, 10rem) rotate(8deg);
+  }
 
-.lcicare-gallery-item:nth-child(3) img {
-  transform: translate(0, -8rem) rotate(2deg);
+  &:nth-child(3) {
+    transform: translate(-4rem, 10rem) rotate(-4deg);
+  }
 }
 
 .lcicare-description {
   font-size: 2rem;
   font-weight: 500;
+}
+
+.lcicare-description-line {
+  text-decoration: underline; /* 이거 꼭 필요 */
+  text-decoration-color: #FFD60080;
+  text-underline-offset: -1px;
+  text-decoration-thickness: 8px;
+  font-weight: 700;
+  color: $sub;
 }
 
 
@@ -98,7 +119,7 @@
 .lcicare-program-item {
   background-color: $white;
   border: 1px solid $black;
-  border-radius: 1.6rem;
+  border-radius: 0.8rem;
   padding: 3.2rem;
 }
 
@@ -116,24 +137,6 @@
   margin-bottom: 1.6rem;
 }
 
-
-.lcicare-center-gallery {
-  width: 100%;
-  max-width: $contentWidth;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-}
-
-.lcicare-center-gallery-item {
-  width: 100%;
-  border-radius: 0.4rem;
-
-  &:nth-child(2) {
-    grid-column: 2 / 4;
-  }
-}
 
 .lcicare-contact-container {
   padding: 4rem 0;
@@ -161,12 +164,78 @@
 
 .lcicare-footer {
   padding-bottom: 3.2rem;
-  div{
+
+  div {
     text-align: center;
     font-size: 2rem;
-    a{
+    font-family: $reddit;
+
+    a {
       color: $sub;
       text-decoration: underline;
     }
   }
 }
+
+#lcicare-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 1.6rem;
+  gap: 0.4rem;
+  width: fit-content;
+  margin: auto;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: 24rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 변형 스타일 */
+.item-wide {
+  grid-column: span 2;
+}
+
+.item-tall {
+  grid-row: span 2;
+}
+
+/* 반응형 보완 */
+@media (max-width: 768px) {
+  .item-wide,
+  .item-tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+

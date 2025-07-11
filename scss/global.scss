@@ -29,15 +29,21 @@
 
 .global-container{
   width: 100%;
-  max-width: $contentWidth;
+  max-width: $defaultWidth;
 }
 
 .grouphome-status-grid {
   width: 100%;
+  max-width: $contentWidth;
   margin: auto auto 6.4rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 6.4rem;
+}
+
+.global-banner{
+  max-width: $contentWidth;
+  margin: auto;
 }
 
 .grouphome-status {

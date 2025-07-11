@@ -12,7 +12,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="global-grouphome">
         <div class="wrapper8">
             <header class="section-header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#000000" viewBox="0 0 256 256">
@@ -39,17 +39,17 @@
             </div>
         </div>
         <div class="wrapper8 gray-bg">
-            <header class="section-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M92,144V128a4,4,0,0,1,8,0v16a4,4,0,0,1-8,0Zm36,4a4,4,0,0,0,4-4V120a4,4,0,0,0-8,0v24A4,4,0,0,0,128,148Zm32,0a4,4,0,0,0,4-4V112a4,4,0,0,0-8,0v32A4,4,0,0,0,160,148Zm52-72V180h12a4,4,0,0,1,0,8H132v24.4a20,20,0,1,1-8,0V188H32a4,4,0,0,1,0-8H44V76H40A12,12,0,0,1,28,64V48A12,12,0,0,1,40,36H216a12,12,0,0,1,12,12V64a12,12,0,0,1-12,12ZM128,220a12,12,0,1,0,12,12A12,12,0,0,0,128,220ZM40,68H216a4,4,0,0,0,4-4V48a4,4,0,0,0-4-4H40a4,4,0,0,0-4,4V64A4,4,0,0,0,40,68Zm164,8H52V180H204Z"></path>
-                </svg>
-                <h2 class="section-header-headline">그룹홈 운영 현황</h2>
-                <p class="section-header-cat">
-                    라이프오브더칠드런은 다양한 프로그램으로 그룹홈과 아동의 성장을 돕습니다.
-                </p>
-                <a href="<?php home_url(); ?>/category/grouphome-news" class="section-direct-btn">그룹홈 소식 모두보기</a>
-            </header>
             <div class="global-container">
+                <header class="section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M92,144V128a4,4,0,0,1,8,0v16a4,4,0,0,1-8,0Zm36,4a4,4,0,0,0,4-4V120a4,4,0,0,0-8,0v24A4,4,0,0,0,128,148Zm32,0a4,4,0,0,0,4-4V112a4,4,0,0,0-8,0v32A4,4,0,0,0,160,148Zm52-72V180h12a4,4,0,0,1,0,8H132v24.4a20,20,0,1,1-8,0V188H32a4,4,0,0,1,0-8H44V76H40A12,12,0,0,1,28,64V48A12,12,0,0,1,40,36H216a12,12,0,0,1,12,12V64a12,12,0,0,1-12,12ZM128,220a12,12,0,1,0,12,12A12,12,0,0,0,128,220ZM40,68H216a4,4,0,0,0,4-4V48a4,4,0,0,0-4-4H40a4,4,0,0,0-4,4V64A4,4,0,0,0,40,68Zm164,8H52V180H204Z"></path>
+                    </svg>
+                    <h2 class="section-header-headline">그룹홈 운영 현황</h2>
+                    <p class="section-header-cat">
+                        라이프오브더칠드런은 다양한 프로그램으로 그룹홈과 아동의 성장을 돕습니다.
+                    </p>
+                    <a href="<?php home_url(); ?>/category/grouphome-news" class="section-direct-btn">그룹홈 소식 모두보기</a>
+                </header>
                 <div class="grouphome-status-grid">
                     <div class="grouphome-status-group">
                         <div class="grouphome-status">
@@ -305,9 +305,11 @@
                         </ul>
                     </div>
                 </div>
-                <?php
-                get_cta_button('국경 너무 아이의<br>보금자리가 되어주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
-                ?>
+                <div class="global-banner">
+                    <?php
+                    get_cta_button('국경 너무 아이의<br>보금자리가 되어주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
+                    ?>
+                </div>
             </div>
         </div>
     </section>
@@ -377,9 +379,11 @@
                         </div>
                     </div>
                 </div>
-                <?php
-                get_cta_button('영양이 필요한 아이에게<br>따뜻한 손길을', 'photo-by-lc-food-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
-                ?>
+                <div class="global-banner">
+                    <?php
+                    get_cta_button('영양이 필요한 아이에게<br>따뜻한 손길을', 'photo-by-lc-food-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
+                    ?>
+                </div>
             </div>
         </div>
     </section>
@@ -467,9 +471,11 @@
                         </div>
                     </div>
                 </div>
-                <?php
-                get_cta_button('공부하고 싶은 아이들을<br>도와주세요.', 'photo-by-lc-education-banner.jpg', '매월 1만 원 후원하기', '#');
-                ?>
+                <div class="global-banner">
+                    <?php
+                    get_cta_button('공부하고 싶은 아이들을<br>도와주세요.', 'photo-by-lc-education-banner.jpg', '매월 1만 원 후원하기', '#');
+                    ?>
+                </div>
             </div>
         </div>
     </section>
@@ -523,9 +529,11 @@
                         </div>
                     </div>
                 </div>
-                <?php
-                get_cta_button('작은 후원이<br>아이의 생명을 지킵니다.', 'photo-by-lc-medical-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
-                ?>
+                <div class="global-banner">
+                    <?php
+                    get_cta_button('작은 후원이<br>아이의 생명을 지킵니다.', 'photo-by-lc-medical-banner.jpg', '매월 1만 원 후원하기', '#', false, true);
+                    ?>
+                </div>
             </div>
         </div>
     </section>
@@ -595,9 +603,11 @@
                         </div>
                     </div>
                 </div>
-                <?php
-                get_cta_button('깨끗한 물로<br>아이의 하루를 바꿔주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
-                ?>
+                <div class="global-banner">
+                    <?php
+                    get_cta_button('깨끗한 물로<br>아이의 하루를 바꿔주세요.', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', false, false);
+                    ?>
+                </div>
             </div>
 
         </div>
@@ -621,10 +631,12 @@
         </div>
         <ul class="floating-page-menu-list">
             <li class="floating-page-menu-item scroll-only">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M237,147.44a4,4,0,0,1-5.48-1.4c-8.33-14-20.93-22-34.56-22a4,4,0,0,1-1.2-.2,36.76,36.76,0,0,1-3.8.2,4,4,0,0,1,0-8,28,28,0,1,0-27.12-35,4,4,0,0,1-7.75-2,36,36,0,1,1,54,39.48c10.81,3.85,20.51,12,27.31,23.48A4,4,0,0,1,237,147.44ZM187.46,214a4,4,0,0,1-1.46,5.46,3.93,3.93,0,0,1-2,.54,4,4,0,0,1-3.46-2,61,61,0,0,0-105.08,0,4,4,0,0,1-6.92-4,68.35,68.35,0,0,1,39.19-31,44,44,0,1,1,40.54,0A68.35,68.35,0,0,1,187.46,214ZM128,180a36,36,0,1,0-36-36A36,36,0,0,0,128,180ZM64,116A28,28,0,1,1,91.12,81a4,4,0,0,0,7.75-2A36,36,0,1,0,45.3,118.75,63.55,63.55,0,0,0,12.8,141.6a4,4,0,0,0,6.4,4.8A55.55,55.55,0,0,1,64,124a4,4,0,0,0,0-8Z"></path>
-                </svg>
-                <p>그룹홈</p>
+                <a href="#global-grouphome">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M237,147.44a4,4,0,0,1-5.48-1.4c-8.33-14-20.93-22-34.56-22a4,4,0,0,1-1.2-.2,36.76,36.76,0,0,1-3.8.2,4,4,0,0,1,0-8,28,28,0,1,0-27.12-35,4,4,0,0,1-7.75-2,36,36,0,1,1,54,39.48c10.81,3.85,20.51,12,27.31,23.48A4,4,0,0,1,237,147.44ZM187.46,214a4,4,0,0,1-1.46,5.46,3.93,3.93,0,0,1-2,.54,4,4,0,0,1-3.46-2,61,61,0,0,0-105.08,0,4,4,0,0,1-6.92-4,68.35,68.35,0,0,1,39.19-31,44,44,0,1,1,40.54,0A68.35,68.35,0,0,1,187.46,214ZM128,180a36,36,0,1,0-36-36A36,36,0,0,0,128,180ZM64,116A28,28,0,1,1,91.12,81a4,4,0,0,0,7.75-2A36,36,0,1,0,45.3,118.75,63.55,63.55,0,0,0,12.8,141.6a4,4,0,0,0,6.4,4.8A55.55,55.55,0,0,1,64,124a4,4,0,0,0,0-8Z"></path>
+                    </svg>
+                    <p>그룹홈</p>
+                </a>
             </li>
             <li class="floating-page-menu-item scroll-only">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">

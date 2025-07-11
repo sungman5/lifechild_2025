@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 <main id="request-support">
-    <section>
+    <section class="suggest-cover"
+             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/suggest_cover_3.jpg')">
+        <div class="overay"></div>
         <div class="wrapper8">
-            <header class="section-header">
-                <h2 class="section-header-headline">자원봉사 신청</h2>
-                <p class="section-header-cat">
-                    자원봉사가 필요하신 분은 아래 폼을 입력해주세요.
-                </p>
-            </header>
             <div class="suggest-container">
+                <header class="section-header">
+                    <h2 class="section-header-headline">자원봉사 신청</h2>
+                    <p class="section-header-cat">
+                        자원봉사가 필요하신 분은 아래 폼을 입력해주세요.
+                    </p>
+                </header>
                 <form id="suggest-form" action="" method="POST">
                     <div class="form-item">
                         <label class="form-item-labels" for="suggest-company">기관명 <span

@@ -20,6 +20,9 @@
   }
 }
 
+#donation-guide .section-header {
+  margin-bottom: 4rem;
+}
 
 .donation-guide-header-item p:first-child {
   color: $sub;
@@ -312,7 +315,7 @@
   cursor: pointer;
   border-top: 1px solid $grayLine;
 
-  &:first-child{
+  &:first-child {
     border-right: 1px solid $grayLine;
   }
 
@@ -379,10 +382,12 @@
     font-weight: 500;
   }
 }
-#donation-support-banner-section{
+
+#donation-support-banner-section {
   background-color: $grayLight;
   border-top: 1px solid $grayLine;
-  .wrapper8{
+
+  .wrapper8 {
     width: 100%;
     max-width: $contentWidth;
     margin: auto;
@@ -393,7 +398,7 @@
 물품후원 페이지
 ********************************************************/
 
-#donation-goods .donation-btn{
+#donation-goods .donation-btn {
   padding: 1.6rem 3.2rem 1.6rem 4.8rem;
 }
 
@@ -503,16 +508,16 @@
   aspect-ratio: 5 / 4;
 }
 
-.step-name{
+.step-name {
   font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 
-.step-desc{
+.step-desc {
   font-size: 1.6rem;
 }
 
-.step-number{
+.step-number {
   font-family: $reddit;
   font-size: 4.8rem;
   font-weight: 700;

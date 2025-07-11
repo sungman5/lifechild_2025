@@ -26,7 +26,6 @@
                 </p>
             </header>
             <div class="donation-grid">
-                <img src="<?php echo get_template_directory_uri() ?>/img/regular_donate_2.png" alt="">
                 <div class="donation-grid-item">
                     <p class="donation-number">01</p>
                     <div class="donation-grid-item-content">

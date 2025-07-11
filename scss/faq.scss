@@ -17,20 +17,17 @@
 
 .faq-item {
   padding: 2.4rem 0;
-  border-top: 1px solid $grayLine;
+  border-bottom: 1px solid $grayLine;
   cursor: pointer;
 
   &:hover {
-    .faq-item-title{
+    .faq-item-title {
       color: $sub;
     }
+
     .faq-plus {
       fill: $sub;
     }
-  }
-
-  &:last-child {
-    border-bottom: 1px solid $grayLine;
   }
 }
 
@@ -54,7 +51,7 @@
 
 #faq {
   .section-header {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .section-header-headline {
@@ -73,11 +70,8 @@
   border: 1px solid $grayLine;
   padding: 1.2rem 2rem;
   border-radius: 0.2rem;
-}
-
-#faq-search {
   width: 100%;
-  max-width: $contentWidth;
+  max-width: $singleWidth;
 }
 
 #search-input {

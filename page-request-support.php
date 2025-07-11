@@ -1,15 +1,16 @@
 <?php get_header(); ?>
-<main id="request-support">
-    <section>
+<main class="suggest">
+    <section class="suggest-cover"
+             style="background-image: url('<?php echo get_template_directory_uri() ?>/img/suggest_cover_2.jpg')">
+        <div class="overay"></div>
         <div class="wrapper8">
-            <header class="section-header">
-                <h2 class="section-header-headline">배분 신청</h2>
-                <p class="section-header-cat">
-                    후원이 필요한 기관은 아래 내용을 작성해주세요.<br>
-                    물품 후원이 발생하면 연락드립니다.
-                </p>
-            </header>
             <div class="suggest-container">
+                <header class="section-header">
+                    <h2 class="section-header-headline">배분 신청</h2>
+                    <p class="section-header-cat">
+                        후원이 필요한 기관은 아래 내용을 작성해주세요.<br>물품 후원이 발생하면 연락드립니다.
+                    </p>
+                </header>
                 <form id="suggest-form" action="" method="POST">
                     <div class="form-item">
                         <label class="form-item-labels" for="suggest-company">기관명 <span

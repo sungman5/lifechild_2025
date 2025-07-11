@@ -234,22 +234,22 @@
  * 각 페이지의 플로팅 서브 메뉴
  ********************************************************/
 document.addEventListener('DOMContentLoaded', () => {
-    const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
-    const sections = document.querySelectorAll('section');
-
-    pageMenuItem.forEach((element, index) => {
-        element.addEventListener('click', (e) => {
-            const isScrollLink = element.classList.contains('scroll-only');
-            if (isScrollLink) {
-                e.preventDefault(); // 내부 스크롤만 처리
-                const targetSection = sections[index + 1];
-                if (targetSection) {
-                    targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
-                }
-            }
-            // 그 외 링크는 기본 이동하게 놔둠
-        });
-    });
+    // const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
+    // const sections = document.querySelectorAll('section');
+    //
+    // pageMenuItem.forEach((element, index) => {
+    //     element.addEventListener('click', (e) => {
+    //         const isScrollLink = element.classList.contains('scroll-only');
+    //         if (isScrollLink) {
+    //             e.preventDefault(); // 내부 스크롤만 처리
+    //             const targetSection = sections[index + 1];
+    //             if (targetSection) {
+    //                 targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+    //             }
+    //         }
+    //         // 그 외 링크는 기본 이동하게 놔둠
+    //     });
+    // });
 });
 
 /********************************************************
@@ -327,6 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
  * faq 탭 기능
  ********************************************************/
 (() => {
+
     const items = document.querySelectorAll('.faq-item');
     const bodys = document.querySelectorAll('.faq-item-content');
     const plus = document.querySelectorAll('.faq-plus');
@@ -356,31 +357,30 @@ document.addEventListener('DOMContentLoaded', () => {
  * faq 검색 기능
  ********************************************************/
 (() => {
+
     const headlines = document.querySelectorAll('.faq-item-title');
     const input = document.getElementById('search-input');
     let debounceTimer;
 
-    if (window.location.pathname === 'donation-guide' || window.location.pathname === 'faq') {
-        input.addEventListener('input', () => {
-            clearTimeout(debounceTimer);
+    input.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
 
-            debounceTimer = setTimeout(() => {
-                const query = input.value.trim().toLowerCase();
-                console.log('검색어:', query);
+        debounceTimer = setTimeout(() => {
+            const query = input.value.trim().toLowerCase();
+            console.log('검색어:', query);
 
-                headlines.forEach((headline) => {
-                    const text = headline.textContent.toLowerCase();
-                    const faqItem = headline.closest('.faq-item');
+            headlines.forEach((headline) => {
+                const text = headline.textContent.toLowerCase();
+                const faqItem = headline.closest('.faq-item');
 
-                    if (text.includes(query)) {
-                        faqItem.style.display = '';
-                    } else {
-                        faqItem.style.display = 'none';
-                    }
-                });
-            }, 300); // 0.5초 (500ms) 대기
-        });
-    }
+                if (text.includes(query)) {
+                    faqItem.style.display = '';
+                } else {
+                    faqItem.style.display = 'none';
+                }
+            });
+        }, 300); // 0.5초 (500ms) 대기
+    });
 
 
 })();
