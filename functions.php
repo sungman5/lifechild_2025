@@ -26,7 +26,7 @@ function enqueue_scripts()
     if (!is_page('lcicare')) {
         wp_enqueue_script('index_script', get_template_directory_uri() . '/scripts/main.js', [], false, true);
     }
-    if(is_page('lcicare')) {
+    if (is_page('lcicare')) {
         wp_enqueue_script('lcicare_script', get_template_directory_uri() . '/scripts/lcicare.js', [], false, true);
     }
 }
@@ -222,5 +222,127 @@ function get_cta_button($headline, $imgFileName, $ctaButtonText, $link, $color =
     HTML;
 }
 
+// 연혁 포스트타입 등록
+function create_history_post_type()
+{
+    $labels = array(
+        'name' => _x('연혁', 'Post type general name', 'textdomain'),
+        'singular_name' => _x('연혁', 'Post type singular name', 'textdomain'),
+        'menu_name' => _x('연혁', 'Admin Menu text', 'textdomain'),
+        'name_admin_bar' => _x('연혁', 'Add New on Toolbar', 'textdomain'),
+        'add_new' => __('새 연혁 추가', 'textdomain'),
+        'add_new_item' => __('새로운 연혁 등록', 'textdomain'),
+        'new_item' => __('새로운 연혁', 'textdomain'),
+        'edit_item' => __('연혁 편집', 'textdomain'),
+        'view_item' => __('연혁 보기', 'textdomain'),
+        'all_items' => __('모든 연혁', 'textdomain'),
+        'search_items' => __('연혁 검색', 'textdomain'),
+        'parent_item_colon' => __('상위 연혁:', 'textdomain'),
+        'not_found' => __('등록된 연혁이 없습니다.', 'textdomain'),
+        'not_found_in_trash' => __('휴지통에서 연혁을 찾을 수 없습니다.', 'textdomain'),
+        'featured_image' => _x('연혁 커버 이미지', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'set_featured_image' => _x('연혁 커버이미지 설정', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'remove_featured_image' => _x('연혁 커버이미지 삭제', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'use_featured_image' => _x('Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'archives' => _x('연혁 아카이브', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain'),
+        'insert_into_item' => _x('Insert into event', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain'),
+        'uploaded_to_this_item' => _x('Uploaded to this event', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain'),
+        'filter_items_list' => _x('Filter events list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain'),
+        'items_list_navigation' => _x('Events list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain'),
+        'items_list' => _x('Events list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain'),
+    );
+
+    register_post_type('history', [
+        'labels' => $labels,
+        'description' => '연혁 포스트타입입니다.',
+        'public' => true,
+        'has_archive' => true,
+//        'rewrite'       => ['slug'  =>  'history', 'with_front' => false, 'pages' => true, 'feeds' => true],
+        'menu_icon' => 'dashicons-calendar',
+        'publicly_queryable' => true,
+        'menu_position' => 6,
+        'show_in_menu' => true,
+        'show_in_rest' => true,
+        'supports' => ['thumbnail', 'title', 'editor', 'excerpt'],
+    ]);
+}
+
+add_action('init', 'create_history_post_type');
 
 
+function create_history_taxonomy()
+{
+    $labels_years = array(
+        'name' => _x('연도', 'taxonomy general name', 'textdomain'),
+        'singular_name' => _x('연도', 'taxonomy singular name', 'textdomain'),
+        'search_items' => __('연도 검색', 'textdomain'),
+        'all_items' => __('모든 연도', 'textdomain'),
+        'parent_item' => __('상위 연도', 'textdomain'),
+        'parent_item_colon' => __('상위 연도:', 'textdomain'),
+        'edit_item' => __('연도 편집', 'textdomain'),
+        'update_item' => __('연도 업데이트', 'textdomain'),
+        'add_new_item' => __('새 연도 추가', 'textdomain'),
+        'new_item_name' => __('새 연도 이름', 'textdomain'),
+        'menu_name' => __('연도', 'textdomain'),
+    );
+
+    $args_years = array(
+        'hierarchical' => true, // true로 설정하면 카테고리처럼 계층적이 됩니다. false로 설정하면 태그처럼 작동합니다.
+        'labels' => $labels_years,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+    );
+
+    register_taxonomy('history_years', array('history'), $args_years);
+}
+
+add_action('init', 'create_history_taxonomy');
+
+
+// 행복나눔가게 포스트타입
+
+function create_store_post_type()
+{
+    $labels = array(
+        'name' => _x('희망나눔가게', 'Post type general name', 'textdomain'),
+        'singular_name' => _x('희망나눔가게', 'Post type singular name', 'textdomain'),
+        'menu_name' => _x('희망나눔가게', 'Admin Menu text', 'textdomain'),
+        'name_admin_bar' => _x('희망나눔가게', 'Add New on Toolbar', 'textdomain'),
+        'add_new' => __('새 희망나눔가게 추가', 'textdomain'),
+        'add_new_item' => __('새로운 희망나눔가게 등록', 'textdomain'),
+        'new_item' => __('새로운 희망나눔가게', 'textdomain'),
+        'edit_item' => __('희망나눔가게 편집', 'textdomain'),
+        'view_item' => __('희망나눔가게 보기', 'textdomain'),
+        'all_items' => __('모든 희망나눔가게', 'textdomain'),
+        'search_items' => __('희망나눔가게 검색', 'textdomain'),
+        'parent_item_colon' => __('상위 희망나눔가게:', 'textdomain'),
+        'not_found' => __('등록된 희망나눔가게이 없습니다.', 'textdomain'),
+        'not_found_in_trash' => __('휴지통에서 희망나눔가게을 찾을 수 없습니다.', 'textdomain'),
+        'featured_image' => _x('희망나눔가게 커버 이미지', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'set_featured_image' => _x('희망나눔가게 커버이미지 설정', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'remove_featured_image' => _x('희망나눔가게 커버이미지 삭제', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'use_featured_image' => _x('Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain'),
+        'archives' => _x('희망나눔가게 아카이브', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain'),
+        'insert_into_item' => _x('Insert into event', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain'),
+        'uploaded_to_this_item' => _x('Uploaded to this event', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain'),
+        'filter_items_list' => _x('Filter events list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain'),
+        'items_list_navigation' => _x('Events list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain'),
+        'items_list' => _x('Events list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain'),
+    );
+
+    register_post_type('store', [
+        'labels' => $labels,
+        'description' => '희망나눔가게 포스트타입입니다.',
+        'public' => true,
+        'has_archive' => true,
+        'supports' => ['thumbnail', 'title', 'editor', 'excerpt'],
+        'taxonomies' => ['post_tag'],
+        'menu_icon' => 'dashicons-store',
+//        'publicly_queryable' => true,
+        'show_in_rest' => true,
+        'menu_position' => 4
+    ]);
+}
+
+add_action('init', 'create_store_post_type');

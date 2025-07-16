@@ -20,7 +20,7 @@
         <div class="wrapper">
             <header class="section-header">
                 <h2 class="section-header-headline">오직 후원자의 힘으로 진심을 전합니다</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     라이프오브더칠드런은 기업이나 정부의 지원 없이, 후원자들의 정성으로 운영됩니다.<br>
                     오직 아이들만 바라보며 한 걸음씩 나아갑니다.
                 </p>
@@ -74,7 +74,7 @@
         <div class="wrapper">
             <header class="section-header">
                 <h2 class="section-header-headline">후원 방법</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     후원자님의 방식대로 간편하게 후원할 수 있습니다.
                 </p>
             </header>
@@ -181,6 +181,6 @@
             <?php get_template_part('template-parts/faq') ?>
         </div>
     </section>
-    <?php get_template_part('template-parts/donation-sub-menu') ?>
+    <?php get_template_part('template-parts/donation-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

@@ -7,7 +7,7 @@
             </div>
             <ul class="footer-links">
                 <li class="footer-links-item">
-                    <a href="">
+                    <a href="<?php echo home_url('/lcicare'); ?>">
                         지역아동센터
                     </a>
                 </li>
@@ -37,7 +37,7 @@
                 ?>
             </nav>
              <div class="footer-middle-info-group">
-                <h3>사단법인 라이프오브더칠드런</h3>
+                <h3><a href="<?php echo home_url(); ?>">사단법인 라이프오브더칠드런</a></h3>
                 <div class="footer-middle-info">
                     <p>(우)08360 서울특별시 구로구 연동로 13길 7, 5층</p>
                     <p>대표번호 02-6246-9191</p>

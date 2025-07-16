@@ -7,7 +7,7 @@
             <div class="suggest-container">
                 <header class="section-header">
                     <h2 class="section-header-headline">문의 및 제안</h2>
-                    <p class="section-header-cat">아래 폼을 작성해주세요. 담당자가 확인 후 빠르게 연락드립니다.</p>
+                    <p class="section-header-desc">아래 폼을 작성해주세요. 담당자가 확인 후 빠르게 연락드립니다.</p>
                 </header>
                 <form id="suggest-form" action="" method="POST">
                     <div class="form-item">
@@ -51,6 +51,6 @@
             </div>
         </div>
     </section>
-    <?php get_template_part('template-parts/form-sub-menu') ?>
+    <?php get_template_part('template-parts/form-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

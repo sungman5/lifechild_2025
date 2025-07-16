@@ -4,49 +4,57 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">정기후원</h2>
-                <p class="section-header-cat">정기후원은 아이들의 삶에 지속적인 변화를 만들어냅니다.</p>
+                <p class="section-header-desc">
+                    매달 일정 금액으로, 아이들의 삶에 지속적인 변화를 만들어갑니다.<br>
+                    장기적인 지원이 필요한 아이들에게 가장 안정적인 방법입니다.
+                </p>
             </header>
             <div class="donation-container">
                 <div class="section-hero">
                     <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-lc-regular-cover.jpg" alt=""
                          title="사진제공: 라이프오브더칠드런">
                 </div>
-                <p class="donation-intro-desc">
-                    정기후원은 아이들의 삶에 지속적인 변화를 만들어냅니다.<br>
-                    여러분의 꾸준한 후원은 생계, 교육, 건강, 긴급구호 등<br>
-                    라이프오브더칠드런의 모든 공익사업에 분배되어 사용됩니다.
-                </p>
-                <a class="donation-btn" href="">
-                    정기후원하기
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                        <path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"></path>
-                    </svg>
-                </a>
+                <div class="donation-usage-container">
+                    <h3 class="donation-usage-headline">월 10,000원으로 시작하세요</h3>
+                    <ul class="donation-usage-grid">
+                        <li class="donation-usage-item">
+                            <p class="donation-usage-title">해외사업</p>
+                            <div class="donation-usage-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque aut
+                                eaque error esse, ipsam libero molestias non odio odit placeat quasi qui, quod tempora
+                                ut velit voluptas voluptate?
+                            </div>
+                        </li>
+                        <li class="donation-usage-item">
+                            <p class="donation-usage-title">국내사업</p>
+                            <div class="donation-usage-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque aut
+                                eaque error esse, ipsam libero molestias non odio odit placeat quasi qui, quod tempora
+                                ut velit voluptas voluptate?
+                            </div>
+                        </li>
+                        <li class="donation-usage-item">
+                            <p class="donation-usage-title">긴급구호</p>
+                            <div class="donation-usage-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque aut
+                                eaque error esse, ipsam libero molestias non odio odit placeat quasi qui, quod tempora
+                                ut velit voluptas voluptate?
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="donation-usage-caption">
+                        ※ 정기/일시후원은 구분하여 집행하지 않으며, 모든 후원금은 기관의 규정과 감사 절차에 따라<br>
+                        아이들을 위한 사업 전반에 신중히 사용됩니다. 위의 구분은 자주 활용되는 대표 영역임을 안내드립니다.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="wrapper gray-bg">
             <header class="section-header">
-                <h2 class="section-header-headline">정기후원, 이렇게 사용됩니다.</h2>
-                <p class="section-header-cat">
-                    아이들의 삶을 바꾸는 데 한 치의 낭비도 없습니다.<br>
-                    후원금은 교육, 생계, 정서 지원 등 꼭 필요한 곳에 쓰이며, 모든 사용 내역은 투명하게 공개됩니다.
-                </p>
-                <a href="<?php home_url(); ?>/category/financial-reports" class="section-direct-btn">
-                    2024년 재정보고
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
-                        <path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"></path>
-                    </svg>
-                </a>
-            </header>
-        </div>
-    </section>
-    <section>
-        <div class="wrapper">
-            <header class="section-header">
                 <h2 class="section-header-headline">정기후원자가 되어주시면</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     정기 소식지와 후원 감사 키트, 활동 현장 초대 등<br>
                     라이프오브더칠드런과 더 가까이 만나는 특별한 소식을 전해드립니다.
                 </p>
@@ -107,11 +115,15 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper8">
             <div class="donation-regular-container">
                 <?php get_cta_button('한 아이의 오늘을 바꾸는<br>가장 꾸준한 방법', 'photo-by-lc-grouphome-banner.jpg', '매월 1만 원 후원하기', '#', '', false); ?>
             </div>
         </div>
     </section>
-    <?php get_template_part('template-parts/donation-sub-menu') ?>
+    <?php get_template_part('template-parts/donation-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

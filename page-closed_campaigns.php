@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">종료된 캠페인</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     종료된 캠페인입니다. 함께해주셔서 고맙습니다.
                 </p>
             </header>

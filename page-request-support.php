@@ -7,7 +7,7 @@
             <div class="suggest-container">
                 <header class="section-header">
                     <h2 class="section-header-headline">배분 신청</h2>
-                    <p class="section-header-cat">
+                    <p class="section-header-desc">
                         후원이 필요한 기관은 아래 내용을 작성해주세요.<br>물품 후원이 발생하면 연락드립니다.
                     </p>
                 </header>
@@ -59,6 +59,6 @@
             </div>
         </div>
     </section>
-    <?php get_template_part('template-parts/form-sub-menu') ?>
+    <?php get_template_part('template-parts/form-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

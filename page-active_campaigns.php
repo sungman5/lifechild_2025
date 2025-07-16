@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">진행 중인 캠페인</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     지금 여러분의 마음이 필요한 곳입니다.
                 </p>
             </header>

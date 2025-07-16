@@ -20,6 +20,7 @@ floating menu
 .floating-page-menu-list{
   display: flex;
   align-items: center;
+  gap: 0.4rem;
 }
 
 .floating-page-menu-item{
@@ -28,7 +29,6 @@ floating menu
   align-items: center;
   font-size: 1.7rem;
   gap: 0.4rem;
-  padding: 0.8rem 1.4rem;
   border-radius: 1.2rem;
   cursor: pointer;
   font-weight: 500;
@@ -46,9 +46,7 @@ floating menu
   border-radius: 1.2rem;
   cursor: pointer;
   font-weight: 500;
-  &:hover{
-    background-color: $primary;
-  }
+  padding: 0.8rem 1.4rem;
 }
 
 .floating-menu-accordion{

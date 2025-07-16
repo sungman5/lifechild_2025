@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">물품 후원</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     아이들에게 꼭 필요한 물품을 직접 전해 따뜻한 나눔을 실천하세요.
                 </p>
             </header>
@@ -50,7 +50,7 @@
         <div class="wrapper gray-bg">
             <header class="section-header">
                 <h2 class="section-header-headline goods-sub-headline">아이들에게 필요한 물품이 있습니다.</h2>
-                <p class="section-header-cat goods-sub-cat">
+                <p class="section-header-desc goods-sub-cat">
                     아이들에게 꼭 필요한 물품을 직접 전해 따뜻한 나눔을 실천하세요.
                 </p>
             </header>
@@ -121,7 +121,7 @@
         <div class="wrapper">
             <header class="section-header">
                 <h2 class="section-header-headline goods-sub-headline">물품 후원을 고려하고 계신가요?</h2>
-                <p class="section-header-cat goods-sub-cat">
+                <p class="section-header-desc goods-sub-cat">
                     물품 후원을 통해 아이들에게 필요한 지원을 직접 전달하실 수 있습니다.<br>
                     후물품 후원은 아래와 같은 절차로 진행됩니다. 자세한 사항은 담당자에게 문의해주세요.
                 </p>
@@ -178,6 +178,6 @@
             </a>
         </div>
     </section>
-    <?php get_template_part('template-parts/donation-sub-menu') ?>
+    <?php get_template_part('template-parts/donation-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

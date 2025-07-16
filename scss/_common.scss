@@ -15,7 +15,7 @@
   gap: 1.6rem;
 }
 
-.section-header-cat {
+.section-header-desc {
   font-size: 2.4rem;
   text-align: center;
   font-weight: 400;
@@ -34,7 +34,7 @@
   .section-header-headline {
     font-size: 4rem;
   }
-  .section-header-cat {
+  .section-header-desc {
     font-size: 2rem;
   }
 }
@@ -43,7 +43,7 @@
   .section-header-headline {
     font-size: 3rem;
   }
-  .section-header-cat {
+  .section-header-desc {
     font-size: 1.6rem;
   }
 }
@@ -68,14 +68,16 @@
   border: 1px solid $sub;
   transition: none;
   cursor: pointer;
-  svg{
+
+  svg {
     fill: $sub;
   }
 
   &:hover {
     background-color: $sub;
     color: $white;
-    svg{
+
+    svg {
       fill: $white;
     }
   }
@@ -177,4 +179,73 @@
 .stats-label {
   font-size: 2rem;
   color: $grayText;
+}
+
+
+/*****************************************************************
+Archive 페이지의 헤더 양식입니다.
+******************************************************************/
+.archive-top-header {
+  background-color: $black;
+}
+
+.archive-top-header-inner {
+  padding: 1.2rem 0;
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    display: block;
+    height: 2rem;
+  }
+
+  p {
+    color: $grayText;
+  }
+}
+
+.archive-header {
+  width: 100%;
+  max-width: $defaultWidth;
+  margin: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle, #00000000, #00000090);
+    z-index: 0;
+  }
+}
+
+.archive-header-symbol {
+  width: 3.2rem;
+  display: block;
+  margin-bottom: 1.6rem;
+  position: relative;
+  z-index: 5;
+}
+
+.archive-header-headline {
+  color: $white;
+  font-family: $reddit;
+  font-size: 4.8rem;
+  line-height: 1;
+  margin-bottom: 1.6rem;
+  position: relative;
+  z-index: 5;
+}
+
+.archive-desc {
+  position: relative;
+  z-index: 5;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $white;
 }

@@ -1,0 +1,33 @@
+#store {
+  .wrapper{
+    background: no-repeat center;
+    position: relative;
+    background-size: cover;
+  }
+}
+
+.store-container{
+  width: 100%;
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+.store-item{
+  border-bottom: 1px solid $grayLine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  &:first-child{
+    border-top: 4px solid $sub;
+  }
+}
+
+.store-name {
+  font-size: 3.2rem;
+}
+
+.store-address{
+  font-size: 2rem;
+  color: $grayText;
+}

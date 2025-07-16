@@ -233,24 +233,28 @@
 /********************************************************
  * 각 페이지의 플로팅 서브 메뉴
  ********************************************************/
-document.addEventListener('DOMContentLoaded', () => {
-    // const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
-    // const sections = document.querySelectorAll('section');
-    //
-    // pageMenuItem.forEach((element, index) => {
-    //     element.addEventListener('click', (e) => {
-    //         const isScrollLink = element.classList.contains('scroll-only');
-    //         if (isScrollLink) {
-    //             e.preventDefault(); // 내부 스크롤만 처리
-    //             const targetSection = sections[index + 1];
-    //             if (targetSection) {
-    //                 targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
-    //             }
-    //         }
-    //         // 그 외 링크는 기본 이동하게 놔둠
-    //     });
-    // });
-});
+(()=>{
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const pageMenuItem = document.querySelectorAll('.floating-page-menu-item');
+        const sections = document.querySelectorAll('section');
+
+        pageMenuItem.forEach((element, index) => {
+            element.addEventListener('click', (e) => {
+                const isScrollLink = element.classList.contains('scroll-only');
+                if (isScrollLink) {
+                    e.preventDefault(); // 내부 스크롤만 처리
+                    const targetSection = sections[index + 1];
+                    if (targetSection) {
+                        targetSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+                    }
+                }
+                // 그 외 링크는 기본 이동하게 놔둠
+            });
+        });
+    });
+})();
+
 
 /********************************************************
  * 모바일 버전에서 서브 메뉴를 위한 푸터 마진 생성
@@ -362,25 +366,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('search-input');
     let debounceTimer;
 
-    input.addEventListener('input', () => {
-        clearTimeout(debounceTimer);
+    if (window.location.pathname === '/category/faq/' || window.location.pathname === '/donation-guide/') {
+        input.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
 
-        debounceTimer = setTimeout(() => {
-            const query = input.value.trim().toLowerCase();
-            console.log('검색어:', query);
+            debounceTimer = setTimeout(() => {
+                const query = input.value.trim().toLowerCase();
+                console.log('검색어:', query);
 
-            headlines.forEach((headline) => {
-                const text = headline.textContent.toLowerCase();
-                const faqItem = headline.closest('.faq-item');
+                headlines.forEach((headline) => {
+                    const text = headline.textContent.toLowerCase();
+                    const faqItem = headline.closest('.faq-item');
 
-                if (text.includes(query)) {
-                    faqItem.style.display = '';
-                } else {
-                    faqItem.style.display = 'none';
-                }
-            });
-        }, 300); // 0.5초 (500ms) 대기
-    });
+                    if (text.includes(query)) {
+                        faqItem.style.display = '';
+                    } else {
+                        faqItem.style.display = 'none';
+                    }
+                });
+            }, 300); // 0.5초 (500ms) 대기
+        });
+    }
 
 
 })();
@@ -392,3 +398,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.history-years li')
     console.log(items)
 })();
+
+/********************************************************
+ * 뉴스레터 배너 숨김
+ ********************************************************/
+(() => {
+    function setNewsLetterBanner() {
+        if (window.location.pathname === '/category/grouphome-brief/') {
+            document.querySelector('.newsletter-top-banner').style.display = 'none';
+            console.log('d')
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', setNewsLetterBanner)
+})();
+
+
+/********************************************************
+ * 아카이빙 페이지의 푸터 색상 변경
+ ********************************************************/
+
+
+/********************************************************
+ * 플로팅 메뉴 현재 페이지 색상 변경
+ ********************************************************/
+(() => {
+    const items = document.querySelectorAll('.floating-page-menu-item');
+    items.forEach(element => {
+        if (element.dataset.url === window.location.pathname) {
+            console.log(element)
+            element.style.backgroundColor = '#ffcd00'
+        }
+    })
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+

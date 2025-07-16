@@ -7,7 +7,7 @@
             <div class="suggest-container">
                 <header class="section-header">
                     <h2 class="section-header-headline">자원봉사 신청</h2>
-                    <p class="section-header-cat">
+                    <p class="section-header-desc">
                         자원봉사가 필요하신 분은 아래 폼을 입력해주세요.
                     </p>
                 </header>
@@ -59,6 +59,6 @@
             </div>
         </div>
     </section>
-    <?php get_template_part('template-parts/form-sub-menu') ?>
+    <?php get_template_part('template-parts/form-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

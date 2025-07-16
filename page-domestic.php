@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">국내사업</h2>
-                <p class="section-header-cat">국내 소외계층을 위한 따뜻한 동행, 희망을 만드는 국내사업</p>
+                <p class="section-header-desc">국내 소외계층을 위한 따뜻한 동행, 희망을 만드는 국내사업</p>
             </header>
             <div class="section-hero">
                 <img src=<?php echo get_template_directory_uri() ?>/img/photo-by-Yonghua-Fu-on-unsplash.jpg" alt=""
@@ -19,7 +19,7 @@
                     <path d="M249.88,92.47l-120-64a4,4,0,0,0-3.76,0l-120,64a4,4,0,0,0,0,7.06L36,115.47v50.82a11.92,11.92,0,0,0,3,8c12.65,14.09,41,37.73,89,37.73,21,0,38.2-4.52,52-10.79V240a4,4,0,0,0,8,0V197.18a111.64,111.64,0,0,0,29-22.91,11.94,11.94,0,0,0,3-8V115.47l29.88-15.94a4,4,0,0,0,0-7.06ZM128,204c-44.83,0-71.25-22-83-35.08a3.92,3.92,0,0,1-1-2.63V119.73l82.12,43.8a4,4,0,0,0,3.76,0L180,136.8v55.53C166.58,199,149.39,204,128,204Zm84-37.71a4,4,0,0,1-1,2.64,103.32,103.32,0,0,1-23,19v-55.4l24-12.8Zm-24.59-42.51a4,4,0,0,0-1.53-1.44l-56-29.87a4,4,0,0,0-3.76,7.06L179.5,128,128,155.47,16.5,96,128,36.53,239.5,96Z"></path>
                 </svg>
                 <h2 class="section-header-headline">교육비 지원사업</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     경제적 어려움으로부터 아이들의 배움과 관계, 자존감을 지켜주는 지원사업
                 </p>
 
@@ -112,7 +112,7 @@
                 <h2 class="section-header-headline">
                     의료비 지원사업
                 </h2>
-                <p class="section-header-cat">치료받을 수 있는 권리를 지키기 위해, 아이들의 긴급한 의료비를 지원합니다.</p>
+                <p class="section-header-desc">치료받을 수 있는 권리를 지키기 위해, 아이들의 긴급한 의료비를 지원합니다.</p>
             </div>
             <div class="domestic-container">
                 <div class="domestic">
@@ -201,7 +201,7 @@
                 <h2 class="section-header-headline">
                     희망나눔사업
                 </h2>
-                <p class="section-header-cat">명절과 계절 고비마다 소외된 이웃에게 따뜻함과 필수 물품을 전하는 희망나눔사업입니다.</p>
+                <p class="section-header-desc">명절과 계절 고비마다 소외된 이웃에게 따뜻함과 필수 물품을 전하는 희망나눔사업입니다.</p>
             </div>
             <div class="domestic-container">
                 <div class="domestic">

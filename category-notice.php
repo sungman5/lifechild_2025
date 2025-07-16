@@ -3,7 +3,7 @@
     <div class="wrapper8">
         <header class="section-header">
             <h2 class="section-header-headline">공지/언론보도</h2>
-            <p class="section-header-cat">
+            <p class="section-header-desc">
                 라이프오브더칠드런의 주요 소식과 언론 보도자료를 전해드립니다.
             </p>
         </header>

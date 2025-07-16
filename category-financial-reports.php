@@ -3,7 +3,7 @@
     <div class="wrapper8">
         <header class="section-header">
             <h2 class="section-header-headline">재정보고</h2>
-            <p class="section-header-cat">
+            <p class="section-header-desc">
                 라이프오브더칠드런의 재정 현황과 사용 내역을 공개합니다.
             </p>
         </header>
@@ -68,5 +68,6 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template-parts/intro-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

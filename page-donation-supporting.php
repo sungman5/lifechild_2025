@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">아동결연</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     개발도상국의 빈곤 아동, 국내 소외계층 아동과 후원자가 1:1로 결연을 맺어<br>
                     깊은 연결을 형성하고 지속적인 지원이 이루어지는 사업입니다.
                 </p>
@@ -65,7 +65,7 @@
                         <div class="wrapper8">
                             <header class="section-header">
                                 <h2 class="section-header-headline supporting-tap-headline">나이에 맞는 돌봄, 삶을 바꾸는 성장</h2>
-                                <p class="section-header-cat">
+                                <p class="section-header-desc">
                                     후원아동 한 명 한 명의 연령과 상황에 맞춘 맞춤형 프로그램을 통해<br>
                                     건강한 성장과 더 나은 미래를 함께 만들어갑니다.
                                 </p>
@@ -110,7 +110,7 @@
                         <div class="wrapper8">
                             <header class="section-header">
                                 <h2 class="section-header-headline supporting-tap-headline">국내 여건에 맞춘 후원 방식</h2>
-                                <p class="section-header-cat">
+                                <p class="section-header-desc">
                                     한 아이를 여러 후원자가 함께 지원하는 1:N 결연으로<br>
                                     국내 현실에 맞는 지속가능한 지원을 실현합니다.
                                 </p>
@@ -165,7 +165,7 @@
         <div class="wrapper8 gray-bg">
             <header class="section-header">
                 <h2 class="section-header-headline">아동결연을 신청하시면</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     결연 후원을 신청하시면 결연아동 카드와 연례 발달 보고서 등을 통해<br>
                     아이의 소중한 성장 이야기를 꾸준히 전해드립니다
                 </p>
@@ -181,6 +181,6 @@
             ?>
         </div>
     </section>
-    <?php get_template_part('template-parts/donation-sub-menu') ?>
+    <?php get_template_part('template-parts/donation-floating-menu') ?>
 </main>
 <?php get_footer(); ?>

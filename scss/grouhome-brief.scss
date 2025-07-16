@@ -1,5 +1,9 @@
 #grouphome-brief {
-  padding: 3.2rem 3.2rem 6.4rem;
+  .wrapper{
+    background: no-repeat center;
+    position: relative;
+    background-size: cover;
+  }
 }
 
 #gh-brief-logo {
@@ -21,18 +25,17 @@
   font-size: 1.8rem;
 }
 
-.gh-brief-container {
-}
-
 .gh-brief-grid {
   display: grid;
-  gap: 4rem;
+  gap: 1.6rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .gh-brief-item {
-  padding: 1.6rem 0.8rem;
-  border-top: 1px solid $grayLine;
+  padding: 3.2rem;
+  border: 1px solid $grayLine;
+  background-color: $white;
+  border-radius: 0.8rem;
 }
 
 .gh-brief-item-title {
@@ -45,7 +48,7 @@
 
   p {
     font-size: 1.5rem;
-    font-family: $sung;
+    //font-family: ;
     line-height: 1.6;
   }
 
@@ -54,7 +57,7 @@
 .gh-brief-tags {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.4rem;
 }
 
 .gh-brief-item-tag {

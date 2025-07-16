@@ -3,7 +3,7 @@
     <div class="wrapper8">
         <header class="section-header">
             <h2 class="section-header-headline">스토리</h2>
-            <p class="section-header-cat">
+            <p class="section-header-desc">
                 여러분의 후원이 변화의 마중물이 되었습니다.
         </header>
         <div class="story-container">

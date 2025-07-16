@@ -43,13 +43,13 @@
 
             </p>
             <div class="slide-navigation-arrow">
-                <svg id="slide-navigation-prev" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000"
+                <svg id="slide-navigation-prev" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                      viewBox="0 0 256 256">
-                    <path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"></path>
+                    <path d="M220,128a4,4,0,0,1-4,4H49.66l65.17,65.17a4,4,0,0,1-5.66,5.66l-72-72a4,4,0,0,1,0-5.66l72-72a4,4,0,0,1,5.66,5.66L49.66,124H216A4,4,0,0,1,220,128Z"></path>
                 </svg>
-                <svg id="slide-navigation-next" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000"
+                <svg id="slide-navigation-next" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                      viewBox="0 0 256 256">
-                    <path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"></path>
+                    <path d="M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"></path>
                 </svg>
             </div>
         </div>
@@ -58,7 +58,7 @@
 <section>
     <div class="wrapper">
         <header class="section-header">
-            <h3 class="section-header-cat">라칠 뉴스룸</h3>
+            <h3 class="section-header-desc">라칠 뉴스룸</h3>
             <h2 class="section-header-headline">후원자와 함께 만들어가는 <br class="br-show-mobile">놀라운 변화</h2>
             <a href="<?php home_url(); ?>/category/story" class="section-direct-btn">뉴스룸 더보기</a>
         </header>
@@ -121,7 +121,7 @@
                     [
                         'taxonomy' => 'category',
                         'field' => 'slug',
-                        'terms' => 'grouphome-brief',
+                        'terms' => 'grouphome-news',
                     ]
                 ]
             ];
@@ -135,6 +135,16 @@
                         <div class="grouphome-news-item-heading">
                             <h3><?php the_title(); ?></h3>
                             <?php the_excerpt(); ?>
+                        </div>
+                        <div class="gh-brief-tags">
+                            <?php
+                            $tags = get_the_terms(get_the_ID(), 'post_tag');
+                            if ($tags && !is_wp_error($tags)) {
+                                foreach ($tags as $tag) {
+                                    echo '<p class="gh-brief-item-tag">' . esc_html($tag->name) . '</p> ';
+                                }
+                            }
+                            ?>
                         </div>
                     </li>
                 <?php
@@ -151,7 +161,7 @@
     <div class="wrapper slogan-wrapper">
         <header class="section-header">
             <h2 class="section-header-headline">단 한 명의 어린이도 <br class="br-show-mobile">소외받지 않는 그날까지</h2>
-            <h3 class="section-header-cat">
+            <h3 class="section-header-desc">
                 라이프오브더칠드런은 누적 후원자 10만 명과 함께,<br>
                 국내외 소외된 아이들을 품는 일에 앞장섭니다.<br>
                 투명한 경영 철학으로, 아동을 위한 사업에 후원금의 85% 이상을 사용하고 있습니다.
@@ -172,7 +182,7 @@
 
 
         <header class="section-header">
-            <h3 class="section-header-cat">
+            <h3 class="section-header-desc">
                 사업 소개
             </h3>
             <h2 class="section-header-headline">
@@ -264,7 +274,7 @@
 <section>
     <div class="wrapper donate-section-wrapper">
         <header class="section-header">
-            <h3 class="section-header-cat">
+            <h3 class="section-header-desc">
                 후원 안내
             </h3>
             <h2 class="section-header-headline">
@@ -290,7 +300,7 @@
 <section id="index-campaign-section">
     <div class="wrapper">
         <header class="section-header">
-            <h3 class="section-header-cat">진행 중인 캠페인</h3>
+            <h3 class="section-header-desc">진행 중인 캠페인</h3>
             <h2 class="section-header-headline">지금 이 순간, 간절한 기다림</h2>
             <a href="" class="section-direct-btn">캠페인 전체보기</a>
         </header>
@@ -346,7 +356,7 @@
 <section id="board-container">
     <div class="wrapper">
         <header class="section-header">
-            <h3 class="section-header-cat">공지/언론보도</h3>
+            <h3 class="section-header-desc">공지/언론보도</h3>
             <h2 class="section-header-headline">알려드립니다</h2>
             <a href="<?php home_url(); ?>/category/notice" class="section-direct-btn">전체보기</a>
         </header>

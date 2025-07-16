@@ -4,7 +4,7 @@
         <div class="wrapper8">
             <header class="section-header">
                 <h2 class="section-header-headline">캠페인 결과보고</h2>
-                <p class="section-header-cat">
+                <p class="section-header-desc">
                     여러분의 손길로 달라진 변화를 보고드립니다.
                 </p>
             </header>

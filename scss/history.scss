@@ -1,11 +1,92 @@
-.history-container{
+.history-container {
   width: 100%;
-  max-width: $contentWidth;
+  max-width: $singleWidth;
   margin: auto;
+  position: relative;
+
+  &:after {
+    content: "";
+    border: 2px dashed $sub;
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0.5rem 0;
+  }
 }
 
-.history-month-grid{
+.history-month-grid {
   display: flex;
   gap: 4rem;
   border-top: 1px solid $grayLine;
+}
+
+.history-body {
+  position: relative;
+  padding: 2.4rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  border: 1px solid $grayLine;
+  margin-left: 2.4rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-radius: 0.8rem;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 999px;
+    border: 4px solid $sub;
+    background-color: $white;
+    position: absolute;
+    left: -5.5%;
+    top: 50%;
+    transform: translate(5.5%, -50%);
+    z-index: 20;
+  }
+
+  &:last-child:before {
+    left: -5.4%;
+    bottom: 0;
+    transform: translate(5.4%, 0);
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .history-year {
+    font-size: 2.4rem;
+    color: $sub;
+  }
+
+  figure {
+    margin-top: 1.6rem;
+  }
+
+  tbody {
+    vertical-align: top;
+  }
+
+  tr {
+    display: flex;
+  }
+
+  td {
+    border: none;
+    padding: 0.6rem;
+    color: $grayText;
+    &:first-child {
+      width: 8%;
+      flex-shrink: 0;
+
+      strong {
+        color: $grayText;
+      }
+    }
+
+    //padding: 0;
+  }
 }
